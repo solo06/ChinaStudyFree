@@ -135,11 +135,11 @@ jobs:
           distribution: temurin
           java-version: "21"
       - uses: android-actions/setup-android@v3
-      - uses: actions/download-artifact@v4
-        with:
-          name: web-out
-          path: apps/web/out
       - run: npm ci --ignore-scripts
+      - name: 生成题库数据
+        run: npm run build:data
+      - name: 构建 lite 静态站（Capacitor webDir = apps/lite/dist）
+        run: npm run build:lite
       - name: 同步 Web 资源到安卓工程
         working-directory: apps/mobile
         run: npx cap sync android
