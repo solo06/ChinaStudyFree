@@ -1,0 +1,230 @@
+name: iOS IPA 构建与发布
+
+# 用途：在 macOS Runner 上把 Capacitor 工程归档成 .ipa，并（tag 触发时）发布到 GitHub Release。
+#
+# 产物：聪聪学堂-unsigned.ipa —— 未签名，下载后需用 Sideloadly / AltStore 自签才能装进 iPhone。
+#       需要已签名版本，配置下面 6 个 Secret 后手动触发并勾选 signed：
+#         IOS_CERT_P12_BASE64 / IOS_CERT_PASSWORD / IOS_PROVISION_BASE64
+#         IOS_TEAM_ID / IOS_KEYCHAIN_PASSWORD / IOS_EXPORT_METHOD
+#
+# 触发：手动（workflow_dispatch）或推送 ios-v* 标签（如 ios-v0.1.0）。
+# 注意：仓库里没有提交 apps/mobile/ios 目录，本流程会在 Runner 上用 `cap add ios` 现场生成，
+#       因此任何改动都会从 capacitor.config.ts 与 apps/lite 重新生成，不依赖本地 Mac。
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "版本号（写入 Info.plist，例如 0.1.0）"
+        required: false
+        default: "0.1.0"
+      signed:
+        description: "产出已签名 IPA（需 IOS_* Secrets）"
+        type: boolean
+        default: false
+  push:
+    tags:
+      - "ios-v*"
+
+permissions:
+  contents: write
+
+env:
+  NODE_VERSION: "22"
+
+jobs:
+  ipa:
+    name: 归档并打包 IPA
+    runs-on: macos-15
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci --ignore-scripts
+
+      - name: 生成题库数据（output/ → apps/web/public/data）
+        run: npm run build:data
+
+      - name: 构建 lite 静态站（Capacitor webDir）
+        run: npm run build:lite
+
+      - name: 校验 webDir 产物
+        run: test -f apps/lite/dist/index.html
+
+      - name: 生成 iOS 工程并同步 Web 资源
+        working-directory: apps/mobile
+        run: |
+          set -euo pipefail
+          npx cap add ios
+          npx cap sync ios
+
+      - name: 安装 CocoaPods 依赖
+        working-directory: apps/mobile/ios/App
+        run: pod install --repo-update
+
+      - name: 套用应用图标（可选，失败不阻断）
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          ICON_DIR="apps/mobile/ios/App/App/Assets.xcassets/AppIcon.appiconset"
+          test -d "$ICON_DIR" || exit 0
+          test -f app-icon-source.png || exit 0
+          mkdir -p /tmp/icon
+          sips -s format png -z 1024 1024 app-icon-source.png --out /tmp/icon/icon1024.png >/dev/null
+          for f in "$ICON_DIR"/*.png; do
+            [ -e "$f" ] || continue
+            sips -s format png -z 1024 1024 /tmp/icon/icon1024.png --out "$f" >/dev/null
+          done
+
+      # secrets.* 不能出现在 if: 表达式中（会导致整个 workflow 校验失败、零 job），
+      # 因此先在这里算出标记，后面用 env.SIGN 判断。
+      - name: 判定签名方式
+        id: signing
+        env:
+          CERT: ${{ secrets.IOS_CERT_P12_BASE64 }}
+          WANT_SIGNED: ${{ inputs.signed }}
+        run: |
+          if [ -n "${CERT:-}" ] && [ "${WANT_SIGNED:-false}" = "true" ]; then
+            echo "SIGN=1" >> "$GITHUB_ENV"
+            echo "签名：已启用"
+          else
+            echo "SIGN=0" >> "$GITHUB_ENV"
+            echo "签名：未启用（产出未签名 IPA）"
+          fi
+
+      - name: 导入签名证书
+        if: env.SIGN == '1'
+        env:
+          CERT_P12: ${{ secrets.IOS_CERT_P12_BASE64 }}
+          CERT_PASSWORD: ${{ secrets.IOS_CERT_PASSWORD }}
+          PROFILE: ${{ secrets.IOS_PROVISION_BASE64 }}
+          KEYCHAIN_PASSWORD: ${{ secrets.IOS_KEYCHAIN_PASSWORD }}
+        run: |
+          set -euo pipefail
+          KEYCHAIN="$RUNNER_TEMP/build.keychain-db"
+          echo "$CERT_P12" | base64 --decode > "$RUNNER_TEMP/cert.p12"
+          echo "$PROFILE"  | base64 --decode > "$RUNNER_TEMP/profile.mobileprovision"
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security import "$RUNNER_TEMP/cert.p12" -k "$KEYCHAIN" -P "$CERT_PASSWORD" \
+            -T /usr/bin/codesign -T /usr/bin/security
+          security set-key-partition-list -S apple-tool:,apple:,codesign: \
+            -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN" >/dev/null
+          security list-keychains -d user -s "$KEYCHAIN" $(security list-keychains -d user | tr -d '"')
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp "$RUNNER_TEMP/profile.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
+
+      - name: 计算版本号
+        run: |
+          set -euo pipefail
+          if [ "${GITHUB_REF_TYPE:-}" = "tag" ]; then
+            V="${GITHUB_REF_NAME#ios-v}"
+          else
+            V="${{ inputs.version }}"
+          fi
+          [ -n "$V" ] || V="0.1.0"
+          echo "APP_VERSION=$V" >> "$GITHUB_ENV"
+          echo "版本号：${V}（构建号 ${GITHUB_RUN_NUMBER}）"
+
+      - name: 归档（未签名）
+        if: env.SIGN != '1'
+        working-directory: apps/mobile/ios/App
+        env:
+          BUILD_NUMBER: ${{ github.run_number }}
+        run: |
+          set -euo pipefail
+          xcodebuild -workspace App.xcworkspace -list | sed -n '1,40p'
+          COMMON=(-configuration Release -sdk iphoneos -destination 'generic/platform=iOS' -quiet
+                  -archivePath "$RUNNER_TEMP/app.xcarchive"
+                  MARKETING_VERSION="$APP_VERSION" CURRENT_PROJECT_VERSION="$BUILD_NUMBER"
+                  CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="")
+          if xcodebuild -workspace App.xcworkspace -list | grep -qE '^\s+App$'; then
+            xcodebuild -workspace App.xcworkspace -scheme App "${COMMON[@]}" archive
+          else
+            xcodebuild -project App.xcodeproj -target App "${COMMON[@]}" archive
+          fi
+
+      - name: 归档并导出（已签名）
+        if: env.SIGN == '1'
+        working-directory: apps/mobile/ios/App
+        env:
+          TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+          EXPORT_METHOD: ${{ secrets.IOS_EXPORT_METHOD }}
+          BUILD_NUMBER: ${{ github.run_number }}
+        run: |
+          set -euo pipefail
+          xcodebuild -workspace App.xcworkspace -scheme App -configuration Release \
+            -sdk iphoneos -destination 'generic/platform=iOS' -quiet \
+            -archivePath "$RUNNER_TEMP/app.xcarchive" \
+            MARKETING_VERSION="$APP_VERSION" CURRENT_PROJECT_VERSION="$BUILD_NUMBER" \
+            DEVELOPMENT_TEAM="$TEAM_ID" CODE_SIGN_STYLE=Manual archive
+          PB=/usr/libexec/PlistBuddy
+          OP="$RUNNER_TEMP/ExportOptions.plist"
+          rm -f "$OP"
+          "$PB" -c "Add :method string ${EXPORT_METHOD:-development}" \
+                 -c "Add :teamID string ${TEAM_ID}" \
+                 -c "Add :signingStyle string manual" \
+                 -c "Add :stripSwiftSymbols bool true" \
+                 -c "Add :compileBitcode bool false" "$OP" >/dev/null
+          mkdir -p "$RUNNER_TEMP/export"
+          xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/app.xcarchive" \
+            -exportOptionsPlist "$OP" -exportPath "$RUNNER_TEMP/export"
+
+      - name: 打包为 IPA（Payload 结构）
+        run: |
+          set -euo pipefail
+          if [ -d "$RUNNER_TEMP/export/Payload" ]; then
+            cd "$RUNNER_TEMP/export"
+            for f in *.ipa; do cp "$f" "$RUNNER_TEMP/app-signed.ipa"; done
+            echo "IPA_PATH=$RUNNER_TEMP/app-signed.ipa" >> "$GITHUB_ENV"
+            echo "IPA_NAME=聪聪学堂-signed" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          APP="$RUNNER_TEMP/app.xcarchive/Products/Applications/App.app"
+          test -d "$APP" || { echo "归档里没有 App.app"; ls -R "$RUNNER_TEMP/app.xcarchive/Products" | head -40; exit 1; }
+          mkdir -p "$RUNNER_TEMP/Payload"
+          cp -R "$APP" "$RUNNER_TEMP/Payload/"
+          cd "$RUNNER_TEMP"
+          /usr/bin/zip -qry app-unsigned.ipa Payload
+          echo "IPA_PATH=$RUNNER_TEMP/app-unsigned.ipa" >> "$GITHUB_ENV"
+          echo "IPA_NAME=聪聪学堂-unsigned" >> "$GITHUB_ENV"
+
+      - name: 汇报产物信息
+        run: |
+          set -euo pipefail
+          unzip -l "$IPA_PATH" | sed -n '1,12p'
+          unzip -p "$IPA_PATH" 'Payload/App.app/Info.plist' > /tmp/Info.plist || true
+          /usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' /tmp/Info.plist 2>/dev/null || true
+          /usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' /tmp/Info.plist 2>/dev/null || true
+          /usr/libexec/PlistBuddy -c 'Print :MinimumOSVersion' /tmp/Info.plist 2>/dev/null || true
+          sha256sum "$IPA_PATH"
+
+      - name: 上传构建产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-ipa
+          path: ${{ env.IPA_PATH }}
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: 发布到 GitHub Release（仅 tag 触发）
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: 聪聪学堂 iOS ${{ github.ref_name }}
+          files: ${{ env.IPA_PATH }}
+          fail_on_unmatched_files: true
+          body: |
+            iOS 客户端 ${{ github.ref_name }}
+
+            - 文件：`${{ env.IPA_NAME }}.ipa`
+            - 未签名：需用 Sideloadly / AltStore 自签后安装（免费 Apple ID 7 天有效）
+            - 应用标识：`com.chinastudyfree.app`
+            - 构建号：${{ github.run_number }}
