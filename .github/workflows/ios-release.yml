@@ -231,8 +231,11 @@ jobs:
           distribution: temurin
           java-version: "21"
 
-      - uses: android-actions/setup-android@v3
 
+      - name: 检查预装 Android SDK
+        run: |
+          echo "ANDROID_HOME=${ANDROID_HOME:-未设置}"
+          ls "${ANDROID_HOME:-/usr/local/lib/android/sdk}/build-tools" | tail -3
       - name: 安装依赖
         run: npm ci --ignore-scripts
 

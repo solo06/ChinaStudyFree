@@ -134,7 +134,6 @@ jobs:
         with:
           distribution: temurin
           java-version: "21"
-      - uses: android-actions/setup-android@v3
       - run: npm ci --ignore-scripts
       - name: 生成题库数据
         run: npm run build:data
