@@ -1,23 +1,25 @@
 name: Docker Hub 镜像发布
 
-# 用途：用 docker/Dockerfile 构建镜像并推送到 Docker Hub（默认 linux/amd64）。
-# 需要在仓库 Settings → Secrets and variables → Actions 里配置：
+# 用途：用 docker/Dockerfile 构建多架构镜像（linux/amd64 + linux/arm64）并推送到 Docker Hub。
+# 需要在仓库 Secrets 里配置：
 #   DOCKERHUB_USERNAME  Docker Hub 用户名
-#   DOCKERHUB_TOKEN     Docker Hub 访问令牌（Read & Write，不要用登录密码）
+#   DOCKERHUB_TOKEN     Docker Hub 访问令牌（Read & Write）
 #
 # 触发：
-#   - 手动 workflow_dispatch（可勾选同时构建 arm64）
-#   - 推送 docker-v* 标签（如 docker-v0.1.0）→ 同时打上 0.1.0 标签
+#   - 手动 workflow_dispatch
+#   - 推送 docker-v* 标签（如 docker-v0.2.0）→ 同时打上 0.2.0 标签
 #   - 推到 main 且改动涉及 docker/ 或应用代码 → 推 latest + sha-短哈希
 #
-# 产物：<用户名>/chinastudyfree:latest / :<版本> / :sha-xxxxxxx
+# 架构：x64 原生构建，arm64 走 QEMU 模拟（GitHub 的 arm64 Runner 排队不可控，
+#   单次约 15~30 分钟，超时已放宽到 120 分钟）。产物是一份 manifest list，
+#   amd64 / arm64 机器 docker pull 时自动取对应架构。
 on:
   workflow_dispatch:
     inputs:
-      arm64:
-        description: "同时构建 linux/arm64（耗时明显更长）"
-        type: boolean
-        default: false
+      platforms:
+        description: "目标平台（留空=amd64+arm64；只出单架构可填 linux/amd64）"
+        required: false
+        default: ""
   push:
     tags:
       - "docker-v*"
@@ -45,23 +47,22 @@ jobs:
   publish:
     name: 构建并推送镜像
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
       - name: 计算目标平台
-        id: platform
         run: |
-          if [ "${{ inputs.arm64 }}" = "true" ]; then
-            echo "PLATFORMS=linux/amd64,linux/arm64" >> "$GITHUB_ENV"
-          else
-            echo "PLATFORMS=linux/amd64" >> "$GITHUB_ENV"
-          fi
-          echo "平台：$PLATFORMS"
+          set -euo pipefail
+          P="${{ inputs.platforms }}"
+          [ -n "$P" ] || P="linux/amd64,linux/arm64"
+          echo "PLATFORMS=$P" >> "$GITHUB_ENV"
+          echo "平台：$P"
 
-      - name: 安装 QEMU（多架构时需要）
-        if: inputs.arm64
+      - name: 安装 QEMU（arm64 模拟）
         uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
 
       - uses: docker/setup-buildx-action@v3
 
@@ -76,6 +77,10 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}
+          # latest=false 必写：否则 metadata-action 的 latest=auto 在推任何 tag 时也会打上
+          # latest，以后补推一个旧版本 tag 会把 latest 悄悄回退成旧代码。
+          flavor: |
+            latest=false
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha,format=short
@@ -94,13 +99,19 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
+      - name: 校验 manifest 架构
+        run: |
+          set -euo pipefail
+          TAG="$(printf '%s\n' "${{ steps.meta.outputs.tags }}" | head -n1)"
+          docker buildx imagetools inspect "$TAG" | sed -n '1,40p'
+
       - name: 冒烟测试（拉取刚推送的镜像，跑 /api/health）
         run: |
           set -euo pipefail
           TAG="$(printf '%s\n' "${{ steps.meta.outputs.tags }}" | head -n1)"
           echo "测试镜像：$TAG"
-          docker pull "$TAG"
-          docker run -d --name csf-smoke -p 18787:8787 "$TAG"
+          docker pull --platform linux/amd64 "$TAG"
+          docker run -d --name csf-smoke --platform linux/amd64 -p 18787:8787 "$TAG"
           ok=0
           for i in $(seq 1 20); do
             if curl -fsS http://127.0.0.1:18787/api/health; then ok=1; break; fi
@@ -114,9 +125,11 @@ jobs:
 
       - name: 输出镜像摘要
         run: |
-          echo "### 已发布镜像" >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
-          echo "${{ steps.meta.outputs.tags }}" >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
-          echo "- digest: \`${{ steps.build.outputs.digest }}\`" >> "$GITHUB_STEP_SUMMARY"
-          echo "- 平台: \`$PLATFORMS\`" >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "### 已发布镜像"
+            echo '```'
+            echo "${{ steps.meta.outputs.tags }}"
+            echo '```'
+            echo "- digest: \`${{ steps.build.outputs.digest }}\`"
+            echo "- 平台: \`$PLATFORMS\`"
+          } >> "$GITHUB_STEP_SUMMARY"
