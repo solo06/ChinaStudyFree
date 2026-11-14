@@ -130,7 +130,7 @@ jobs:
           fi
           [ -n "$V" ] || V="0.1.0"
           echo "APP_VERSION=$V" >> "$GITHUB_ENV"
-          echo "版本号：$V（构建号 $GITHUB_RUN_NUMBER）"
+          echo "版本号：${V}（构建号 ${GITHUB_RUN_NUMBER}）"
 
       - name: 归档（未签名）
         if: env.SIGN != '1'
