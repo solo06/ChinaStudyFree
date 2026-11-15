@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- 完全离线：不申请 INTERNET 权限，不加载任何网页 -->
+
+    <!-- Android 11+ 的包可见性限制：不声明这条，TextToSpeech 可能找不到已安装的语音引擎 -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
