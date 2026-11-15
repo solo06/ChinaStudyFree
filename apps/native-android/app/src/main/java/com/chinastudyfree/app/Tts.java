@@ -59,25 +59,29 @@ public class Tts {
         }
     }
 
-    /** 引擎就绪且支持中文才返回 true；否则调用方应把朗读按钮隐藏。 */
+    /** 引擎就绪且支持中文才返回 true（初始化是异步的，刚进页面时可能为 false）。 */
     public boolean available() {
         return ready && !failed && engine != null;
     }
 
-    public void speak(String text) {
-        if (text == null) return;
+    /** 返回 false 表示本机没有可用的语音引擎（调用方可以据此提示用户）。 */
+    public boolean speak(String text) {
+        if (text == null) return false;
         String body = text.trim();
-        if (body.isEmpty()) return;
+        if (body.isEmpty()) return false;
         if (!available()) {
-            if (!failed) pending = body;
-            return;
+            if (failed) return false;
+            pending = body;
+            return true;
         }
         try {
             stop();
             String id = UTTERANCE_PREFIX + (++counter);
             engine.speak(body, TextToSpeech.QUEUE_FLUSH, null, id);
+            return true;
         } catch (Throwable ignored) {
             // 静默：语音失败不影响学习流程
+            return false;
         }
     }
 

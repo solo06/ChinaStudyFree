@@ -173,7 +173,7 @@ public class LessonActivity extends Activity {
                     ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             slp.setMargins(Ui.dp(this, 10), 0, 0, 0);
             speak.setLayoutParams(slp);
-            speak.setOnClickListener(v -> { if (tts != null) tts.speak(speechBody); });
+            speak.setOnClickListener(v -> speakOrHint(speechBody));
             qRow.addView(speak);
         }
         card.addView(qRow);
@@ -295,8 +295,14 @@ public class LessonActivity extends Activity {
                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         lp.setMargins(0, Ui.dp(this, 10), 0, 0);
         speak.setLayoutParams(lp);
-        speak.setOnClickListener(v -> { if (tts != null) tts.speak(exp); });
+        speak.setOnClickListener(v -> speakOrHint(exp));
         fbSlot.addView(speak);
+    }
+
+    /** 播读文本；本机没有可用语音引擎时给一次提示，而不是点了没反应。 */
+    private void speakOrHint(String text) {
+        if (tts == null) return;
+        if (!tts.speak(text)) Ui.toast(this, "本机没有可用的中文语音引擎");
     }
 
     private void setProgress(float frac) {
