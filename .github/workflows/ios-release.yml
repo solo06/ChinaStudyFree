@@ -68,6 +68,15 @@ jobs:
         working-directory: apps/mobile/ios/App
         run: pod install --repo-update
 
+      - name: 确认原生 TTS 插件已进入工程
+        working-directory: apps/mobile/ios/App
+        run: |
+          set -euo pipefail
+          grep -i "text-to-speech\|TextToSpeech" Podfile.lock || {
+            echo "Podfile.lock 里没有 TextToSpeech，语音导读会退回浏览器 speechSynthesis"
+            exit 1
+          }
+
       - name: 套用应用图标（可选，失败不阻断）
         continue-on-error: true
         run: |
