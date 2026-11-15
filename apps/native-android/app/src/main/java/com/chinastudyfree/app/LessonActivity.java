@@ -48,6 +48,8 @@ public class LessonActivity extends Activity {
     /** 红心耗尽弹窗只弹一次，避免每答错一题叠加一层 Dialog */
     private boolean noHeartsDialogShown;
     private Dialog noHeartsDialog;
+    /** 语音导读（系统 TTS，离线） */
+    private Tts tts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,10 +69,21 @@ public class LessonActivity extends Activity {
         total = questions.length();
         Progress.get(this).setActiveBookId(bookId);
         Progress.get(this).setActiveLesson(lessonId, lessonTitle);
+        tts = Tts.get(this);
 
         buildShell();
         if (total == 0) { finishLesson(); return; }
         renderQuestion(0);
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (tts != null) {
+            tts.stop();
+            tts.shutdown();
+            tts = null;
+        }
+        super.onDestroy();
     }
 
     private void buildShell() {
@@ -127,6 +140,7 @@ public class LessonActivity extends Activity {
     }
 
     private void renderQuestion(int idx) {
+        if (tts != null) tts.stop();
         bodyContainer.removeAllViews();
         currentIndex = idx;
         JSONObject q = questions.optJSONObject(idx);
@@ -146,7 +160,23 @@ public class LessonActivity extends Activity {
                 Ui.color(this, R.color.line), Ui.dp(this, 2), Ui.dp(this, 16)));
         card.addView(Ui.tv(this, typeLabel(type) + " · " + Data.i(q, "score") + " 分", 13, R.color.inkLight, true));
         card.addView(Ui.gap(this, 8));
-        card.addView(Ui.tv(this, Data.s(q, "q"), 17, R.color.ink, false));
+        LinearLayout qRow = new LinearLayout(this);
+        qRow.setOrientation(LinearLayout.HORIZONTAL);
+        qRow.setGravity(Gravity.CENTER_VERTICAL);
+        qRow.addView(Ui.tv(this, Data.s(q, "q"), 17, R.color.ink, false), Ui.lpWeight(1f));
+        final String speechBody = speechText(q);
+        if (tts != null && speechBody.length() > 0) {
+            TextView speak = Ui.ghostButton(this, "🔊 朗读", R.color.secondary);
+            speak.setPadding(Ui.dp(this, 12), Ui.dp(this, 8), Ui.dp(this, 12), Ui.dp(this, 8));
+            speak.setMinHeight(Ui.dp(this, 36));
+            LinearLayout.LayoutParams slp = new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            slp.setMargins(Ui.dp(this, 10), 0, 0, 0);
+            speak.setLayoutParams(slp);
+            speak.setOnClickListener(v -> { if (tts != null) tts.speak(speechBody); });
+            qRow.addView(speak);
+        }
+        card.addView(qRow);
         card.addView(Ui.gap(this, 12));
         bodyContainer.addView(card);
 
@@ -171,6 +201,7 @@ public class LessonActivity extends Activity {
                 final TextView opt = Ui.option(this, label);
                 opt.setOnClickListener(v -> {
                     if (answeredCount > idx) return;
+                    if (tts != null) tts.stop();
                     boolean ok = norm(label).equals(norm(ans));
                     gradeChoice(card, labels, ans, opt, ok, exp, fbSlot);
                 });
@@ -194,6 +225,7 @@ public class LessonActivity extends Activity {
             card.addView(submit);
             View.OnClickListener doSubmit = v -> {
                 if (answeredCount > idx) return;
+                if (tts != null) tts.stop();
                 String user = et.getText().toString();
                 if (user.trim().length() == 0) { Ui.toast(this, "先写个答案吧"); return; }
                 boolean ok = norm(user).equals(norm(ans));
@@ -229,6 +261,44 @@ public class LessonActivity extends Activity {
         }
     }
 
+    /** 朗读文本：知识点 + 题干 + 选项（选项只在选择/判断题里读）。 */
+    private String speechText(JSONObject q) {
+        StringBuilder sb = new StringBuilder();
+        String knowledge = Data.s(lesson, "knowledge");
+        if (knowledge.length() > 0 && !knowledge.contains("[object Object]")) {
+            sb.append(knowledge).append("。");
+        }
+        String stem = Data.s(q, "q");
+        if (stem.length() > 0) sb.append(stem).append("。");
+        String type = Data.s(q, "type");
+        List<String> labels = new ArrayList<>();
+        if ("true_false".equals(type)) {
+            labels.add("对");
+            labels.add("错");
+        } else if ("choice".equals(type)) {
+            JSONArray opts = Data.arr(q, "opts");
+            for (int i = 0; i < opts.length(); i++) labels.add(opts.optString(i, ""));
+        }
+        for (int i = 0; i < labels.size(); i++) {
+            String label = labels.get(i).trim();
+            if (label.isEmpty()) continue;
+            sb.append((char) ('A' + i)).append("、").append(label).append("。");
+        }
+        return sb.toString();
+    }
+
+    /** 在反馈区追加「朗读解析」按钮。 */
+    private void addExplainSpeech(LinearLayout fbSlot, String exp) {
+        if (tts == null || exp.length() == 0) return;
+        TextView speak = Ui.ghostButton(this, "🔊 朗读解析", R.color.secondary);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        lp.setMargins(0, Ui.dp(this, 10), 0, 0);
+        speak.setLayoutParams(lp);
+        speak.setOnClickListener(v -> { if (tts != null) tts.speak(exp); });
+        fbSlot.addView(speak);
+    }
+
     private void setProgress(float frac) {
         float f = Math.max(0f, Math.min(1f, frac));
         if (progressFill != null) {
@@ -259,6 +329,7 @@ public class LessonActivity extends Activity {
         fbSlot.removeAllViews();
         fbSlot.addView(Ui.feedback(this,
                 (ok ? "✓ 答对了！" : "✗ 正确答案：" + ans) + (exp.length() > 0 ? "\n\n解析：" + exp : ""), ok));
+        addExplainSpeech(fbSlot, exp);
         addContinue();
     }
 
@@ -269,6 +340,7 @@ public class LessonActivity extends Activity {
         fbSlot.removeAllViews();
         fbSlot.addView(Ui.feedback(this,
                 (ok ? "✓ 答对了！" : "✗ 正确答案：" + ans) + (exp.length() > 0 ? "\n\n解析：" + exp : ""), ok));
+        addExplainSpeech(fbSlot, exp);
         addContinue();
     }
 

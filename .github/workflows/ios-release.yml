@@ -8,7 +8,7 @@ name: iOS / Android 客户端构建与发布
 #         IOS_CERT_P12_BASE64 / IOS_CERT_PASSWORD / IOS_PROVISION_BASE64
 #         IOS_TEAM_ID / IOS_KEYCHAIN_PASSWORD / IOS_EXPORT_METHOD
 #
-# 触发：手动（workflow_dispatch）或推送 ios-v* 标签（如 ios-v0.1.0）。
+# 触发：手动（workflow_dispatch）或推送 ios-v* / mobile-v* 标签（如 mobile-v0.4.0）。
 # 注意：仓库里没有提交 apps/mobile/ios 目录，本流程会在 Runner 上用 `cap add ios` 现场生成，
 #       因此任何改动都会从 capacitor.config.ts 与 apps/lite 重新生成，不依赖本地 Mac。
 on:
@@ -25,6 +25,7 @@ on:
   push:
     tags:
       - "ios-v*"
+      - "mobile-v*"
 
 permissions:
   contents: write
@@ -135,6 +136,7 @@ jobs:
           set -euo pipefail
           if [ "${GITHUB_REF_TYPE:-}" = "tag" ]; then
             V="${GITHUB_REF_NAME#ios-v}"
+            V="${V#mobile-v}"
           else
             V="${{ inputs.version }}"
           fi
@@ -295,6 +297,7 @@ jobs:
         run: |
           set -euo pipefail
           V="${GITHUB_REF_NAME#ios-v}"
+          V="${V#mobile-v}"
           sed -i "s/versionName '[^']*'/versionName '${V}'/" apps/native-android/app/build.gradle
           sed -i "s/versionCode [0-9]*/versionCode ${GITHUB_RUN_NUMBER}/" apps/native-android/app/build.gradle
           grep -nE "versionName|versionCode" apps/native-android/app/build.gradle
@@ -340,6 +343,7 @@ jobs:
         run: |
           set -euo pipefail
           V="${GITHUB_REF_NAME#ios-v}"
+          V="${V#mobile-v}"
           cp dist/ios/app-unsigned.ipa "dist/congcong-ios-${V}-unsigned.ipa"
           cp dist/android/*.apk "dist/congcong-android-${V}.apk"
           ls -lh dist/*.ipa dist/*.apk
