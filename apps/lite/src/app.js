@@ -53,6 +53,107 @@
     return "";
   }
 
+
+  // ── 语音导读 ────────────────────────────────────────────────────────
+  // 优先级：Capacitor 原生 TTS（iOS AVSpeechSynthesizer / Android TextToSpeech，离线可用）
+  //        → 浏览器 speechSynthesis（桌面/移动浏览器）
+  //        → 静默（不影响阅读，按钮自动隐藏）
+  var TTS = (function () {
+    var audio = null;
+
+    function plugin() {
+      try {
+        if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.TextToSpeech) {
+          return window.Capacitor.Plugins.TextToSpeech;
+        }
+      } catch (e) {}
+      return null;
+    }
+    function hasWeb() {
+      try { return !!(window.speechSynthesis && window.SpeechSynthesisUtterance); } catch (e) { return false; }
+    }
+    function trim(text) {
+      return String(text == null ? "" : text).replace(/\s+/g, " ").replace(/^\s+|\s+$/g, "");
+    }
+    function stop() {
+      var p = plugin();
+      if (p && p.stop) { try { p.stop(); } catch (e) {} }
+      if (hasWeb()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
+      if (audio) { try { audio.pause(); audio = null; } catch (e) {} }
+    }
+    function webSpeak(text) {
+      if (!hasWeb()) return;
+      try {
+        var u = new window.SpeechSynthesisUtterance(text);
+        u.lang = "zh-CN";
+        u.rate = 0.95;
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(u);
+      } catch (e) {}
+    }
+    function speak(text) {
+      text = trim(text);
+      if (!text) return;
+      stop();
+      var p = plugin();
+      if (p) {
+        try {
+          p.speak({ text: text, lang: "zh-CN", rate: 0.95, pitch: 1.0, volume: 1.0, category: "ambient" });
+          return;
+        } catch (e) { /* 落到浏览器语音 */ }
+      }
+      webSpeak(text);
+    }
+    return {
+      speak: speak,
+      stop: stop,
+      available: function () { return !!plugin() || hasWeb(); }
+    };
+  })();
+
+  function questionSpeechText(q) {
+    var parts = [];
+    var kp = one(q, "q-kp");
+    if (kp && kp.textContent) parts.push(kp.textContent);
+    var stem = one(q, "q-text");
+    if (stem && stem.textContent) parts.push(stem.textContent);
+    var opts = byClass(q, "opt");
+    for (var i = 0; i < opts.length; i++) {
+      var spans = opts[i].querySelectorAll ? opts[i].querySelectorAll("span") : [];
+      var label = spans.length ? spans[spans.length - 1].textContent : opts[i].textContent;
+      parts.push(String.fromCharCode(65 + i) + "、" + (label || ""));
+    }
+    return parts.join("。");
+  }
+
+  function explainSpeechText(q) {
+    var t = one(q, "explain-text");
+    return t && t.textContent ? t.textContent : "";
+  }
+
+  function initTTS(root, qs) {
+    var btns = byClass(root, "tts-btn");
+    if (!btns.length) return;
+    if (!TTS.available()) {
+      for (var h = 0; h < btns.length; h++) btns[h].style.display = "none";
+      return;
+    }
+    for (var i = 0; i < qs.length; i++) {
+      (function (q) {
+        var list = byClass(q, "tts-btn");
+        for (var j = 0; j < list.length; j++) {
+          (function (btn) {
+            btn.onclick = function (ev) {
+              if (ev) { ev.preventDefault(); ev.stopPropagation(); }
+              var kind = btn.getAttribute("data-tts");
+              TTS.speak(kind === "explain" ? explainSpeechText(q) : questionSpeechText(q));
+            };
+          })(list[j]);
+        }
+      })(qs[i]);
+    }
+  }
+
   // ── 课程页：答题 ────────────────────────────────────────────────────
   function initLesson() {
     var list = document.querySelector(".q-list");
@@ -61,6 +162,7 @@
     var lesson = list.getAttribute("data-lesson") || "";
     var total = parseInt(list.getAttribute("data-total"), 10) || 0;
     var qs = byClass(list, "q");
+    initTTS(list, qs);
     var answered = 0, correct = 0;
 
     // 进入课程即记录「继续学习」
@@ -103,6 +205,7 @@
       } catch (e) {}
     }
     function settle(q, ok, msg) {
+      TTS.stop();
       if (q.getAttribute("data-done") === "1") return;
       q.setAttribute("data-done", "1");
       addClass(q, ok ? "correct" : "wrong");

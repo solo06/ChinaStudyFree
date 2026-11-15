@@ -235,11 +235,11 @@ function renderQuestion(q, n) {
     ? "self" : (INPUT_TYPES.has(type) ? "input" : "click");
 
   return `<section class="q" data-mode="${mode}" data-type="${esc(type)}" data-answer="${esc(ansRaw)}" data-qid="${esc(q.id)}">
-<div class="q-head"><span class="q-no">${n}</span>${kp ? `<span class="q-kp">${kp}</span>` : ""}<span class="q-score">${esc(q.score || 0)} 分</span></div>
+<div class="q-head"><span class="q-no">${n}</span>${kp ? `<span class="q-kp">${kp}</span>` : ""}<span class="q-score">${esc(q.score || 0)} 分</span><button type="button" class="tts-btn" data-tts="question" aria-label="朗读这道题">朗读</button></div>
 <div class="q-text">${qtext}</div>
 ${body}
 <div class="q-feedback" hidden></div>
-${explain ? `<details class="q-explain"><summary>查看解析</summary><div>${explain}</div></details>` : ""}
+${explain ? `<details class="q-explain"><summary>查看解析</summary><div><span class="explain-text">${explain}</span><span class="tts-row"><button type="button" class="tts-btn" data-tts="explain" aria-label="朗读解析">朗读解析</button></span></div></details>` : ""}
 </section>`;
 }
 
