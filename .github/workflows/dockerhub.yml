@@ -10,6 +10,9 @@ name: Docker Hub 镜像发布
 #   - 推送 docker-v* 标签（如 docker-v0.2.0）→ 同时打上 0.2.0 标签
 #   - 推到 main 且改动涉及 docker/ 或应用代码 → 推 latest + sha-短哈希
 #
+# latest 策略：推 docker-vX.Y.Z 时，只要 X.Y.Z 不小于已发布的最高版本，latest 就跟着走；
+#   补推旧版本 tag（如 0.4.1 出现在 0.5.0 之后）不会把 latest 回退。
+#
 # 架构：x64 原生构建，arm64 走 QEMU 模拟（GitHub 的 arm64 Runner 排队不可控，
 #   单次约 15~30 分钟，超时已放宽到 120 分钟）。产物是一份 manifest list，
 #   amd64 / arm64 机器 docker pull 时自动取对应架构。
@@ -82,6 +85,44 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      # latest 只跟「不小于已发布最高版本」的 tag 走：
+      # 推 docker-v0.6.0 → latest 前移；补推 docker-v0.4.1 → latest 保持不变（防回退）。
+      - name: 判断本次是否推进 latest
+        id: latest
+        env:
+          DH_USER: ${{ secrets.DOCKERHUB_USERNAME }}
+        run: |
+          set -euo pipefail
+          if [ "${GITHUB_REF_TYPE:-}" != "tag" ]; then
+            echo "LATEST_OK=1" >> "$GITHUB_ENV"
+            echo "非 tag 触发（main / 手动）→ 更新 latest"
+            exit 0
+          fi
+          NEW="${GITHUB_REF_NAME#docker-v}"
+          if ! printf '%s' "$NEW" | grep -qE '^[0-9]+(\.[0-9]+)*$'; then
+            echo "LATEST_OK=0" >> "$GITHUB_ENV"
+            echo "tag $GITHUB_REF_NAME 不是版本号（应为 docker-vX.Y.Z）→ 不动 latest"
+            exit 0
+          fi
+          API="https://hub.docker.com/v2/repositories/${DH_USER}/${IMAGE_NAME}/tags?page_size=100"
+          PUBLISHED="$(curl -fsS --max-time 20 "$API" 2>/dev/null \
+            | python3 -c 'import sys,json; print("\n".join(t["name"] for t in json.load(sys.stdin).get("results",[])))' 2>/dev/null \
+            | grep -E '^[0-9]+(\.[0-9]+)*$' || true)"
+          MAX="$(printf '%s\n' "$PUBLISHED" | sort -V | tail -n1)"
+          if [ -z "$MAX" ]; then
+            echo "LATEST_OK=1" >> "$GITHUB_ENV"
+            echo "还没有任何版本 tag → 本次 $NEW 设为 latest"
+            exit 0
+          fi
+          HIGHEST="$(printf '%s\n%s\n' "$NEW" "$MAX" | sort -V | tail -n1)"
+          if [ "$HIGHEST" = "$NEW" ]; then
+            echo "LATEST_OK=1" >> "$GITHUB_ENV"
+            echo "本次 $NEW >= 已发布最高版 $MAX → 推进 latest"
+          else
+            echo "LATEST_OK=0" >> "$GITHUB_ENV"
+            echo "本次 $NEW < 已发布最高版 $MAX → latest 保持不动（防回退）"
+          fi
+
       - name: 生成镜像标签
         id: meta
         uses: docker/metadata-action@v5
@@ -90,12 +131,12 @@ jobs:
           images: |
             ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}
             ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}
-          # latest=false 必写：否则 metadata-action 的 latest=auto 在推任何 tag 时也会打上
-          # latest，以后补推一个旧版本 tag 会把 latest 悄悄回退成旧代码。
+          # latest=false 必写：关掉 metadata-action 的 latest=auto，latest 完全由上面的
+          # 「判断本次是否推进 latest」决定（tag 前进、旧 tag 不回退）。
           flavor: |
             latest=false
           tags: |
-            type=raw,value=latest,enable={{is_default_branch}}
+            type=raw,value=latest,enable=${{ env.LATEST_OK == '1' }}
             type=sha,format=short
             type=match,pattern=docker-v(.*),group=1
 
