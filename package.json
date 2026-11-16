@@ -29,7 +29,8 @@
     "package:offline": "bash scripts/package-offline.sh",
     "sync:android": "npm run sync:android --workspace=china-study-free-mobile",
     "sync:ios": "npm run sync:ios --workspace=china-study-free-mobile",
-    "icons:android": "python scripts/gen-android-icons.py"
+    "icons:android": "python scripts/gen-android-icons.py",
+    "sync:pdfs": "node scripts/sync-textbook-pdfs.mjs"
   },
   "dependencies": {
     "ws": "^8.18.0"
