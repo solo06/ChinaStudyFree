@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Module 4 It's a T-shirt 衣物与聚会",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第4单元「Module 4 It's a T-shirt 衣物与聚会」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "衣物 T-shirt / dress / trousers",
+        "question": "「裤子」的英文是（　）",
+        "options": [
+          "trousers",
+          "trouserss",
+          "trowser",
+          "trouser"
+        ],
+        "answer": "trousers",
+        "explanation": "trousers = 裤子。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "too 与 Here's …",
+        "question": "「太大了。」的英文是（　）",
+        "options": [
+          "It's too big.",
+          "It's to big.",
+          "It's too bigger.",
+          "It too big."
+        ],
+        "answer": "It's too big.",
+        "explanation": "too + 形容词。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "too 与 Here's …",
+        "question": "「这是件T恤。」的英文是（　）",
+        "options": [
+          "Here's a T-shirt.",
+          "Here a T-shirt.",
+          "Here's T-shirt.",
+          "This a T-shirt here."
+        ],
+        "answer": "Here's a T-shirt.",
+        "explanation": "Here's = Here is。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "衣物 T-shirt / dress / trousers",
+        "question": "dress 的意思是「连衣裙」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "dress = 连衣裙。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "衣物 T-shirt / dress / trousers",
+      "core_concept": "T-shirt T恤、dress 连衣裙、trousers 裤子（复数）。party 聚会。",
+      "key_formula": "T-shirt / dress / trousers",
+      "common_mistakes": [
+        "trousers 当单数。"
+      ],
+      "tips": "裤子总是复数。"
+    },
+    {
+      "point": "too 与 Here's …",
+      "core_concept": "Here's a T-shirt. 这是件T恤。It's too big. 太大了。too 表示「太……」，也可表示「也」。",
+      "key_formula": "Here's + 名词. / It's too + 形容词.",
+      "common_mistakes": [
+        "too 与 to 混。"
+      ],
+      "tips": "too 太/也，to 到。"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Unit 6 Happy Holidays 节日快乐",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "第6单元「Unit 6 Happy Holidays 节日快乐」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "礼物与节日词汇 card / present / holiday",
+        "question": "「礼物」的英文是（　）",
+        "options": [
+          "presents",
+          "present",
+          "parent",
+          "presant"
+        ],
+        "answer": "present",
+        "explanation": "present = 礼物。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "礼物与节日词汇 card / present / holiday",
+        "question": "「卡片」的英文是（　）",
+        "options": [
+          "card",
+          "cart",
+          "cord",
+          "cards"
+        ],
+        "answer": "card",
+        "explanation": "card = 卡片。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "Happy New Year! / Thank you.",
+        "question": "新年时最合适的祝福是（　）",
+        "options": [
+          "Happy New Year!",
+          "Happy birthday!",
+          "Good morning!",
+          "Good night!"
+        ],
+        "answer": "Happy New Year!",
+        "explanation": "新年说 Happy New Year。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "Happy New Year! / Thank you.",
+        "question": "「这是给你的礼物。」的英文是（　）",
+        "options": [
+          "Here's a present for you.",
+          "Here a present for you.",
+          "Here's present for you.",
+          "This present for you here."
+        ],
+        "answer": "Here's a present for you.",
+        "explanation": "Here's = Here is。"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "礼物与节日词汇 card / present / holiday",
+        "question": "present 的意思是「礼物」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "present = 礼物。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "礼物与节日词汇 card / present / holiday",
+      "core_concept": "card 卡片、present 礼物、holiday 节日/假期。Happy New Year! 新年快乐！",
+      "key_formula": "card / present / holiday",
+      "common_mistakes": [
+        "present 与 parent（父母）混。"
+      ],
+      "tips": "present 礼物，parent 父母。"
+    },
+    {
+      "point": "Happy New Year! / Thank you.",
+      "core_concept": "Happy New Year! 新年快乐！Here's a present for you. 这是给你的礼物。Thank you. 谢谢。",
+      "key_formula": "Happy New Year! — Thank you.",
+      "common_mistakes": [
+        "祝福时说 Happy birthday（生日才用）。"
+      ],
+      "tips": "新年说 Happy New Year。"
+    }
+  ]
+}

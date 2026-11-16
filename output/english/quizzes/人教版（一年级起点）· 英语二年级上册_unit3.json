@@ -1,0 +1,123 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Unit 3 My Friends 我的朋友",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "第3单元「Unit 3 My Friends 我的朋友」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "外貌形容词 tall / short / big / thin / handsome / pretty",
+        "question": "「高的」的英文是（　）",
+        "options": [
+          "tall",
+          "tale",
+          "tell",
+          "tol"
+        ],
+        "answer": "tall",
+        "explanation": "tall = 高的。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "外貌形容词 tall / short / big / thin / handsome / pretty",
+        "question": "「瘦的」的英文是（　）",
+        "options": [
+          "thin",
+          "thim",
+          "thank",
+          "than"
+        ],
+        "answer": "thin",
+        "explanation": "thin = 瘦的。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "外貌形容词 tall / short / big / thin / handsome / pretty",
+        "question": "「漂亮的（形容女孩）」的英文是（　）",
+        "options": [
+          "pritty",
+          "handsome",
+          "pretty",
+          "prety"
+        ],
+        "answer": "pretty",
+        "explanation": "pretty = 漂亮的（形容女孩）。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "What does he look like?",
+        "question": "「他长什么样？」的英文是（　）",
+        "options": [
+          "What does he look like?",
+          "What he look like?",
+          "What is he look like?",
+          "How he look like?"
+        ],
+        "answer": "What does he look like?",
+        "explanation": "第三人称用 does。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "What does he look like?",
+        "question": "— What does she look like? — ___（她很高）",
+        "options": [
+          "She is tall.",
+          "She tall.",
+          "He is tall.",
+          "She is tall very."
+        ],
+        "answer": "She is tall.",
+        "explanation": "She is + 形容词。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "外貌形容词 tall / short / big / thin / handsome / pretty",
+        "question": "short 既可表示「矮的」也可表示「短的」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "一词两义。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "外貌形容词 tall / short / big / thin / handsome / pretty",
+      "core_concept": "tall 高的、short 矮的/短的、big 大的、thin 瘦的、handsome 英俊的（多形容男孩）、pretty 漂亮的（多形容女孩）。",
+      "key_formula": "tall / short / big / thin / handsome / pretty",
+      "common_mistakes": [
+        "形容女孩用 handsome。"
+      ],
+      "tips": "女孩用 pretty，男孩用 handsome。"
+    },
+    {
+      "point": "What does he look like?",
+      "core_concept": "What does he look like? 他长什么样？He is tall. 他很高。",
+      "key_formula": "What does he / she look like? — He / She is + 形容词.",
+      "common_mistakes": [
+        "漏掉 does：What he look like?（×）"
+      ],
+      "tips": "第三人称用 does。"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Unit 6 Clothes 衣服",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "第6单元「Unit 6 Clothes 衣服」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts",
+        "question": "「衬衫」的英文是（　）",
+        "options": [
+          "skirt",
+          "short",
+          "shorts",
+          "shirt"
+        ],
+        "answer": "shirt",
+        "explanation": "shirt = 衬衫。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts",
+        "question": "「短裙」的英文是（　）",
+        "options": [
+          "shirt",
+          "skert",
+          "skat",
+          "skirt"
+        ],
+        "answer": "skirt",
+        "explanation": "skirt = 短裙。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts",
+        "question": "「连衣裙」的英文是（　）",
+        "options": [
+          "dres",
+          "drees",
+          "dresses",
+          "dress"
+        ],
+        "answer": "dress",
+        "explanation": "dress = 连衣裙。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts",
+        "question": "「袜子」的英文是（　）",
+        "options": [
+          "socks",
+          "sock",
+          "soks",
+          "shoes"
+        ],
+        "answer": "socks",
+        "explanation": "常用复数。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "your + 衣物",
+        "question": "「这是你的T恤。」的英文是（　）",
+        "options": [
+          "This is your T-shirt.",
+          "This is you T-shirt.",
+          "This your T-shirt is.",
+          "This are your T-shirt."
+        ],
+        "answer": "This is your T-shirt.",
+        "explanation": "your + 名词。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts",
+        "question": "shorts 的意思是「短裤」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "shorts = 短裤。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts",
+      "core_concept": "shirt 衬衫、T-shirt T恤、skirt 短裙、dress 连衣裙、socks 袜子、shorts 短裤。socks 和 shorts 常用复数。",
+      "key_formula": "shirt / T-shirt / skirt / dress / socks / shorts",
+      "common_mistakes": [
+        "sock 当单数（成对用 socks）。"
+      ],
+      "tips": "成对的东西用复数。"
+    },
+    {
+      "point": "your + 衣物",
+      "core_concept": "This is your shirt. 这是你的衬衫。your 表示「你的」。",
+      "key_formula": "This is your + 衣物.",
+      "common_mistakes": [
+        "把 your 写成 you。"
+      ],
+      "tips": "your 后面必须跟名词。"
+    }
+  ]
+}

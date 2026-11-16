@@ -1,0 +1,107 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Unit 5 Drink 饮料",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "第5单元「Unit 5 Drink 饮料」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "饮料词汇 juice / tea / milk / water",
+        "question": "「果汁」的英文是（　）",
+        "options": [
+          "juise",
+          "juce",
+          "juices",
+          "juice"
+        ],
+        "answer": "juice",
+        "explanation": "juice = 果汁。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "饮料词汇 juice / tea / milk / water",
+        "question": "「牛奶」的英文是（　）",
+        "options": [
+          "milk",
+          "milt",
+          "mill",
+          "mike"
+        ],
+        "answer": "milk",
+        "explanation": "milk = 牛奶。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "I'm thirsty. / Thanks.",
+        "question": "「我渴了。」的英文是（　）",
+        "options": [
+          "I'm thirsty.",
+          "I'm hungry.",
+          "I'm thirty.",
+          "I'm thirsty water."
+        ],
+        "answer": "I'm thirsty.",
+        "explanation": "thirsty = 渴。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "饮料词汇 juice / tea / milk / water",
+        "question": "「一些水」的英文是（　）",
+        "options": [
+          "some water",
+          "a water",
+          "some waters",
+          "many water"
+        ],
+        "answer": "some water",
+        "explanation": "不可数名词用 some。"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "I'm thirsty. / Thanks.",
+        "question": "别人递给你东西后，可以说 Thanks.",
+        "options": [],
+        "answer": "对",
+        "explanation": "thanks = 谢谢。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "饮料词汇 juice / tea / milk / water",
+      "core_concept": "juice 果汁、tea 茶、milk 牛奶、water 水。这些多是不可数名词，说 some juice / some water。",
+      "key_formula": "juice / tea / milk / water",
+      "common_mistakes": [
+        "a water（×，一般说 some water）。"
+      ],
+      "tips": "液体不可数。"
+    },
+    {
+      "point": "I'm thirsty. / Thanks.",
+      "core_concept": "I'm thirsty. 我渴了。Here you are. 给你。Thanks. 谢谢。",
+      "key_formula": "I'm thirsty. — Here you are. — Thanks.",
+      "common_mistakes": [
+        "hungry 与 thirsty 混用。"
+      ],
+      "tips": "hungry 饿，thirsty 渴。"
+    }
+  ]
+}

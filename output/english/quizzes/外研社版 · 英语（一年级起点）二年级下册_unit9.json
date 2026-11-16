@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 9 Turn left 问路",
+  "unit_number": 9,
+  "unit_test": {
+    "title": "第9单元「Module 9 Turn left 问路」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "方向 left / right / straight",
+        "question": "「左」的英文是（　）",
+        "options": [
+          "left",
+          "lift",
+          "lefts",
+          "lft"
+        ],
+        "answer": "left",
+        "explanation": "left = 左。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "方向 left / right / straight",
+        "question": "「右」的英文是（　）",
+        "options": [
+          "rite",
+          "rights",
+          "rigth",
+          "right"
+        ],
+        "answer": "right",
+        "explanation": "right = 右。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "方向 left / right / straight",
+        "question": "「向左转」的英文是（　）",
+        "options": [
+          "turn left",
+          "turn to left",
+          "left turn to",
+          "turn the left"
+        ],
+        "answer": "turn left",
+        "explanation": "turn left。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "excuse me / lost / road",
+        "question": "「I'm lost.」的意思是「我迷路了」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "lost = 迷路。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "方向 left / right / straight",
+      "core_concept": "left 左、right 右、straight 直。turn left 向左转、turn right 向右转、go straight on 直走。",
+      "key_formula": "turn left / turn right / go straight on",
+      "common_mistakes": [
+        "turn to left（×）。"
+      ],
+      "tips": "turn left 不加 to。"
+    },
+    {
+      "point": "excuse me / lost / road",
+      "core_concept": "Excuse me. 劳驾。I'm lost. 我迷路了。road 路。Where's the hospital? 医院在哪？",
+      "key_formula": "Excuse me, where's the …?",
+      "common_mistakes": [
+        "Excuse me 用于打扰别人前。"
+      ],
+      "tips": "问路先说 Excuse me。"
+    }
+  ]
+}

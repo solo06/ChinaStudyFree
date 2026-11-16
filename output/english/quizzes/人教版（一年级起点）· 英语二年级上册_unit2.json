@@ -1,0 +1,107 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Unit 2 Boys and Girls 男孩和女孩",
+  "unit_number": 2,
+  "unit_test": {
+    "title": "第2单元「Unit 2 Boys and Girls 男孩和女孩」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "人物词汇 boy / girl / man / woman / classmate / friend",
+        "question": "「女孩」的英文是（　）",
+        "options": [
+          "girl",
+          "gril",
+          "girll",
+          "boy"
+        ],
+        "answer": "girl",
+        "explanation": "girl = 女孩。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "人物词汇 boy / girl / man / woman / classmate / friend",
+        "question": "「同学」的英文是（　）",
+        "options": [
+          "classmates",
+          "clasmat",
+          "roommate",
+          "classmate"
+        ],
+        "answer": "classmate",
+        "explanation": "classmate = 同学。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "What's his / her name?",
+        "question": "问女孩的名字，应说（　）",
+        "options": [
+          "What's her name?",
+          "What's his name?",
+          "What's she name?",
+          "Who's her name?"
+        ],
+        "answer": "What's her name?",
+        "explanation": "女孩用 her。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "What's his / her name?",
+        "question": "— What's his name? — ___（他叫盼盼）",
+        "options": [
+          "His name is Panpan.",
+          "Her name is Panpan.",
+          "He name is Panpan.",
+          "His Panpan name."
+        ],
+        "answer": "His name is Panpan.",
+        "explanation": "his name = 他的名字。"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "人物词汇 boy / girl / man / woman / classmate / friend",
+        "question": "man 的复数是 men。",
+        "options": [],
+        "answer": "对",
+        "explanation": "不规则复数。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "人物词汇 boy / girl / man / woman / classmate / friend",
+      "core_concept": "boy 男孩、girl 女孩、man 男人（成年）、woman 女人（成年）、classmate 同学、friend 朋友。",
+      "key_formula": "boy / girl / man / woman / classmate / friend",
+      "common_mistakes": [
+        "man 复数写成 mans。"
+      ],
+      "tips": "man → men。"
+    },
+    {
+      "point": "What's his / her name?",
+      "core_concept": "What's his name? 他叫什么名字？His name is Panpan. What's her name? 她叫什么名字？Her name is Candy.",
+      "key_formula": "What's his name? — His name is … / What's her name? — Her name is …",
+      "common_mistakes": [
+        "his 与 her 混用。"
+      ],
+      "tips": "his 男，her 女。"
+    }
+  ]
+}

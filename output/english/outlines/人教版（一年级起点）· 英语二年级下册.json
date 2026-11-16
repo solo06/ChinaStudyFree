@@ -1,0 +1,161 @@
+{
+  "textbook": "二年级下册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Unit 1 Playtime 课余活动",
+      "knowledge_points": [
+        {
+          "name": "活动短语 play football / fly a kite / ride a bike / swim",
+          "description": "掌握六个活动短语。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "Can you …? — Yes, I can. / No, I can't.",
+          "description": "会问能力并回答。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Unit 2 Weather 天气",
+      "knowledge_points": [
+        {
+          "name": "天气词 rainy / cloudy / snowy / windy / sunny",
+          "description": "认识五种天气。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "What's the weather like?",
+          "description": "会问天气并回答。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Unit 3 Seasons 季节",
+      "knowledge_points": [
+        {
+          "name": "季节词汇 spring / summer / autumn / winter",
+          "description": "认识四季。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "冷热形容词 hot / warm / cool / cold",
+          "description": "会用形容词说天气冷暖。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Unit 4 Time 时间",
+      "knowledge_points": [
+        {
+          "name": "数字 eleven—fifty",
+          "description": "认识 11—50 的整十与十几。",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "What time is it?",
+          "description": "会问时间并回答。",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Unit 5 My Day 我的一天",
+      "knowledge_points": [
+        {
+          "name": "作息短语 get up / eat breakfast / go to school / go to bed",
+          "description": "掌握一天的活动。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "When do you …? — At …",
+          "description": "会问时间安排。",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Unit 6 My Week 我的一周",
+      "knowledge_points": [
+        {
+          "name": "星期词汇 Sunday—Saturday",
+          "description": "掌握七个星期名。",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "today 与星期表达",
+          "description": "会说「今天是星期几」。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    }
+  ]
+}

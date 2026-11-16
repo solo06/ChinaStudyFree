@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 6 She usually goes shopping 日常习惯",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "第6单元「Module 6 She usually goes shopping 日常习惯」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "动作 ride / cook / go shopping",
+        "question": "「厨房」的英文是（　）",
+        "options": [
+          "kitchin",
+          "kitchen",
+          "kithen",
+          "kichen"
+        ],
+        "answer": "kitchen",
+        "explanation": "kitchen = 厨房。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "usually 与第三人称",
+        "question": "「她通常去购物。」的英文是（　）",
+        "options": [
+          "She usually goes shopping.",
+          "She usually go shopping.",
+          "She usual goes shopping.",
+          "She usually going shopping."
+        ],
+        "answer": "She usually goes shopping.",
+        "explanation": "三单 goes。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "动作 ride / cook / go shopping",
+        "question": "「做饭」的英文是（　）",
+        "options": [
+          "cook",
+          "cooking dinner",
+          "make cook",
+          "cooker"
+        ],
+        "answer": "cook",
+        "explanation": "cook 既名词也动词。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 3,
+        "knowledge_point": "通常是 usually",
+        "question": "usually 的意思是「通常」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "usually = 通常。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "动作 ride / cook / go shopping",
+      "core_concept": "ride 骑、cook 做饭、go shopping 去购物、kitchen 厨房、ill 生病的。",
+      "key_formula": "ride a bike / cook dinner / go shopping",
+      "common_mistakes": [
+        "go to shopping（×）。"
+      ],
+      "tips": "go shopping 不加 to。"
+    },
+    {
+      "point": "usually 与第三人称",
+      "core_concept": "She usually goes shopping. 她通常去购物。usually 通常。第三人称单数动词加 -s/-es。",
+      "key_formula": "He / She usually + 动词-s.",
+      "common_mistakes": [
+        "She usually go（×）。"
+      ],
+      "tips": "usually 后仍要三单形式。"
+    }
+  ]
+}

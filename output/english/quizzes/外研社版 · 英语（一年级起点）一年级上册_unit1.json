@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 1 Hello 打招呼",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第1单元「Module 1 Hello 打招呼」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "问候与告别 hello / goodbye / How are you?",
+        "question": "「你好」的英文是（　）",
+        "options": [
+          "hallo",
+          "help",
+          "hell",
+          "hello"
+        ],
+        "answer": "hello",
+        "explanation": "hello = 你好。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "问候与告别 hello / goodbye / How are you?",
+        "question": "「再见」的英文是（　）",
+        "options": [
+          "goodnight",
+          "goodbye",
+          "goodby",
+          "goodboy"
+        ],
+        "answer": "goodbye",
+        "explanation": "goodbye = 再见。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "问候与告别 hello / goodbye / How are you?",
+        "question": "— How are you? — ___",
+        "options": [
+          "I'm fine, thank you.",
+          "I'm five.",
+          "My name is Bill.",
+          "Yes, I am."
+        ],
+        "answer": "I'm fine, thank you.",
+        "explanation": "问身体好不好。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "yes / no",
+        "question": "no 的意思是「不」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "no = 不。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "问候与告别 hello / goodbye / How are you?",
+      "core_concept": "hello（hi）你好、goodbye（bye）再见、How are you? 你好吗？I'm fine, thank you. 我很好，谢谢。sorry 对不起。",
+      "key_formula": "How are you? — I'm fine, thank you.",
+      "common_mistakes": [
+        "回答用 I'm fine, thanks you.（×）"
+      ],
+      "tips": "thank you 不带 s。"
+    },
+    {
+      "point": "yes / no",
+      "core_concept": "yes 是、no 不。回答一般疑问句时先说 Yes 或 No。",
+      "key_formula": "Yes, I am. / No, I'm not.",
+      "common_mistakes": [
+        "Yes 后接否定。"
+      ],
+      "tips": "Yes 配肯定，No 配否定。"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Module 10 Happy New Year! 节日",
+  "unit_number": 10,
+  "unit_test": {
+    "title": "第10单元「Module 10 Happy New Year! 节日」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "节日词汇 year / present / dumpling / Christmas",
+        "question": "「礼物」的英文是（　）",
+        "options": [
+          "presents",
+          "present",
+          "presant",
+          "parent"
+        ],
+        "answer": "present",
+        "explanation": "present = 礼物。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "节日词汇 year / present / dumpling / Christmas",
+        "question": "「饺子」的英文是（　）",
+        "options": [
+          "dumpling",
+          "dumplin",
+          "dumplig",
+          "dumplings"
+        ],
+        "answer": "dumpling",
+        "explanation": "dumpling = 饺子。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "节日词汇 year / present / dumpling / Christmas",
+        "question": "新年祝福应说（　）",
+        "options": [
+          "Happy New Year!",
+          "Merry Christmas!",
+          "Happy birthday!",
+          "Good luck to you."
+        ],
+        "answer": "Happy New Year!",
+        "explanation": "新年用 Happy New Year。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "wish / come in / eat",
+        "question": "come in 的意思是「进来」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "come in 进来。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "节日词汇 year / present / dumpling / Christmas",
+      "core_concept": "year 年、present 礼物、dumpling 饺子、Christmas 圣诞节、dinner 正餐。Happy New Year! 新年快乐！",
+      "key_formula": "Happy New Year! / Merry Christmas!",
+      "common_mistakes": [
+        "新年说 Merry Christmas（×）。"
+      ],
+      "tips": "新年 Happy New Year。"
+    },
+    {
+      "point": "wish / come in / eat",
+      "core_concept": "come in 进来、wish 祝愿、eat 吃、Chinese 中国的。We wish you a happy New Year. 祝你新年快乐。",
+      "key_formula": "Come in, please. / We wish you …",
+      "common_mistakes": [
+        "wish you happy（漏 a）。"
+      ],
+      "tips": "wish you a happy…"
+    }
+  ]
+}

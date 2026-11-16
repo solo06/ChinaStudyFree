@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 10 That is his car 家人与所有格",
+  "unit_number": 10,
+  "unit_test": {
+    "title": "第10单元「Module 10 That is his car 家人与所有格」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "家人词汇 father / mother / grandpa / grandma / sister / brother",
+        "question": "「妈妈」的英文是（　）",
+        "options": [
+          "moter",
+          "father",
+          "mother",
+          "mather"
+        ],
+        "answer": "mother",
+        "explanation": "mother = 妈妈。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "家人词汇 father / mother / grandpa / grandma / sister / brother",
+        "question": "「兄弟」的英文是（　）",
+        "options": [
+          "sister",
+          "brother",
+          "bother",
+          "broter"
+        ],
+        "answer": "brother",
+        "explanation": "brother = 兄弟。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "物主代词 his / her",
+        "question": "这是她的包，应说（　）",
+        "options": [
+          "This is her bag.",
+          "This is his bag.",
+          "This is she bag.",
+          "This is hers bag."
+        ],
+        "answer": "This is her bag.",
+        "explanation": "her + 名词。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "物主代词 his / her",
+        "question": "his 表示「他的」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "his = 他的。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "家人词汇 father / mother / grandpa / grandma / sister / brother",
+      "core_concept": "father 爸爸、mother 妈妈、grandpa 爷爷/外公、grandma 奶奶/外婆、sister 姐妹、brother 兄弟。",
+      "key_formula": "father / mother / grandpa / grandma / sister / brother",
+      "common_mistakes": [
+        "grandpa 与 grandpa 不分男女。"
+      ],
+      "tips": "grandpa 男，grandma 女。"
+    },
+    {
+      "point": "物主代词 his / her",
+      "core_concept": "That is his car. 那是他的车。This is her bag. 这是她的包。his 指男性，her 指女性。",
+      "key_formula": "That is his / her + 名词.",
+      "common_mistakes": [
+        "his 与 her 混用。"
+      ],
+      "tips": "his 男，her 女。"
+    }
+  ]
+}

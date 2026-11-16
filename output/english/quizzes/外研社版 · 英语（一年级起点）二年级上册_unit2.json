@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Module 2 I don't like meat 食物与喜好",
+  "unit_number": 2,
+  "unit_test": {
+    "title": "第2单元「Module 2 I don't like meat 食物与喜好」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "食物词汇 meat / noodles / rice / sweets / ice cream",
+        "question": "「肉」的英文是（　）",
+        "options": [
+          "meat",
+          "meet",
+          "met",
+          "mate"
+        ],
+        "answer": "meat",
+        "explanation": "meat = 肉。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "食物词汇 meat / noodles / rice / sweets / ice cream",
+        "question": "「糖果」的英文是（　）",
+        "options": [
+          "swetes",
+          "sweats",
+          "sweets",
+          "sweet"
+        ],
+        "answer": "sweets",
+        "explanation": "sweets = 糖果。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "I like / I don't like",
+        "question": "「我不喜欢肉。」的英文是（　）",
+        "options": [
+          "I don't like meat.",
+          "I not like meat.",
+          "I don't like meats.",
+          "I no like meat."
+        ],
+        "answer": "I don't like meat.",
+        "explanation": "don't + 原形。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "I like / I don't like",
+        "question": "ice cream 的意思是「冰淇淋」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "ice cream。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "食物词汇 meat / noodles / rice / sweets / ice cream",
+      "core_concept": "meat 肉、noodles 面条、rice 米饭、sweets 糖果、ice cream 冰淇淋。children 孩子们（child 的复数）。",
+      "key_formula": "meat / noodles / rice / sweets / ice cream",
+      "common_mistakes": [
+        "sweet 单数指「甜的」。"
+      ],
+      "tips": "sweets 糖果（复数）。"
+    },
+    {
+      "point": "I like / I don't like",
+      "core_concept": "I like noodles. 我喜欢面条。I don't like meat. 我不喜欢肉。nice 好的。",
+      "key_formula": "I like … / I don't like …",
+      "common_mistakes": [
+        "I don't like meats（×，meat 不可数）。"
+      ],
+      "tips": "meat / rice 不可数。"
+    }
+  ]
+}

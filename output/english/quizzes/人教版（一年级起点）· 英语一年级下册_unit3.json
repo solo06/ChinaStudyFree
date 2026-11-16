@@ -1,0 +1,123 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Unit 3 Toys 玩具",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "第3单元「Unit 3 Toys 玩具」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "玩具词汇 plane / ball / doll / train / car / bear",
+        "question": "「球」的英文是（　）",
+        "options": [
+          "ball",
+          "bell",
+          "bull",
+          "bal"
+        ],
+        "answer": "ball",
+        "explanation": "ball = 球。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "玩具词汇 plane / ball / doll / train / car / bear",
+        "question": "「洋娃娃」的英文是（　）",
+        "options": [
+          "doll",
+          "dole",
+          "dolls",
+          "dol"
+        ],
+        "answer": "doll",
+        "explanation": "doll = 洋娃娃。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "玩具词汇 plane / ball / doll / train / car / bear",
+        "question": "「飞机」的英文是（　）",
+        "options": [
+          "plan",
+          "plant",
+          "plain",
+          "plane"
+        ],
+        "answer": "plane",
+        "explanation": "plane = 飞机。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "Can I …? — Sure. / Sorry.",
+        "question": "想借别人的玩具，最礼貌的说法是（　）",
+        "options": [
+          "Can I play with your ball?",
+          "Give me your ball.",
+          "I play your ball.",
+          "Your ball, please give."
+        ],
+        "answer": "Can I play with your ball?",
+        "explanation": "Can I…? 表示请求。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "Can I …? — Sure. / Sorry.",
+        "question": "同意对方的请求，应说（　）",
+        "options": [
+          "Sure.",
+          "Sorry.",
+          "No, I can't.",
+          "Thank you."
+        ],
+        "answer": "Sure.",
+        "explanation": "Sure = 当然可以。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "玩具词汇 plane / ball / doll / train / car / bear",
+        "question": "train 的意思是「火车」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "train = 火车。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "玩具词汇 plane / ball / doll / train / car / bear",
+      "core_concept": "plane 飞机、ball 球、doll 洋娃娃、train 火车、car 小汽车、bear 玩具熊。",
+      "key_formula": "plane / ball / doll / train / car / bear",
+      "common_mistakes": [
+        "plane 与 planet（行星）混。"
+      ],
+      "tips": "plane 飞机。"
+    },
+    {
+      "point": "Can I …? — Sure. / Sorry.",
+      "core_concept": "Can I play with your ball? 我可以玩你的球吗？Sure. 当然可以。Sorry. 抱歉（不方便）。",
+      "key_formula": "Can I play with your …? — Sure. / Sorry.",
+      "common_mistakes": [
+        "用 Give me your ball.（不礼貌）"
+      ],
+      "tips": "请求用 Can I…? 更礼貌。"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "textbook": "二年级上册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Module 1 I like football 一起活动",
+      "knowledge_points": [
+        {
+          "name": "活动用语 come on / team",
+          "description": "掌握活动相关词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "Let's + 动词原形",
+          "description": "会用 Let's 提议。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Module 2 I don't like meat 食物与喜好",
+      "knowledge_points": [
+        {
+          "name": "食物词汇 meat / noodles / rice / sweets / ice cream",
+          "description": "认识五种食物。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "I like / I don't like",
+          "description": "会表达喜欢与不喜欢。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Module 3 Do you like bananas? 水果",
+      "knowledge_points": [
+        {
+          "name": "水果 banana / apple / orange / tomato / fruit",
+          "description": "认识水果与蔬菜。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "Do you like …? 与 Here you are.",
+          "description": "会问喜好并递东西。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Module 4 It's a T-shirt 衣物与聚会",
+      "knowledge_points": [
+        {
+          "name": "衣物 T-shirt / dress / trousers",
+          "description": "认识三种衣物。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "too 与 Here's …",
+          "description": "会用 too 表示「也」和 Here's。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Module 5 I get up at seven 我的一天",
+      "knowledge_points": [
+        {
+          "name": "作息短语 get up / go to school / have lunch / go home / watch TV",
+          "description": "掌握一天的活动。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "at + 钟点",
+          "description": "会用 at 表示时间。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Module 6 It's on Sunday 星期与城市",
+      "knowledge_points": [
+        {
+          "name": "星期日 Sunday / 一周表达",
+          "description": "认识 Sunday 及一周概念。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "居住与景物 live / park / city / sky / moon",
+          "description": "会描述居住环境。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "title": "Module 7 We have a picnic 出行方式",
+      "knowledge_points": [
+        {
+          "name": "交通工具 train / bus / ship / plane / bike",
+          "description": "认识五种交通方式。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "go to work / on holiday",
+          "description": "会说出行目的。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "title": "Module 8 She watches TV 周末活动",
+      "knowledge_points": [
+        {
+          "name": "周末活动 watch / read / play / listen",
+          "description": "掌握周末活动的说法。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "第三人称单数 -s",
+          "description": "会用 -s 形式描述他人。",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "title": "Module 9 It's winter 季节与衣物",
+      "knowledge_points": [
+        {
+          "name": "季节 winter / spring / summer / autumn",
+          "description": "认识四季。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "天气与衣物 warm / cool / cold / coat / sweater / glove",
+          "description": "会用天气配衣物。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "title": "Module 10 Happy New Year! 节日",
+      "knowledge_points": [
+        {
+          "name": "节日词汇 year / present / dumpling / Christmas",
+          "description": "认识节日相关词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "wish / come in / eat",
+          "description": "会说祝福与邀请。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    }
+  ]
+}

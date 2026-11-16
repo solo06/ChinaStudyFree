@@ -1,0 +1,265 @@
+{
+  "textbook": "一年级上册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Module 1 Hello 打招呼",
+      "knowledge_points": [
+        {
+          "name": "问候与告别 hello / goodbye / How are you?",
+          "description": "掌握最基础的问候语。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "yes / no",
+          "description": "会用 yes / no 作简单回答。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Module 2 What's your name? 你叫什么名字",
+      "knowledge_points": [
+        {
+          "name": "询问姓名 What's your name?",
+          "description": "会问名字并回答。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "问候时间 good morning / good afternoon",
+          "description": "会按时间打招呼。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Module 3 Sit down, please 课堂指令",
+      "knowledge_points": [
+        {
+          "name": "指令动词 sit / stand / open / point",
+          "description": "听懂并说出课堂指令。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "教室物品 desk / chair / window / door",
+          "description": "认识四个教室词。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Module 4 It's red 颜色",
+      "knowledge_points": [
+        {
+          "name": "颜色 red / blue / yellow / green / black / white / orange",
+          "description": "掌握七种颜色。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "What colour is it? — It's …",
+          "description": "会问颜色并回答。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Module 5 This is our teacher 介绍他人",
+      "knowledge_points": [
+        {
+          "name": "介绍他人 This is … / That is …",
+          "description": "会介绍身边的人或物。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "学校词汇 teacher / school / classroom / bag",
+          "description": "认识四个学校词。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Module 6 What's this? 文具",
+      "knowledge_points": [
+        {
+          "name": "文具 schoolbag / book / pen / pencil / ruler / eraser / crayon",
+          "description": "掌握七个文具词。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "What's this? — It's a …",
+          "description": "会问「这是什么」。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "title": "Module 7 Is it a monkey? 这是猴子吗",
+      "knowledge_points": [
+        {
+          "name": "一般疑问句 Is it a …?",
+          "description": "会问「它是……吗」并回答。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "动物与物品 monkey / monster / kite / house / box",
+          "description": "认识五个词。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "title": "Module 8 How many? 数字与数量",
+      "knowledge_points": [
+        {
+          "name": "数字 one—ten",
+          "description": "会数 1—10。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "How many …? 与颜色搭配",
+          "description": "会问数量，并说彩色物品。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "title": "Module 9 Happy birthday! 生日与年龄",
+      "knowledge_points": [
+        {
+          "name": "询问年龄 How old are you?",
+          "description": "会问年龄并回答。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "生日祝福 Happy birthday!",
+          "description": "会说生日祝福与感谢。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "title": "Module 10 That is his car 家人与所有格",
+      "knowledge_points": [
+        {
+          "name": "家人词汇 father / mother / grandpa / grandma / sister / brother",
+          "description": "认识六位家人。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "物主代词 his / her",
+          "description": "会用 his / her 表示「他的 / 她的」。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    }
+  ]
+}

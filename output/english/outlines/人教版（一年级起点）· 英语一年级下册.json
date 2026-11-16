@@ -1,0 +1,161 @@
+{
+  "textbook": "一年级下册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Unit 1 Classroom 教室与方位",
+      "knowledge_points": [
+        {
+          "name": "教室物品 chair / desk / blackboard",
+          "description": "认识教室里的物品。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "方位介词 in / on / under",
+          "description": "会用 in / on / under 说位置。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Unit 2 Room 我的房间",
+      "knowledge_points": [
+        {
+          "name": "房间物品 light / bed / door / box",
+          "description": "认识房间里的物品。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "方位介词 near / behind",
+          "description": "会用 near / behind 说位置。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Unit 3 Toys 玩具",
+      "knowledge_points": [
+        {
+          "name": "玩具词汇 plane / ball / doll / train / car / bear",
+          "description": "认识六种玩具。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "Can I …? — Sure. / Sorry.",
+          "description": "会用英语借玩具。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Unit 4 Food 食物",
+      "knowledge_points": [
+        {
+          "name": "食物词汇 rice / noodles / vegetable / fish / chicken / egg",
+          "description": "认识常见食物。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "I'm hungry. I want …",
+          "description": "会表达饥饿和想要什么。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Unit 5 Drink 饮料",
+      "knowledge_points": [
+        {
+          "name": "饮料词汇 juice / tea / milk / water",
+          "description": "认识常见饮料。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "I'm thirsty. / Thanks.",
+          "description": "会表达口渴与道谢。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Unit 6 Clothes 衣服",
+      "knowledge_points": [
+        {
+          "name": "衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts",
+          "description": "认识常见衣物。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "your + 衣物",
+          "description": "会说他人的衣物。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    }
+  ]
+}

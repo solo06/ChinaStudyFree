@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 10 Where's the supermarket? 指路",
+  "unit_number": 10,
+  "unit_test": {
+    "title": "第10单元「Module 10 Where's the supermarket? 指路」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "地点 supermarket / cinema / station",
+        "question": "「电影院」的英文是（　）",
+        "options": [
+          "cineme",
+          "cinama",
+          "cinema",
+          "cinima"
+        ],
+        "answer": "cinema",
+        "explanation": "cinema = 电影院。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "next to / in front of",
+        "question": "「在超市旁边」的英文是（　）",
+        "options": [
+          "next to the supermarket",
+          "next the supermarket",
+          "next to supermarket the",
+          "near to supermarket"
+        ],
+        "answer": "next to the supermarket",
+        "explanation": "next to + the + 地点。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "next to / in front of",
+        "question": "「在学校前面」的英文是（　）",
+        "options": [
+          "in front of the school",
+          "in the front of school",
+          "front of the school",
+          "in front the school"
+        ],
+        "answer": "in front of the school",
+        "explanation": "in front of 固定搭配。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "地点 supermarket / cinema / station",
+        "question": "taxi 的意思是「出租车」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "taxi = 出租车。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "地点 supermarket / cinema / station",
+      "core_concept": "supermarket 超市、cinema 电影院、station 车站、taxi 出租车。",
+      "key_formula": "supermarket / cinema / station",
+      "common_mistakes": [
+        "cinema 拼成 cinima。"
+      ],
+      "tips": "ci-ne-ma。"
+    },
+    {
+      "point": "next to / in front of",
+      "core_concept": "next to 紧挨着、in front of 在……前面、turn back 往回走、wrong 错误的。",
+      "key_formula": "It's next to the … / It's in front of the …",
+      "common_mistakes": [
+        "next the bank（漏 to）。"
+      ],
+      "tips": "next to 有 to。"
+    }
+  ]
+}

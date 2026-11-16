@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 4 It's red 颜色",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第4单元「Module 4 It's red 颜色」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "颜色 red / blue / yellow / green / black / white / orange",
+        "question": "「白色」的英文是（　）",
+        "options": [
+          "whit",
+          "wite",
+          "wid",
+          "white"
+        ],
+        "answer": "white",
+        "explanation": "white = 白色。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "颜色 red / blue / yellow / green / black / white / orange",
+        "question": "「橙色」的英文是（　）",
+        "options": [
+          "orage",
+          "oragne",
+          "orange",
+          "orenge"
+        ],
+        "answer": "orange",
+        "explanation": "orange = 橙色。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "What colour is it? — It's …",
+        "question": "— What colour is it? — ___（蓝色）",
+        "options": [
+          "It's blue.",
+          "It's a blue.",
+          "It blue.",
+          "Blue it is."
+        ],
+        "answer": "It's blue.",
+        "explanation": "It's + 颜色。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "颜色 red / blue / yellow / green / black / white / orange",
+        "question": "green 的意思是「绿色」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "green = 绿色。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "颜色 red / blue / yellow / green / black / white / orange",
+      "core_concept": "red 红、blue 蓝、yellow 黄、green 绿、black 黑、white 白、orange 橙。",
+      "key_formula": "red / blue / yellow / green / black / white / orange",
+      "common_mistakes": [
+        "orange 既是橙色也是橙子。"
+      ],
+      "tips": "orange 一词两义。"
+    },
+    {
+      "point": "What colour is it? — It's …",
+      "core_concept": "What colour is it? 它是什么颜色？It's red. 它是红色的。",
+      "key_formula": "What colour is it? — It's + 颜色.",
+      "common_mistakes": [
+        "漏 It's。"
+      ],
+      "tips": "It's + 颜色。"
+    }
+  ]
+}

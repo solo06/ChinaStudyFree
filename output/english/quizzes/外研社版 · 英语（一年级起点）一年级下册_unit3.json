@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Module 3 How many? 数字 11—12",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "第3单元「Module 3 How many? 数字 11—12」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "数字 eleven / twelve",
+        "question": "「十一」的英文是（　）",
+        "options": [
+          "elven",
+          "elewen",
+          "eleven",
+          "elevn"
+        ],
+        "answer": "eleven",
+        "explanation": "eleven = 十一。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "don't / let's 的用法",
+        "question": "「我不知道。」的英文是（　）",
+        "options": [
+          "I don't know.",
+          "I not know.",
+          "I don't no.",
+          "I no know."
+        ],
+        "answer": "I don't know.",
+        "explanation": "否定用 don't。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "don't / let's 的用法",
+        "question": "「我们数一数吧。」的英文是（　）",
+        "options": [
+          "Let's count.",
+          "Let's to count.",
+          "Let us counting.",
+          "Let count."
+        ],
+        "answer": "Let's count.",
+        "explanation": "Let's + 原形。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "数字 eleven / twelve",
+        "question": "twelve 表示 12。",
+        "options": [],
+        "answer": "对",
+        "explanation": "twelve = 12。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "数字 eleven / twelve",
+      "core_concept": "eleven 11、twelve 12。one—twelve 是本册的数字范围。",
+      "key_formula": "eleven / twelve",
+      "common_mistakes": [
+        "twelve 拼成 twelth。"
+      ],
+      "tips": "twelve 结尾是 ve。"
+    },
+    {
+      "point": "don't / let's 的用法",
+      "core_concept": "I don't know. 我不知道。Let's count. 我们数一数吧。don't = do not，let's = let us。",
+      "key_formula": "I don't know. / Let's + 动词原形.",
+      "common_mistakes": [
+        "Let's to count（×）。"
+      ],
+      "tips": "let's 后跟原形。"
+    }
+  ]
+}

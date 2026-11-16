@@ -1,0 +1,123 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Unit 4 In the Community 我们的社区",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第4单元「Unit 4 In the Community 我们的社区」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "场所词汇 bookshop / supermarket / zoo / park / school / hospital",
+        "question": "「书店」的英文是（　）",
+        "options": [
+          "bookshop",
+          "bookstore",
+          "booksop",
+          "shopbook"
+        ],
+        "answer": "bookshop",
+        "explanation": "bookshop = 书店。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "场所词汇 bookshop / supermarket / zoo / park / school / hospital",
+        "question": "「超市」的英文是（　）",
+        "options": [
+          "supmarket",
+          "supermarket",
+          "supermark",
+          "supermaket"
+        ],
+        "answer": "supermarket",
+        "explanation": "supermarket = 超市。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "场所词汇 bookshop / supermarket / zoo / park / school / hospital",
+        "question": "「医院」的英文是（　）",
+        "options": [
+          "hospital",
+          "hopital",
+          "hospitel",
+          "hospitl"
+        ],
+        "answer": "hospital",
+        "explanation": "hospital = 医院。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "I'm going to …",
+        "question": "「我要去动物园。」的英文是（　）",
+        "options": [
+          "I'm going to the zoo.",
+          "I'm going zoo.",
+          "I'm go to the zoo.",
+          "I going to the zoo."
+        ],
+        "answer": "I'm going to the zoo.",
+        "explanation": "be going to + the + 场所。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "I'm going to …",
+        "question": "— Where are we going today? — ___（去公园）",
+        "options": [
+          "To the park.",
+          "To park.",
+          "The park go.",
+          "We park."
+        ],
+        "answer": "To the park.",
+        "explanation": "回答 To the + 场所。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "场所词汇 bookshop / supermarket / zoo / park / school / hospital",
+        "question": "zoo 的意思是「动物园」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "zoo = 动物园。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "场所词汇 bookshop / supermarket / zoo / park / school / hospital",
+      "core_concept": "bookshop 书店、supermarket 超市、zoo 动物园、park 公园、school 学校、hospital 医院。",
+      "key_formula": "bookshop / supermarket / zoo / park / school / hospital",
+      "common_mistakes": [
+        "hospital 拼成 hopital。"
+      ],
+      "tips": "hospital 中间是 s-p-i。"
+    },
+    {
+      "point": "I'm going to …",
+      "core_concept": "I'm going to the bookshop. 我要去书店。Where are we going today? 我们今天去哪儿？",
+      "key_formula": "I'm going to the + 场所.",
+      "common_mistakes": [
+        "漏掉 the：I'm going to bookshop.（×）"
+      ],
+      "tips": "场所前加 the。"
+    }
+  ]
+}

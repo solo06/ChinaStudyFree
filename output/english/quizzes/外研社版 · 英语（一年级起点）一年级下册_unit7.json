@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Module 7 There is a cat 存在句",
+  "unit_number": 7,
+  "unit_test": {
+    "title": "第7单元「Module 7 There is a cat 存在句」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "物品词汇 table / animal / some / over there",
+        "question": "「动物」的英文是（　）",
+        "options": [
+          "animals",
+          "anamal",
+          "animal",
+          "animel"
+        ],
+        "answer": "animal",
+        "explanation": "animal = 动物。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "There is / There are",
+        "question": "「有一些动物。」的英文是（　）",
+        "options": [
+          "There are some animals.",
+          "There is some animals.",
+          "There are some animal.",
+          "There have some animals."
+        ],
+        "answer": "There are some animals.",
+        "explanation": "复数用 there are。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "There is / There are",
+        "question": "「有一只猫。」的英文是（　）",
+        "options": [
+          "There is a cat.",
+          "There are a cat.",
+          "There is cat.",
+          "There have a cat."
+        ],
+        "answer": "There is a cat.",
+        "explanation": "单数用 there is。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 3,
+        "knowledge_point": "There is / There are",
+        "question": "over there 的意思是「在那边」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "over there 在那边。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "There is / There are",
+      "core_concept": "There is a cat. 有一只猫。There are some animals. 有一些动物。单数 is，复数 are。",
+      "key_formula": "There is a + 单数 / There are + 复数",
+      "common_mistakes": [
+        "There is some animals（×）。"
+      ],
+      "tips": "看后面名词单复数。"
+    },
+    {
+      "point": "物品词汇 table / animal / some / over there",
+      "core_concept": "table 桌子、animal 动物、some 一些、over there 在那边、help 帮助。",
+      "key_formula": "over there / some animals",
+      "common_mistakes": [
+        "some 后跟单数（×）。"
+      ],
+      "tips": "some + 复数或不可数。"
+    }
+  ]
+}

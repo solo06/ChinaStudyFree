@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 5 This is our teacher 介绍他人",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "第5单元「Module 5 This is our teacher 介绍他人」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "学校词汇 teacher / school / classroom / bag",
+        "question": "「学校」的英文是（　）",
+        "options": [
+          "scool",
+          "shcool",
+          "school",
+          "scholl"
+        ],
+        "answer": "school",
+        "explanation": "school = 学校。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "学校词汇 teacher / school / classroom / bag",
+        "question": "「教室」的英文是（　）",
+        "options": [
+          "classrom",
+          "clasroom",
+          "classrooom",
+          "classroom"
+        ],
+        "answer": "classroom",
+        "explanation": "classroom = 教室。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "介绍他人 This is … / That is …",
+        "question": "「这是我们的老师。」的英文是（　）",
+        "options": [
+          "This is our teacher.",
+          "This is we teacher.",
+          "This our teacher is.",
+          "This are our teacher."
+        ],
+        "answer": "This is our teacher.",
+        "explanation": "our + 名词。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "介绍他人 This is … / That is …",
+        "question": "That is 用来介绍远处的人或物。",
+        "options": [],
+        "answer": "对",
+        "explanation": "that 指远处。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "介绍他人 This is … / That is …",
+      "core_concept": "This is our teacher. 这是我们的老师。That is my bag. 那是我的包。近处用 this，远处用 that。",
+      "key_formula": "This is + 人/物. / That is + 人/物.",
+      "common_mistakes": [
+        "This is our teacher.（our 不能省）"
+      ],
+      "tips": "our = 我们的。"
+    },
+    {
+      "point": "学校词汇 teacher / school / classroom / bag",
+      "core_concept": "teacher 老师、school 学校、classroom 教室、bag 包。Nice to meet you. 很高兴见到你。",
+      "key_formula": "teacher / school / classroom / bag",
+      "common_mistakes": [
+        "classroom 拼成 classrom。"
+      ],
+      "tips": "class + room。"
+    }
+  ]
+}

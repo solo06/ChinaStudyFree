@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Module 9 I like football 运动与喜好",
+  "unit_number": 9,
+  "unit_test": {
+    "title": "第9单元「Module 9 I like football 运动与喜好」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "运动 football / basketball / swimming",
+        "question": "「篮球」的英文是（　）",
+        "options": [
+          "basketballs",
+          "basketbal",
+          "basketball",
+          "basketbool"
+        ],
+        "answer": "basketball",
+        "explanation": "basketball = 篮球。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "运动 football / basketball / swimming",
+        "question": "「踢足球」的英文是（　）",
+        "options": [
+          "play football",
+          "play the football",
+          "play a football",
+          "footballing"
+        ],
+        "answer": "play football",
+        "explanation": "球类不加 the。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "I like … / favourite",
+        "question": "「我最喜欢的运动是游泳。」的英文是（　）",
+        "options": [
+          "My favourite sport is swimming.",
+          "My favourite sport is swim.",
+          "I favourite sport swimming.",
+          "My favourite sports is swim."
+        ],
+        "answer": "My favourite sport is swimming.",
+        "explanation": "favourite + 名词。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "I like … / favourite",
+        "question": "I like football. 的意思是「我喜欢足球」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "like 表喜好。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "运动 football / basketball / swimming",
+      "core_concept": "football 足球、basketball 篮球、swimming 游泳、sport 运动。play football 踢足球。",
+      "key_formula": "play football / play basketball",
+      "common_mistakes": [
+        "play the football（×）。"
+      ],
+      "tips": "球类运动不加 the。"
+    },
+    {
+      "point": "I like … / favourite",
+      "core_concept": "I like football. 我喜欢足球。My favourite sport is football. 我最喜欢的运动是足球。with 和……一起，together 一起。",
+      "key_formula": "I like + 名词. / My favourite sport is …",
+      "common_mistakes": [
+        "I like play football（×）。"
+      ],
+      "tips": "like 后接名词或动名词。"
+    }
+  ]
+}

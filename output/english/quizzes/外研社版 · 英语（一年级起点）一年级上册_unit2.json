@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 2 What's your name? 你叫什么名字",
+  "unit_number": 2,
+  "unit_test": {
+    "title": "第2单元「Module 2 What's your name? 你叫什么名字」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "询问姓名 What's your name?",
+        "question": "「你叫什么名字？」的英文是（　）",
+        "options": [
+          "What's your name?",
+          "What your name?",
+          "How your name?",
+          "Who's your name?"
+        ],
+        "answer": "What's your name?",
+        "explanation": "What's = What is。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "问候时间 good morning / good afternoon",
+        "question": "「下午」的英文是（　）",
+        "options": [
+          "afternon",
+          "aftermoon",
+          "morning",
+          "afternoon"
+        ],
+        "answer": "afternoon",
+        "explanation": "afternoon = 下午。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "问候时间 good morning / good afternoon",
+        "question": "下午见到老师，应说（　）",
+        "options": [
+          "Good afternoon.",
+          "Good morning.",
+          "Good night.",
+          "Goodbye."
+        ],
+        "answer": "Good afternoon.",
+        "explanation": "下午用 afternoon。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "询问姓名 What's your name?",
+        "question": "「My name is Lily.」是自我介绍。",
+        "options": [],
+        "answer": "对",
+        "explanation": "my name is…"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "询问姓名 What's your name?",
+      "core_concept": "What's your name? 你叫什么名字？My name is Bill. 我叫比尔。Ms 女士（用于姓前）。",
+      "key_formula": "What's your name? — My name is …",
+      "common_mistakes": [
+        "回答用 I name is Bill.（×）"
+      ],
+      "tips": "my name = 我的名字。"
+    },
+    {
+      "point": "问候时间 good morning / good afternoon",
+      "core_concept": "Good morning. 早上好。Good afternoon. 下午好。please 请。",
+      "key_formula": "Good morning, Ms Wu.",
+      "common_mistakes": [
+        "下午说 Good morning。"
+      ],
+      "tips": "上午 morning，下午 afternoon。"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Unit 1 School 学校与文具",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第1单元「Unit 1 School 学校与文具」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "文具与人物词汇",
+        "question": "「书」的英文是（　）",
+        "options": [
+          "book",
+          "look",
+          "cook",
+          "box"
+        ],
+        "answer": "book",
+        "explanation": "book = 书。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "文具与人物词汇",
+        "question": "「尺子」的英文是（　）",
+        "options": [
+          "rule",
+          "ruller",
+          "rubber",
+          "ruler"
+        ],
+        "answer": "ruler",
+        "explanation": "ruler = 尺子。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "文具与人物词汇",
+        "question": "「铅笔」的英文是（　）",
+        "options": [
+          "pencel",
+          "pensil",
+          "pencil",
+          "pen"
+        ],
+        "answer": "pencil",
+        "explanation": "pencil = 铅笔。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "I have a … / Show me your …",
+        "question": "「我有一本书。」的英文是（　）",
+        "options": [
+          "I have a book.",
+          "I has a book.",
+          "I have book.",
+          "I am a book."
+        ],
+        "answer": "I have a book.",
+        "explanation": "I + have + a + 物品。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "I have a … / Show me your …",
+        "question": "「给我看看你的书包。」的英文是（　）",
+        "options": [
+          "Show me your schoolbag.",
+          "Show your me schoolbag.",
+          "Show me you schoolbag.",
+          "Show me your bag school."
+        ],
+        "answer": "Show me your schoolbag.",
+        "explanation": "Show me your + 物品。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "文具与人物词汇",
+        "question": "teacher 的意思是「老师」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "teacher = 老师。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "文具与人物词汇",
+      "core_concept": "book 书、ruler 尺子、pencil 铅笔、schoolbag 书包、teacher 老师。这些都是教室里最常见的词。",
+      "key_formula": "book / ruler / pencil / schoolbag / teacher",
+      "common_mistakes": [
+        "pencil 与 pen 混淆（pen 是钢笔）。"
+      ],
+      "tips": "pencil 铅笔，pen 钢笔。"
+    },
+    {
+      "point": "I have a … / Show me your …",
+      "core_concept": "I have a pencil. 我有一支铅笔。Show me your ruler. 给我看看你的尺子。Stand up. 起立。Sit down. 请坐。",
+      "key_formula": "I have a + 物品.",
+      "common_mistakes": [
+        "a 与 an 混用（an 用在元音音素前）。"
+      ],
+      "tips": "I have a book. / I have an apple."
+    }
+  ]
+}

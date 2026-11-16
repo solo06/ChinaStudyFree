@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Module 3 Do you like bananas? 水果",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "第3单元「Module 3 Do you like bananas? 水果」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "水果 banana / apple / orange / tomato / fruit",
+        "question": "「水果」的英文是（　）",
+        "options": [
+          "fruite",
+          "fruits",
+          "froot",
+          "fruit"
+        ],
+        "answer": "fruit",
+        "explanation": "fruit = 水果。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "水果 banana / apple / orange / tomato / fruit",
+        "question": "「西红柿」的英文是（　）",
+        "options": [
+          "tomatoe",
+          "tometo",
+          "tomato",
+          "tommato"
+        ],
+        "answer": "tomato",
+        "explanation": "tomato = 西红柿。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "Do you like …? 与 Here you are.",
+        "question": "— Do you like oranges? — ___（喜欢）",
+        "options": [
+          "Yes, I do.",
+          "Yes, I like.",
+          "Yes, I am.",
+          "Yes, I does."
+        ],
+        "answer": "Yes, I do.",
+        "explanation": "Do 问 Do 答。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "水果 banana / apple / orange / tomato / fruit",
+        "question": "「Here you are.」的意思是「给你」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "递东西时用。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "水果 banana / apple / orange / tomato / fruit",
+      "core_concept": "banana 香蕉、apple 苹果、orange 橙子、tomato 西红柿、fruit 水果、milk 牛奶。",
+      "key_formula": "banana / apple / orange / tomato / fruit",
+      "common_mistakes": [
+        "tomato 复数 tomatoes。"
+      ],
+      "tips": "tomato → tomatoes。"
+    },
+    {
+      "point": "Do you like …? 与 Here you are.",
+      "core_concept": "Do you like bananas? 你喜欢香蕉吗？Yes, I do. / No, I don't. Here you are. 给你。",
+      "key_formula": "Do you like + 复数? — Yes, I do. / No, I don't.",
+      "common_mistakes": [
+        "答 Yes, I like.（×）"
+      ],
+      "tips": "Do 问 Do 答。"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Module 1 I like football 一起活动",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第1单元「Module 1 I like football 一起活动」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "活动用语 come on / team",
+        "question": "「球队」的英文是（　）",
+        "options": [
+          "team",
+          "teem",
+          "tam",
+          "teams"
+        ],
+        "answer": "team",
+        "explanation": "team = 球队。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "Let's + 动词原形",
+        "question": "「我们唱首歌吧。」的英文是（　）",
+        "options": [
+          "Let's sing a song.",
+          "Let's to sing a song.",
+          "Let sing a song.",
+          "Let's singing a song."
+        ],
+        "answer": "Let's sing a song.",
+        "explanation": "Let's + 原形。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "活动用语 come on / team",
+        "question": "「加油！」的英文是（　）",
+        "options": [
+          "Come on!",
+          "Come in!",
+          "Come to!",
+          "Come up!"
+        ],
+        "answer": "Come on!",
+        "explanation": "come on 加油。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "Let's + 动词原形",
+        "question": "Let's 后面接动词原形。",
+        "options": [],
+        "answer": "对",
+        "explanation": "Let's + 原形。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "活动用语 come on / team",
+      "core_concept": "song 歌曲、come on 加油、team 球队。Let's sing a song. 我们唱首歌吧。",
+      "key_formula": "come on / team / song",
+      "common_mistakes": [
+        "come on 写成 come in。"
+      ],
+      "tips": "come on 加油；come in 进来。"
+    },
+    {
+      "point": "Let's + 动词原形",
+      "core_concept": "Let's sing a song. 我们唱首歌。Let's play football. 我们踢足球吧。",
+      "key_formula": "Let's + 动词原形.",
+      "common_mistakes": [
+        "Let's to sing（×）。"
+      ],
+      "tips": "Let's 后不加 to。"
+    }
+  ]
+}

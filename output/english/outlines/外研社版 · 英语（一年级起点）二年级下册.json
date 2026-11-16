@@ -1,0 +1,265 @@
+{
+  "textbook": "二年级下册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Module 1 What's the weather like? 天气",
+      "knowledge_points": [
+        {
+          "name": "天气词 sunny / windy / rain / snow",
+          "description": "认识天气词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "What's the weather like?",
+          "description": "会问天气。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Module 2 I have a new camera 物品与动作",
+      "knowledge_points": [
+        {
+          "name": "物品 radio / photo / newspaper / camera / letter",
+          "description": "认识五种物品。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "draw / write / smile",
+          "description": "掌握三个动作词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Module 3 Tidy your room 家务与整理",
+      "knowledge_points": [
+        {
+          "name": "家务短语 tidy / do homework / sleep",
+          "description": "掌握三个日常动作。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "secret / card / flower / science",
+          "description": "认识四个名词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Module 4 Hide-and-seek 游戏与方位",
+      "knowledge_points": [
+        {
+          "name": "游戏词汇 hide / seek / hide-and-seek / stone",
+          "description": "认识游戏相关词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "behind / drink / talk",
+          "description": "会用 behind 和日常动词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Module 5 Hurry up! 催促与游戏",
+      "knowledge_points": [
+        {
+          "name": "催促 hurry up / late",
+          "description": "会说「快点」和「迟到」。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "those / well / kid / of course",
+          "description": "掌握常用词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Module 6 She usually goes shopping 日常习惯",
+      "knowledge_points": [
+        {
+          "name": "动作 ride / cook / go shopping",
+          "description": "掌握三个动作短语。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "usually 与第三人称",
+          "description": "会用 usually 说习惯。",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "title": "Module 7 Children's Day 儿童节",
+      "knowledge_points": [
+        {
+          "name": "节日词汇 Children's Day / picnic / beach",
+          "description": "认识儿童节相关词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "say a poem / play 表演",
+          "description": "会说表演类活动。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "title": "Module 8 The train is at the station 交通与地点",
+      "knowledge_points": [
+        {
+          "name": "地点 station / hospital / hill / factory",
+          "description": "认识四个地点。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "turn around / jump / come back",
+          "description": "掌握三个动作短语。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "title": "Module 9 Turn left 问路",
+      "knowledge_points": [
+        {
+          "name": "方向 left / right / straight",
+          "description": "掌握三个方向词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "excuse me / lost / road",
+          "description": "会问路。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "title": "Module 10 Where's the supermarket? 指路",
+      "knowledge_points": [
+        {
+          "name": "地点 supermarket / cinema / station",
+          "description": "认识三个地点。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "next to / in front of",
+          "description": "两个方位短语。",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    }
+  ]
+}

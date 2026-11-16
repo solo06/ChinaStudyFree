@@ -1,0 +1,123 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Unit 5 In the Park 在公园",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "第5单元「Unit 5 In the Park 在公园」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "景物词汇 lake / boat / tree / grass / hill / flower",
+        "question": "「湖」的英文是（　）",
+        "options": [
+          "lake",
+          "lack",
+          "like",
+          "lak"
+        ],
+        "answer": "lake",
+        "explanation": "lake = 湖。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "景物词汇 lake / boat / tree / grass / hill / flower",
+        "question": "「小船」的英文是（　）",
+        "options": [
+          "boat",
+          "boar",
+          "boot",
+          "bot"
+        ],
+        "answer": "boat",
+        "explanation": "boat = 小船。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "景物词汇 lake / boat / tree / grass / hill / flower",
+        "question": "「树」的英文是（　）",
+        "options": [
+          "tree",
+          "three",
+          "tre",
+          "trees"
+        ],
+        "answer": "tree",
+        "explanation": "tree = 树。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "There is / There are",
+        "question": "「湖上有一条船。」的英文是（　）",
+        "options": [
+          "There is a boat on the lake.",
+          "There are a boat on the lake.",
+          "There is boat on lake.",
+          "There have a boat on the lake."
+        ],
+        "answer": "There is a boat on the lake.",
+        "explanation": "单数用 there is。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "There is / There are",
+        "question": "「公园里有很多树。」的英文是（　）",
+        "options": [
+          "There are trees in the park.",
+          "There is trees in the park.",
+          "There are tree in the park.",
+          "There have trees in the park."
+        ],
+        "answer": "There are trees in the park.",
+        "explanation": "复数用 there are。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "There is / There are",
+        "question": "There is 后面跟单数名词，There are 跟复数。",
+        "options": [],
+        "answer": "对",
+        "explanation": "看单复数。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "景物词汇 lake / boat / tree / grass / hill / flower",
+      "core_concept": "lake 湖、boat 小船、tree 树、grass 草、hill 小山、flower 花。tree 复数是 trees。",
+      "key_formula": "lake / boat / tree / grass / hill / flower",
+      "common_mistakes": [
+        "grass 当可数加 s。"
+      ],
+      "tips": "grass 不可数，不加 s。"
+    },
+    {
+      "point": "There is / There are",
+      "core_concept": "There is a boat on the lake. 湖上有一条船。There are trees in the park. 公园里有很多树。单数用 is，复数用 are。",
+      "key_formula": "There is a + 单数 / There are + 复数",
+      "common_mistakes": [
+        "There are a boat.（×）"
+      ],
+      "tips": "看后面的名词单复数。"
+    }
+  ]
+}

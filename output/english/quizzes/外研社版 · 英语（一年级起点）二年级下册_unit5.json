@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 5 Hurry up! 催促与游戏",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "第5单元「Module 5 Hurry up! 催促与游戏」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "催促 hurry up / late",
+        "question": "「快点！」的英文是（　）",
+        "options": [
+          "Hurry up!",
+          "Hurry on!",
+          "Hurry in!",
+          "Quick up!"
+        ],
+        "answer": "Hurry up!",
+        "explanation": "hurry up 快点。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "those / well / kid / of course",
+        "question": "「小孩」的英文是（　）",
+        "options": [
+          "kids",
+          "kid",
+          "kidd",
+          "kit"
+        ],
+        "answer": "kid",
+        "explanation": "kid = 小孩。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "those / well / kid / of course",
+        "question": "「当然。」的英文是（　）",
+        "options": [
+          "Of course.",
+          "Of cause.",
+          "Of course it.",
+          "On course."
+        ],
+        "answer": "Of course.",
+        "explanation": "固定表达。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "催促 hurry up / late",
+        "question": "late 的意思是「迟的」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "late = 迟的。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "催促 hurry up / late",
+      "core_concept": "Hurry up! 快点！late 迟的、sad 伤心的、those 那些、game 游戏、clap 拍手。",
+      "key_formula": "Hurry up! / You're late.",
+      "common_mistakes": [
+        "late 与 later 混。"
+      ],
+      "tips": "late 迟的。"
+    },
+    {
+      "point": "those / well / kid / of course",
+      "core_concept": "those 那些（that 的复数）、well 好、kid 小孩、of course 当然、catch 抓住。",
+      "key_formula": "Those are … / Of course.",
+      "common_mistakes": [
+        "those 当单数。"
+      ],
+      "tips": "those + 复数。"
+    }
+  ]
+}

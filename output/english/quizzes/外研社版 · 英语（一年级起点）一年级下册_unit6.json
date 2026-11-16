@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Module 6 This is my father 动物园",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "第6单元「Module 6 This is my father 动物园」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "动物园动物 elephant / tiger / giraffe / snake / horse",
+        "question": "「大象」的英文是（　）",
+        "options": [
+          "elephant",
+          "elefant",
+          "elephent",
+          "elephnat"
+        ],
+        "answer": "elephant",
+        "explanation": "elephant = 大象。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "动物园动物 elephant / tiger / giraffe / snake / horse",
+        "question": "「长颈鹿」的英文是（　）",
+        "options": [
+          "giraff",
+          "giraffe",
+          "girafe",
+          "giraf"
+        ],
+        "answer": "giraffe",
+        "explanation": "giraffe = 长颈鹿。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "形容词 long / short / tall / cute / strong",
+        "question": "「它很高。」的英文是（　）",
+        "options": [
+          "It's tall.",
+          "It's long.",
+          "It tall.",
+          "It's talls."
+        ],
+        "answer": "It's tall.",
+        "explanation": "高度用 tall。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "动物园动物 elephant / tiger / giraffe / snake / horse",
+        "question": "zoo 的意思是「动物园」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "zoo = 动物园。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "动物园动物 elephant / tiger / giraffe / snake / horse",
+      "core_concept": "elephant 大象、tiger 老虎、giraffe 长颈鹿、snake 蛇、horse 马、zoo 动物园。",
+      "key_formula": "elephant / tiger / giraffe / snake / horse",
+      "common_mistakes": [
+        "giraffe 拼成 girafe。"
+      ],
+      "tips": "双 f。"
+    },
+    {
+      "point": "形容词 long / short / tall / cute / strong",
+      "core_concept": "long 长的、short 短的/矮的、tall 高的、cute 可爱的、strong 强壮的。",
+      "key_formula": "It's long / short / tall.",
+      "common_mistakes": [
+        "tall 与 long 混。"
+      ],
+      "tips": "高用 tall，长用 long。"
+    }
+  ]
+}

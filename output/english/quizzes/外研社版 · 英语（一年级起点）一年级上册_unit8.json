@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 8 How many? 数字与数量",
+  "unit_number": 8,
+  "unit_test": {
+    "title": "第8单元「Module 8 How many? 数字与数量」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "数字 one—ten",
+        "question": "「六」的英文是（　）",
+        "options": [
+          "sis",
+          "six",
+          "sicks",
+          "sixt"
+        ],
+        "answer": "six",
+        "explanation": "six = 六。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "How many …? 与颜色搭配",
+        "question": "「粉色」的英文是（　）",
+        "options": [
+          "pink",
+          "pinck",
+          "pinkk",
+          "pank"
+        ],
+        "answer": "pink",
+        "explanation": "pink = 粉色。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "How many …? 与颜色搭配",
+        "question": "「多少个粉色球？」的英文是（　）",
+        "options": [
+          "How many pink balls?",
+          "How many pink ball?",
+          "How much pink balls?",
+          "How many balls pink?"
+        ],
+        "answer": "How many pink balls?",
+        "explanation": "How many + 复数。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "数字 one—ten",
+        "question": "seven 表示 7。",
+        "options": [],
+        "answer": "对",
+        "explanation": "seven = 7。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "数字 one—ten",
+      "core_concept": "one 1、two 2、three 3、four 4、five 5、six 6、seven 7、eight 8、nine 9、ten 10。count 数。",
+      "key_formula": "one—ten",
+      "common_mistakes": [
+        "three 写成 tree。"
+      ],
+      "tips": "three 三，tree 树。"
+    },
+    {
+      "point": "How many …? 与颜色搭配",
+      "core_concept": "How many? 多少？How many pink balls? 多少个粉色球？pink 粉色、brown 棕色、ball 球。",
+      "key_formula": "How many + 复数名词?",
+      "common_mistakes": [
+        "How many ball（×）。"
+      ],
+      "tips": "How many 后跟复数。"
+    }
+  ]
+}

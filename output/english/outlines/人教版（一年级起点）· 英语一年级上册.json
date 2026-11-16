@@ -1,0 +1,161 @@
+{
+  "textbook": "一年级上册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Unit 1 School 学校与文具",
+      "knowledge_points": [
+        {
+          "name": "文具与人物词汇",
+          "description": "认识 book / ruler / pencil / schoolbag / teacher。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "I have a … / Show me your …",
+          "description": "会用 have 表达「我有」，听懂课堂指令。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Unit 2 Face 我的脸",
+      "knowledge_points": [
+        {
+          "name": "五官词汇 eye / nose / mouth / ear / face",
+          "description": "认识五个五官单词。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "This is my … / Touch your …",
+          "description": "会介绍自己的五官，听懂身体指令。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Unit 3 Animals 动物园里",
+      "knowledge_points": [
+        {
+          "name": "动物词汇 bird / tiger / monkey / dog / cat",
+          "description": "认识五种动物。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "What's this? — It's a …",
+          "description": "会问「这是什么」并回答。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Unit 4 Numbers 数字 1—10",
+      "knowledge_points": [
+        {
+          "name": "数字 one—ten",
+          "description": "会读会写 1—10 的英文。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "How many … are there?",
+          "description": "会问数量并回答。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Unit 5 Colours 颜色",
+      "knowledge_points": [
+        {
+          "name": "颜色词汇 red / blue / green / yellow / black",
+          "description": "认识五种颜色。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "What colour is it? — It's …",
+          "description": "会问颜色并回答。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Unit 6 Fruit 水果",
+      "knowledge_points": [
+        {
+          "name": "水果词汇 apple / orange / banana / pear",
+          "description": "认识四种水果。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "Do you like …? — Yes, I do. / No, I don't.",
+          "description": "会问喜好并回答。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    }
+  ]
+}

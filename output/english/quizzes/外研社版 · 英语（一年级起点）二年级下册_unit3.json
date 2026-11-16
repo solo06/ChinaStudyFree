@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 3 Tidy your room 家务与整理",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "第3单元「Module 3 Tidy your room 家务与整理」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "家务短语 tidy / do homework / sleep",
+        "question": "「做作业」的英文是（　）",
+        "options": [
+          "homework",
+          "homeworks",
+          "home work",
+          "housework"
+        ],
+        "answer": "homework",
+        "explanation": "homework = 做作业。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "secret / card / flower / science",
+        "question": "「秘密」的英文是（　）",
+        "options": [
+          "secreet",
+          "secert",
+          "secret",
+          "secrect"
+        ],
+        "answer": "secret",
+        "explanation": "secret = 秘密。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "家务短语 tidy / do homework / sleep",
+        "question": "「整理你的房间。」的英文是（　）",
+        "options": [
+          "Tidy your room.",
+          "Tidy you room.",
+          "Tidying your room.",
+          "Tidy your rooms please you."
+        ],
+        "answer": "Tidy your room.",
+        "explanation": "祈使句用原形。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "secret / card / flower / science",
+        "question": "flower 的意思是「花」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "flower = 花。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "家务短语 tidy / do homework / sleep",
+      "core_concept": "tidy 整理、do homework 做作业、sleep 睡觉、room 房间。Tidy your room. 整理你的房间。",
+      "key_formula": "tidy your room / do homework",
+      "common_mistakes": [
+        "do homeworks（×，homework 不可数）。"
+      ],
+      "tips": "homework 不可数。"
+    },
+    {
+      "point": "secret / card / flower / science",
+      "core_concept": "secret 秘密、card 卡片、flower 花、science 科学、today 今天。",
+      "key_formula": "secret / card / flower / science",
+      "common_mistakes": [
+        "science 拼错。"
+      ],
+      "tips": "sci-ence。"
+    }
+  ]
+}

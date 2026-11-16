@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Module 5 I get up at seven 我的一天",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "第5单元「Module 5 I get up at seven 我的一天」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "作息短语 get up / go to school / have lunch / go home / watch TV",
+        "question": "「看电视」的英文是（　）",
+        "options": [
+          "watch TV",
+          "watch the TV",
+          "see TV",
+          "look TV"
+        ],
+        "answer": "watch TV",
+        "explanation": "不加 the。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "at + 钟点",
+        "question": "「我七点起床。」的英文是（　）",
+        "options": [
+          "I get up at seven.",
+          "I get up in seven.",
+          "I get up seven.",
+          "I get up on seven."
+        ],
+        "answer": "I get up at seven.",
+        "explanation": "钟点前用 at。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "作息短语 get up / go to school / have lunch / go home / watch TV",
+        "question": "「起床」的英文是（　）",
+        "options": [
+          "get in",
+          "getting up",
+          "get up",
+          "get on"
+        ],
+        "answer": "get up",
+        "explanation": "get up = 起床。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "at + 钟点",
+        "question": "have lunch 的意思是「吃午饭」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "have lunch。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "作息短语 get up / go to school / have lunch / go home / watch TV",
+      "core_concept": "get up 起床、go to school 上学、have lunch 吃午饭、go home 回家、watch TV 看电视。",
+      "key_formula": "get up / go to school / have lunch / go home / watch TV",
+      "common_mistakes": [
+        "watch the TV（×）。"
+      ],
+      "tips": "watch TV 不加 the。"
+    },
+    {
+      "point": "at + 钟点",
+      "core_concept": "I get up at seven. 我七点起床。at 用于钟点前。",
+      "key_formula": "I + 动作 + at + 时间.",
+      "common_mistakes": [
+        "in seven（×）。"
+      ],
+      "tips": "钟点用 at。"
+    }
+  ]
+}
