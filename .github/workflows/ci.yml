@@ -72,3 +72,30 @@ jobs:
             exit 1
           fi
           echo "未检测到明显密钥"
+
+  api-smoke:
+    name: 账号与后台接口冒烟
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: 构建服务端（单文件产物）
+        run: npm run build:server
+      - name: 启动服务并跑接口冒烟
+        env:
+          ADMIN_EMAIL: admin@example.com
+          ADMIN_PASSWORD: admin-password-123
+          AUTH_SECRET: ci-only-secret-ci-only-secret
+          DATA_DIR: ${{ runner.temp }}/csf-data
+          STATIC_DIR: ${{ runner.temp }}/no-static
+          PORT: "8787"
+          CORS_ORIGIN: "*"
+        run: |
+          node apps/server/dist/index.js > /tmp/server.log 2>&1 &
+          bash scripts/smoke-auth.sh
+          echo "----- 服务端日志 -----"
+          cat /tmp/server.log

@@ -20,6 +20,9 @@ import express, { type Request, type Response, type NextFunction } from "express
 import { chatLLM, parseJSON, LLMNotConfigured, type ChatMessage } from "./llm.js";
 import { dashscopeTTS, TTSNotConfigured, synthesize } from "./tts.js";
 import { geminiImage, ImageNotConfigured } from "./image.js";
+import { Store } from "./store.js";
+import { resolveSecret } from "./auth.js";
+import { ensureBootstrapAdmin, registerAuthRoutes } from "./auth-routes.js";
 
 const HOST = process.env.HOST || "0.0.0.0";
 const PORT = Number(process.env.PORT || 8787);
@@ -75,8 +78,17 @@ app.use(express.json({ limit: "2mb" }));
 
 // ---- CORS（移动端跨域调用）----
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", CORS_ORIGIN);
-  res.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  // 通配 * 时不能带 cookie；配了具体来源则回显来源并允许携带凭证（Web 同源登录用 Cookie）
+  if (CORS_ORIGIN === "*") {
+    res.header("Access-Control-Allow-Origin", "*");
+  } else {
+    const origin = req.header("origin") || "";
+    const allowed = CORS_ORIGIN.split(",").map((v) => v.trim());
+    res.header("Access-Control-Allow-Origin", allowed.includes(origin) ? origin : allowed[0] || "");
+    res.header("Access-Control-Allow-Credentials", "true");
+    res.header("Vary", "Origin");
+  }
+  res.header("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE,OPTIONS");
   res.header("Access-Control-Allow-Headers", "Content-Type,Authorization");
   if (req.method === "OPTIONS") return res.sendStatus(204);
   next();
@@ -262,6 +274,20 @@ app.post("/api/ai/tts", async (req: Request, res: Response) => {
     console.error("[tts]", e);
     fail(res, 500, (e as Error).message);
   }
+});
+
+// ===== 账号 / 会话 / 管理后台 =====
+// 数据落在 DATA_DIR（Docker 里是 /app/data 卷）：app.json（账号与设置）+ auth.key（会话密钥）
+const DATA_DIR = process.env.DATA_DIR || path.resolve(process.cwd(), "data");
+const store = new Store(DATA_DIR);
+await store.init();
+const authSecret = resolveSecret(DATA_DIR);
+registerAuthRoutes(app, { store, secret: authSecret, log });
+await ensureBootstrapAdmin(store, log);
+log("info", "账号系统就绪", {
+  dataDir: DATA_DIR,
+  users: store.read().users.length,
+  registrationOpen: store.read().settings.registrationOpen,
 });
 
 // ===== 静态资源托管（Next.js 导出产物）=====
