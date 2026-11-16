@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 8 The train is at the station 交通与地点",
+  "unit_number": 8,
+  "unit_test": {
+    "title": "第8单元「Module 8 The train is at the station 交通与地点」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "地点 station / hospital / hill / factory",
+        "question": "「车站」的英文是（　）",
+        "options": [
+          "statoin",
+          "station",
+          "stasion",
+          "stations"
+        ],
+        "answer": "station",
+        "explanation": "station = 车站。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "地点 station / hospital / hill / factory",
+        "question": "「工厂」的英文是（　）",
+        "options": [
+          "factor",
+          "factory",
+          "factery",
+          "factry"
+        ],
+        "answer": "factory",
+        "explanation": "factory = 工厂。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "turn around / jump / come back",
+        "question": "「转过身。」的英文是（　）",
+        "options": [
+          "Turn around.",
+          "Turn on.",
+          "Turn up.",
+          "Turn in."
+        ],
+        "answer": "Turn around.",
+        "explanation": "turn around 转身。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "turn around / jump / come back",
+        "question": "come back 的意思是「回来」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "come back 回来。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "地点 station / hospital / hill / factory",
+      "core_concept": "station 车站、hospital 医院、hill 小山、factory 工厂、ground 地面。",
+      "key_formula": "station / hospital / hill / factory",
+      "common_mistakes": [
+        "station 拼错。"
+      ],
+      "tips": "sta-tion。"
+    },
+    {
+      "point": "turn around / jump / come back",
+      "core_concept": "turn around 转身、jump 跳、come back 回来、again 再一次。",
+      "key_formula": "Turn around. / Come back.",
+      "common_mistakes": [
+        "turn around 说成 turn round（也可）。"
+      ],
+      "tips": "两者都可。"
+    }
+  ]
+}

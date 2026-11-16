@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 2 I have a new camera 物品与动作",
+  "unit_number": 2,
+  "unit_test": {
+    "title": "第2单元「Module 2 I have a new camera 物品与动作」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "物品 radio / photo / newspaper / camera / letter",
+        "question": "「照相机」的英文是（　）",
+        "options": [
+          "camara",
+          "camra",
+          "camera",
+          "camer"
+        ],
+        "answer": "camera",
+        "explanation": "camera = 照相机。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "物品 radio / photo / newspaper / camera / letter",
+        "question": "「报纸」的英文是（　）",
+        "options": [
+          "newspapper",
+          "newspapers",
+          "newspapr",
+          "newspaper"
+        ],
+        "answer": "newspaper",
+        "explanation": "newspaper = 报纸。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "draw / write / smile",
+        "question": "「画一幅画」的英文是（　）",
+        "options": [
+          "draw a picture",
+          "draw picture",
+          "write a picture",
+          "draw the pictures one"
+        ],
+        "answer": "draw a picture",
+        "explanation": "draw + a + picture。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "物品 radio / photo / newspaper / camera / letter",
+        "question": "letter 的意思是「信」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "letter = 信。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "物品 radio / photo / newspaper / camera / letter",
+      "core_concept": "radio 收音机、photo 照片、newspaper 报纸、camera 照相机、letter 信。",
+      "key_formula": "radio / photo / newspaper / camera / letter",
+      "common_mistakes": [
+        "photo 复数 photos。"
+      ],
+      "tips": "photo → photos。"
+    },
+    {
+      "point": "draw / write / smile",
+      "core_concept": "draw 画、write 写、smile 微笑、picture 图画。draw a picture 画一幅画。",
+      "key_formula": "draw a picture / write a letter",
+      "common_mistakes": [
+        "draw picture（漏 a）。"
+      ],
+      "tips": "可数名词单数前加 a。"
+    }
+  ]
+}

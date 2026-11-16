@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Module 10 Let's go swimming 提议与感受",
+  "unit_number": 10,
+  "unit_test": {
+    "title": "第10单元「Module 10 Let's go swimming 提议与感受」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "提议 Let's …",
+        "question": "「我们去游泳吧。」的英文是（　）",
+        "options": [
+          "Let's go swimming.",
+          "Let's to go swimming.",
+          "Let go swimming.",
+          "Let's going swimming."
+        ],
+        "answer": "Let's go swimming.",
+        "explanation": "Let's + 原形。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "感受 hot / tired",
+        "question": "「累的」的英文是（　）",
+        "options": [
+          "tried",
+          "tire",
+          "tiredd",
+          "tired"
+        ],
+        "answer": "tired",
+        "explanation": "tired = 累的。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "感受 hot / tired",
+        "question": "「我很热。」的英文是（　）",
+        "options": [
+          "I'm hot.",
+          "I'm heat.",
+          "I hot.",
+          "I'm hots."
+        ],
+        "answer": "I'm hot.",
+        "explanation": "hot 是形容词。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "提议 Let's …",
+        "question": "「Let's dance.」是提议一起跳舞。",
+        "options": [],
+        "answer": "对",
+        "explanation": "Let's 表建议。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "提议 Let's …",
+      "core_concept": "Let's go swimming. 我们去游泳吧。Let's sing and dance. 我们唱歌跳舞吧。idea 主意。",
+      "key_formula": "Let's + 动词原形.",
+      "common_mistakes": [
+        "Let's to go（×）。"
+      ],
+      "tips": "let's 后不加 to。"
+    },
+    {
+      "point": "感受 hot / tired",
+      "core_concept": "I'm hot. 我很热。I'm tired. 我累了。go swimming 去游泳。",
+      "key_formula": "I'm hot / tired.",
+      "common_mistakes": [
+        "I'm tire（×）。"
+      ],
+      "tips": "tired 是形容词。"
+    }
+  ]
+}

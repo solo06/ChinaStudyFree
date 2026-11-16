@@ -1,0 +1,107 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Unit 5 My Day 我的一天",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "第5单元「Unit 5 My Day 我的一天」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "作息短语 get up / eat breakfast / go to school / go to bed",
+        "question": "「起床」的英文是（　）",
+        "options": [
+          "get up",
+          "get on",
+          "stand up",
+          "wake"
+        ],
+        "answer": "get up",
+        "explanation": "get up = 起床。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "作息短语 get up / eat breakfast / go to school / go to bed",
+        "question": "「吃早饭」的英文是（　）",
+        "options": [
+          "eat breakfast",
+          "eat lunch",
+          "have breakfasts",
+          "eat the breakfast"
+        ],
+        "answer": "eat breakfast",
+        "explanation": "三餐前不加 the。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "When do you …? — At …",
+        "question": "「你什么时候去上学？」的英文是（　）",
+        "options": [
+          "When do you go to school?",
+          "When you go to school?",
+          "What time you go school?",
+          "When do you go school?"
+        ],
+        "answer": "When do you go to school?",
+        "explanation": "When do you + 动词。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "When do you …? — At …",
+        "question": "— When do you get up? — ___（七点）",
+        "options": [
+          "At seven.",
+          "In seven.",
+          "On seven.",
+          "Seven o'clock is."
+        ],
+        "answer": "At seven.",
+        "explanation": "钟点前用 at。"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "作息短语 get up / eat breakfast / go to school / go to bed",
+        "question": "go to bed 的意思是「上床睡觉」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "go to bed。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "作息短语 get up / eat breakfast / go to school / go to bed",
+      "core_concept": "get up 起床、eat breakfast 吃早饭、go to school 上学、eat lunch 吃午饭、go home 回家、eat dinner 吃晚饭、go to bed 上床睡觉。",
+      "key_formula": "get up / eat breakfast / go to school / go to bed",
+      "common_mistakes": [
+        "go to school 说成 go school。"
+      ],
+      "tips": "school 前加 to。"
+    },
+    {
+      "point": "When do you …? — At …",
+      "core_concept": "When do you get up? 你什么时候起床？At seven. 七点。every day 每天。",
+      "key_formula": "When do you + 动词? — At + 时间.",
+      "common_mistakes": [
+        "回答用 In seven（×）。"
+      ],
+      "tips": "钟点前用 at。"
+    }
+  ]
+}

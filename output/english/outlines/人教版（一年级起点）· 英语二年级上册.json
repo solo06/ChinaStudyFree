@@ -1,0 +1,161 @@
+{
+  "textbook": "二年级上册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Unit 1 My Family 我的家人",
+      "knowledge_points": [
+        {
+          "name": "家人词汇 father / mother / sister / brother / grandfather / grandmother",
+          "description": "认识六位家人。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "Who's he? / Who's she?",
+          "description": "会问「他/她是谁」。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Unit 2 Boys and Girls 男孩和女孩",
+      "knowledge_points": [
+        {
+          "name": "人物词汇 boy / girl / man / woman / classmate / friend",
+          "description": "认识六个人物词。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "What's his / her name?",
+          "description": "会问男孩、女孩的名字。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Unit 3 My Friends 我的朋友",
+      "knowledge_points": [
+        {
+          "name": "外貌形容词 tall / short / big / thin / handsome / pretty",
+          "description": "会用形容词描述人。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "What does he look like?",
+          "description": "会问外貌并描述。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Unit 4 In the Community 我们的社区",
+      "knowledge_points": [
+        {
+          "name": "场所词汇 bookshop / supermarket / zoo / park / school / hospital",
+          "description": "认识六个社区场所。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "I'm going to …",
+          "description": "会说要去哪里。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Unit 5 In the Park 在公园",
+      "knowledge_points": [
+        {
+          "name": "景物词汇 lake / boat / tree / grass / hill / flower",
+          "description": "认识公园里的景物。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "There is / There are",
+          "description": "会用 there be 说「有」。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Unit 6 Happy Holidays 节日快乐",
+      "knowledge_points": [
+        {
+          "name": "礼物与节日词汇 card / present / holiday",
+          "description": "认识节日相关词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "Happy New Year! / Thank you.",
+          "description": "会说节日祝福并回应。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    }
+  ]
+}

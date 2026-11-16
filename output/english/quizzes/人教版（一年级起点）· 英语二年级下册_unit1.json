@@ -1,0 +1,107 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Unit 1 Playtime 课余活动",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第1单元「Unit 1 Playtime 课余活动」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "活动短语 play football / fly a kite / ride a bike / swim",
+        "question": "「游泳」的英文是（　）",
+        "options": [
+          "swim",
+          "swin",
+          "swime",
+          "swam"
+        ],
+        "answer": "swim",
+        "explanation": "swim = 游泳。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "活动短语 play football / fly a kite / ride a bike / swim",
+        "question": "「踢足球」的英文是（　）",
+        "options": [
+          "play football",
+          "play the football",
+          "play a football",
+          "football play"
+        ],
+        "answer": "play football",
+        "explanation": "球类不加 the。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "Can you …? — Yes, I can. / No, I can't.",
+        "question": "— Can you ride a bike? — ___（会）",
+        "options": [
+          "Yes, I can.",
+          "Yes, I do.",
+          "Yes, I am.",
+          "Yes, I can't."
+        ],
+        "answer": "Yes, I can.",
+        "explanation": "Can 问 Can 答。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "Can you …? — Yes, I can. / No, I can't.",
+        "question": "「我不会放风筝。」的英文是（　）",
+        "options": [
+          "I can't fly a kite.",
+          "I can fly a kite.",
+          "I can't to fly a kite.",
+          "I don't can fly a kite."
+        ],
+        "answer": "I can't fly a kite.",
+        "explanation": "否定用 can't + 原形。"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "Can you …? — Yes, I can. / No, I can't.",
+        "question": "can 后面要跟动词原形。",
+        "options": [],
+        "answer": "对",
+        "explanation": "can + 原形。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "活动短语 play football / fly a kite / ride a bike / swim",
+      "core_concept": "play football 踢足球、fly a kite 放风筝、ride a bike 骑自行车、make a model plane 做飞机模型、swim 游泳、make a snowman 堆雪人。",
+      "key_formula": "play football / fly a kite / ride a bike / swim",
+      "common_mistakes": [
+        "play football 说成 play the football。"
+      ],
+      "tips": "球类运动不加 the。"
+    },
+    {
+      "point": "Can you …? — Yes, I can. / No, I can't.",
+      "core_concept": "Can you play football? 你会踢足球吗？Yes, I can. / No, I can't. can 后接动词原形。",
+      "key_formula": "Can you + 动词原形? — Yes, I can. / No, I can't.",
+      "common_mistakes": [
+        "Can you to swim?（×）"
+      ],
+      "tips": "can 后不加 to。"
+    }
+  ]
+}

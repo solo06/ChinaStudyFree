@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 4 Hide-and-seek 游戏与方位",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第4单元「Module 4 Hide-and-seek 游戏与方位」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "游戏词汇 hide / seek / hide-and-seek / stone",
+        "question": "「石头」的英文是（　）",
+        "options": [
+          "ston",
+          "stoon",
+          "stones",
+          "stone"
+        ],
+        "answer": "stone",
+        "explanation": "stone = 石头。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "behind / drink / talk",
+        "question": "「他在门后面。」的英文是（　）",
+        "options": [
+          "He is behind the door.",
+          "He is on the door.",
+          "He is in the door.",
+          "He behind door."
+        ],
+        "answer": "He is behind the door.",
+        "explanation": "behind = 在后面。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "游戏词汇 hide / seek / hide-and-seek / stone",
+        "question": "「捉迷藏」的英文是（　）",
+        "options": [
+          "hide-seek",
+          "hiding-seek",
+          "hide-and-seek game",
+          "hide-and-seek"
+        ],
+        "answer": "hide-and-seek",
+        "explanation": "hide-and-seek = 捉迷藏。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "behind / drink / talk",
+        "question": "talk 的意思是「说话」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "talk = 说话。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "游戏词汇 hide / seek / hide-and-seek / stone",
+      "core_concept": "hide 躲藏、seek 寻找、hide-and-seek 捉迷藏、stone 石头、noise 声音、call 喊。",
+      "key_formula": "hide-and-seek",
+      "common_mistakes": [
+        "hide and seek 连字符可省。"
+      ],
+      "tips": "hide-and-seek 捉迷藏。"
+    },
+    {
+      "point": "behind / drink / talk",
+      "core_concept": "behind 在……后面、drink 喝、talk 说话。He is behind the door. 他在门后。",
+      "key_formula": "He / She is behind the …",
+      "common_mistakes": [
+        "behind 拼错。"
+      ],
+      "tips": "be + hind。"
+    }
+  ]
+}

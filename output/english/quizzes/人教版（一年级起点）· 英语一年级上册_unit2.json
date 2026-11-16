@@ -1,0 +1,123 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Unit 2 Face 我的脸",
+  "unit_number": 2,
+  "unit_test": {
+    "title": "第2单元「Unit 2 Face 我的脸」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "五官词汇 eye / nose / mouth / ear / face",
+        "question": "「眼睛」的英文是（　）",
+        "options": [
+          "yes",
+          "eye",
+          "ear",
+          "ice"
+        ],
+        "answer": "eye",
+        "explanation": "eye = 眼睛。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "五官词汇 eye / nose / mouth / ear / face",
+        "question": "「鼻子」的英文是（　）",
+        "options": [
+          "nose",
+          "no",
+          "note",
+          "rose"
+        ],
+        "answer": "nose",
+        "explanation": "nose = 鼻子。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "五官词汇 eye / nose / mouth / ear / face",
+        "question": "「嘴」的英文是（　）",
+        "options": [
+          "mouse",
+          "month",
+          "moth",
+          "mouth"
+        ],
+        "answer": "mouth",
+        "explanation": "mouth = 嘴。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "This is my … / Touch your …",
+        "question": "「这是我的耳朵。」的英文是（　）",
+        "options": [
+          "This is my ear.",
+          "This is my eyes.",
+          "This are my ear.",
+          "This my ear is."
+        ],
+        "answer": "This is my ear.",
+        "explanation": "单数用 This is my…"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "This is my … / Touch your …",
+        "question": "「摸摸你的脸。」的英文是（　）",
+        "options": [
+          "Touch your face.",
+          "Touch you face.",
+          "Touch your faces.",
+          "Touching your face."
+        ],
+        "answer": "Touch your face.",
+        "explanation": "指令用动词原形开头。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "五官词汇 eye / nose / mouth / ear / face",
+        "question": "face 的意思是「脸」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "face = 脸。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "五官词汇 eye / nose / mouth / ear / face",
+      "core_concept": "eye 眼睛、nose 鼻子、mouth 嘴、ear 耳朵、face 脸。eye 和 ear 常用复数 eyes / ears（成对）。",
+      "key_formula": "eye / nose / mouth / ear / face",
+      "common_mistakes": [
+        "把 mouth 读成 mouse（老鼠）。"
+      ],
+      "tips": "mouth 嘴，mouse 老鼠，别混。"
+    },
+    {
+      "point": "This is my … / Touch your …",
+      "core_concept": "This is my nose. 这是我的鼻子。Touch your mouth. 摸摸你的嘴。",
+      "key_formula": "This is my + 身体部位.",
+      "common_mistakes": [
+        "用 This is me nose（×）。"
+      ],
+      "tips": "my 后面直接跟名词。"
+    }
+  ]
+}

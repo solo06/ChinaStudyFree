@@ -1,0 +1,107 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Unit 1 My Family 我的家人",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第1单元「Unit 1 My Family 我的家人」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "家人词汇 father / mother / sister / brother / grandfather / grandmother",
+        "question": "「妈妈」的英文是（　）",
+        "options": [
+          "brother",
+          "mather",
+          "mother",
+          "father"
+        ],
+        "answer": "mother",
+        "explanation": "mother = 妈妈。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "家人词汇 father / mother / sister / brother / grandfather / grandmother",
+        "question": "「姐妹」的英文是（　）",
+        "options": [
+          "sistor",
+          "syster",
+          "sister",
+          "brother"
+        ],
+        "answer": "sister",
+        "explanation": "sister = 姐妹。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "Who's he? / Who's she?",
+        "question": "问「他是谁」，应说（　）",
+        "options": [
+          "Who's he?",
+          "Who's she?",
+          "What's he?",
+          "Where's he?"
+        ],
+        "answer": "Who's he?",
+        "explanation": "男的问 he。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "Who's he? / Who's she?",
+        "question": "— Who's she? — ___（我妈妈）",
+        "options": [
+          "She is my mother.",
+          "He is my mother.",
+          "She my mother.",
+          "It is my mother."
+        ],
+        "answer": "She is my mother.",
+        "explanation": "she 指女性。"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "Who's he? / Who's she?",
+        "question": "回答 Who's she? 时要用 She is…",
+        "options": [],
+        "answer": "对",
+        "explanation": "she 对应 she。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "家人词汇 father / mother / sister / brother / grandfather / grandmother",
+      "core_concept": "father 爸爸、mother 妈妈、sister 姐妹、brother 兄弟、grandfather 爷爷/外公、grandmother 奶奶/外婆。",
+      "key_formula": "father / mother / sister / brother / grandfather / grandmother",
+      "common_mistakes": [
+        "sister 与 brother 性别弄反。"
+      ],
+      "tips": "sister 女，brother 男。"
+    },
+    {
+      "point": "Who's he? / Who's she?",
+      "core_concept": "Who's he? 他是谁？He is my father. Who's she? 她是谁？She is my mother. 男用 he，女用 she。",
+      "key_formula": "Who's he? — He is my … / Who's she? — She is my …",
+      "common_mistakes": [
+        "男的说 she。"
+      ],
+      "tips": "he 男 she 女。"
+    }
+  ]
+}

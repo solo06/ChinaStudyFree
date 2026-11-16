@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 3 Sit down, please 课堂指令",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "第3单元「Module 3 Sit down, please 课堂指令」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "教室物品 desk / chair / window / door",
+        "question": "「窗户」的英文是（　）",
+        "options": [
+          "windo",
+          "windows",
+          "window",
+          "widow"
+        ],
+        "answer": "window",
+        "explanation": "window = 窗户。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "教室物品 desk / chair / window / door",
+        "question": "「门」的英文是（　）",
+        "options": [
+          "door",
+          "doll",
+          "dore",
+          "dour"
+        ],
+        "answer": "door",
+        "explanation": "door = 门。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "指令动词 sit / stand / open / point",
+        "question": "「请起立。」的英文是（　）",
+        "options": [
+          "Stand up, please.",
+          "Sit down, please.",
+          "Stand please up.",
+          "Up stand, please."
+        ],
+        "answer": "Stand up, please.",
+        "explanation": "stand up 起立。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "指令动词 sit / stand / open / point",
+        "question": "Point to the door. 的意思是「指向门」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "point to 指向。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "指令动词 sit / stand / open / point",
+      "core_concept": "Sit down, please. 请坐。Stand up, please. 请起立。Open the window. 打开窗户。Point to the door. 指向门。",
+      "key_formula": "Sit down / Stand up / Open the door / Point to the desk",
+      "common_mistakes": [
+        "Point the door（漏 to）。"
+      ],
+      "tips": "point to 是固定搭配。"
+    },
+    {
+      "point": "教室物品 desk / chair / window / door",
+      "core_concept": "desk 书桌、chair 椅子、window 窗户、door 门。",
+      "key_formula": "desk / chair / window / door",
+      "common_mistakes": [
+        "door 与 doll 混。"
+      ],
+      "tips": "door 门，doll 娃娃。"
+    }
+  ]
+}

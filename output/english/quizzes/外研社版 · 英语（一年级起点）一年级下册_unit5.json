@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Module 5 They're cows 农场动物",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "第5单元「Module 5 They're cows 农场动物」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "农场动物 cow / pig / duck / chicken / farm",
+        "question": "「奶牛」的英文是（　）",
+        "options": [
+          "cows",
+          "cow",
+          "coo",
+          "caw"
+        ],
+        "answer": "cow",
+        "explanation": "cow = 奶牛。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "农场动物 cow / pig / duck / chicken / farm",
+        "question": "「鸭子」的英文是（　）",
+        "options": [
+          "duck",
+          "duk",
+          "dark",
+          "dock"
+        ],
+        "answer": "duck",
+        "explanation": "duck = 鸭子。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "They're … / 形容词 big / small / fat / thin",
+        "question": "它们是奶牛，应说（　）",
+        "options": [
+          "They're cows.",
+          "They're cow.",
+          "It's cows.",
+          "They is cows."
+        ],
+        "answer": "They're cows.",
+        "explanation": "复数用 they're。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "They're … / 形容词 big / small / fat / thin",
+        "question": "fat 的意思是「胖的」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "fat = 胖。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "农场动物 cow / pig / duck / chicken / farm",
+      "core_concept": "cow 奶牛、pig 猪、duck 鸭子、chicken 鸡、farm 农场、egg 鸡蛋。",
+      "key_formula": "cow / pig / duck / chicken / farm",
+      "common_mistakes": [
+        "chicken 既可指鸡也可指鸡肉。"
+      ],
+      "tips": "一词两义。"
+    },
+    {
+      "point": "They're … / 形容词 big / small / fat / thin",
+      "core_concept": "They're cows. 它们是奶牛。very 很、big 大的、little 小的、fat 胖的、thin 瘦的。",
+      "key_formula": "They're + 复数名词. / It's very fat.",
+      "common_mistakes": [
+        "They're cow（漏复数）。"
+      ],
+      "tips": "they're 后跟复数。"
+    }
+  ]
+}

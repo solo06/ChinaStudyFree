@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 9 Happy birthday! 生日与年龄",
+  "unit_number": 9,
+  "unit_test": {
+    "title": "第9单元「Module 9 Happy birthday! 生日与年龄」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "询问年龄 How old are you?",
+        "question": "「你几岁了？」的英文是（　）",
+        "options": [
+          "How old are you?",
+          "How are you old?",
+          "How old you are?",
+          "What old are you?"
+        ],
+        "answer": "How old are you?",
+        "explanation": "How old…?"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "生日祝福 Happy birthday!",
+        "question": "「生日」的英文是（　）",
+        "options": [
+          "birthday",
+          "birthay",
+          "brithday",
+          "birtday"
+        ],
+        "answer": "birthday",
+        "explanation": "birthday = 生日。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "生日祝福 Happy birthday!",
+        "question": "别人祝你生日快乐，你应说（　）",
+        "options": [
+          "Thank you.",
+          "Happy birthday.",
+          "You're welcome.",
+          "I'm nine."
+        ],
+        "answer": "Thank you.",
+        "explanation": "收到祝福道谢。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "生日祝福 Happy birthday!",
+        "question": "You're welcome! 的意思是「不客气」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "回应感谢。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "询问年龄 How old are you?",
+      "core_concept": "How old are you? 你几岁？I'm nine. 我九岁。",
+      "key_formula": "How old are you? — I'm + 数字.",
+      "common_mistakes": [
+        "How old you are?（语序错）"
+      ],
+      "tips": "疑问句 are 提前。"
+    },
+    {
+      "point": "生日祝福 Happy birthday!",
+      "core_concept": "Happy birthday! 生日快乐！Thank you. 谢谢。You're welcome! 不客气！too 也。",
+      "key_formula": "Happy birthday! — Thank you. / You're welcome.",
+      "common_mistakes": [
+        "回答祝福说 You're welcome（错，那是回应感谢）。"
+      ],
+      "tips": "收到祝福答 Thank you。"
+    }
+  ]
+}

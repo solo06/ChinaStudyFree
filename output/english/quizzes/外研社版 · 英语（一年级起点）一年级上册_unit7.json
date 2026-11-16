@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 7 Is it a monkey? 这是猴子吗",
+  "unit_number": 7,
+  "unit_test": {
+    "title": "第7单元「Module 7 Is it a monkey? 这是猴子吗」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "动物与物品 monkey / monster / kite / house / box",
+        "question": "「风筝」的英文是（　）",
+        "options": [
+          "kite",
+          "kit",
+          "kate",
+          "kight"
+        ],
+        "answer": "kite",
+        "explanation": "kite = 风筝。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "动物与物品 monkey / monster / kite / house / box",
+        "question": "「房子」的英文是（　）",
+        "options": [
+          "horse",
+          "haus",
+          "hous",
+          "house"
+        ],
+        "answer": "house",
+        "explanation": "house = 房子。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "一般疑问句 Is it a …?",
+        "question": "— Is it a monkey? — ___（不是）",
+        "options": [
+          "No, it isn't.",
+          "No, it is.",
+          "No, it not.",
+          "No, it don't."
+        ],
+        "answer": "No, it isn't.",
+        "explanation": "否定答 isn't。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "一般疑问句 Is it a …?",
+        "question": "「Is it a kite?」是在问「它是风筝吗」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "一般疑问句。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "一般疑问句 Is it a …?",
+      "core_concept": "Is it a monkey? 它是猴子吗？Yes, it is. / No, it isn't. isn't = is not。",
+      "key_formula": "Is it a + 名词? — Yes, it is. / No, it isn't.",
+      "common_mistakes": [
+        "回答 Yes, it's.（×）"
+      ],
+      "tips": "简答不说 it's。"
+    },
+    {
+      "point": "动物与物品 monkey / monster / kite / house / box",
+      "core_concept": "monkey 猴子、monster 怪物、kite 风筝、house 房子、box 盒子。new 新的。",
+      "key_formula": "monkey / monster / kite / house / box",
+      "common_mistakes": [
+        "kite 与 cat 混。"
+      ],
+      "tips": "kite 风筝。"
+    }
+  ]
+}

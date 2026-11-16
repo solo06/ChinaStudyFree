@@ -1,0 +1,123 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Unit 4 Food 食物",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第4单元「Unit 4 Food 食物」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "食物词汇 rice / noodles / vegetable / fish / chicken / egg",
+        "question": "「米饭」的英文是（　）",
+        "options": [
+          "rice",
+          "rise",
+          "race",
+          "ice"
+        ],
+        "answer": "rice",
+        "explanation": "rice = 米饭。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "食物词汇 rice / noodles / vegetable / fish / chicken / egg",
+        "question": "「鸡蛋」的英文是（　）",
+        "options": [
+          "agg",
+          "egg",
+          "eg",
+          "edge"
+        ],
+        "answer": "egg",
+        "explanation": "egg = 鸡蛋。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "食物词汇 rice / noodles / vegetable / fish / chicken / egg",
+        "question": "「蔬菜」的英文是（　）",
+        "options": [
+          "vegtable",
+          "vegatables",
+          "vegetables",
+          "vegetable"
+        ],
+        "answer": "vegetable",
+        "explanation": "vegetable = 蔬菜。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "I'm hungry. I want …",
+        "question": "「我饿了。」的英文是（　）",
+        "options": [
+          "I'm hungry.",
+          "I'm thirsty.",
+          "I'm happy.",
+          "I'm hungry food."
+        ],
+        "answer": "I'm hungry.",
+        "explanation": "hungry = 饿；thirsty = 渴。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "I'm hungry. I want …",
+        "question": "「我想要一些面条。」的英文是（　）",
+        "options": [
+          "I want some noodles.",
+          "I want some noodle.",
+          "I want eat noodles.",
+          "I wants some noodles."
+        ],
+        "answer": "I want some noodles.",
+        "explanation": "some + 复数。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "食物词汇 rice / noodles / vegetable / fish / chicken / egg",
+        "question": "chicken 既是「鸡」也是「鸡肉」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "一词两义。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "食物词汇 rice / noodles / vegetable / fish / chicken / egg",
+      "core_concept": "rice 米饭、noodles 面条、vegetable 蔬菜、fish 鱼、chicken 鸡肉、egg 鸡蛋。noodles 常用复数。",
+      "key_formula": "rice / noodles / vegetable / fish / chicken / egg",
+      "common_mistakes": [
+        "noodle 当单数（一般说 noodles）。"
+      ],
+      "tips": "面条成条，常用复数。"
+    },
+    {
+      "point": "I'm hungry. I want …",
+      "core_concept": "I'm hungry. 我饿了。I want some rice. 我想要一些米饭。and 表示并列：fish and rice。",
+      "key_formula": "I'm hungry. I want some + 食物.",
+      "common_mistakes": [
+        "I want eat rice.（×）"
+      ],
+      "tips": "want 后面直接跟名词。"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Module 4 These are your eyes 身体部位",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第4单元「Module 4 These are your eyes 身体部位」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "身体部位 head / face / eye / ear / mouth / nose / hand / leg / feet",
+        "question": "「头」的英文是（　）",
+        "options": [
+          "head",
+          "hand",
+          "hard",
+          "hed"
+        ],
+        "answer": "head",
+        "explanation": "head = 头。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "身体部位 head / face / eye / ear / mouth / nose / hand / leg / feet",
+        "question": "「手」的英文是（　）",
+        "options": [
+          "hand",
+          "head",
+          "hend",
+          "had"
+        ],
+        "answer": "hand",
+        "explanation": "hand = 手。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "These are … / Touch your …",
+        "question": "「这些是你的眼睛。」的英文是（　）",
+        "options": [
+          "These are your eyes.",
+          "This is your eyes.",
+          "These is your eyes.",
+          "These your eyes are."
+        ],
+        "answer": "These are your eyes.",
+        "explanation": "these + are。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "These are … / Touch your …",
+        "question": "feet 是 foot 的复数。",
+        "options": [],
+        "answer": "对",
+        "explanation": "不规则复数。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "身体部位 head / face / eye / ear / mouth / nose / hand / leg / feet",
+      "core_concept": "head 头、face 脸、eye 眼睛、ear 耳朵、mouth 嘴、nose 鼻子、hand 手、leg 腿、feet 脚（foot 的复数）。",
+      "key_formula": "head / face / eye / ear / mouth / nose / hand / leg / feet",
+      "common_mistakes": [
+        "foot 的复数写成 foots。"
+      ],
+      "tips": "foot → feet。"
+    },
+    {
+      "point": "These are … / Touch your …",
+      "core_concept": "These are your eyes. 这些是你的眼睛。Touch your nose. 摸摸鼻子。these 是 this 的复数。",
+      "key_formula": "These are your + 复数名词.",
+      "common_mistakes": [
+        "These is your eyes（×）。"
+      ],
+      "tips": "these 配 are。"
+    }
+  ]
+}

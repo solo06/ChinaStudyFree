@@ -1,0 +1,107 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Unit 3 Seasons 季节",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "第3单元「Unit 3 Seasons 季节」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "季节词汇 spring / summer / autumn / winter",
+        "question": "「春天」的英文是（　）",
+        "options": [
+          "sping",
+          "springs",
+          "spring",
+          "sprig"
+        ],
+        "answer": "spring",
+        "explanation": "spring = 春天。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "季节词汇 spring / summer / autumn / winter",
+        "question": "「冬天」的英文是（　）",
+        "options": [
+          "wintr",
+          "winder",
+          "winter",
+          "winer"
+        ],
+        "answer": "winter",
+        "explanation": "winter = 冬天。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "冷热形容词 hot / warm / cool / cold",
+        "question": "「夏天很热。」的英文是（　）",
+        "options": [
+          "It's hot in summer.",
+          "It hot in summer.",
+          "It's hot on summer.",
+          "It's heat in summer."
+        ],
+        "answer": "It's hot in summer.",
+        "explanation": "in + 季节。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "冷热形容词 hot / warm / cool / cold",
+        "question": "「凉爽的」的英文是（　）",
+        "options": [
+          "cool",
+          "cold",
+          "warm",
+          "hot"
+        ],
+        "answer": "cool",
+        "explanation": "cool = 凉爽。"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "季节词汇 spring / summer / autumn / winter",
+        "question": "一年有四个季节。",
+        "options": [],
+        "answer": "对",
+        "explanation": "四季。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "季节词汇 spring / summer / autumn / winter",
+      "core_concept": "spring 春、summer 夏、autumn 秋、winter 冬。一年四季 four seasons。",
+      "key_formula": "spring / summer / autumn / winter",
+      "common_mistakes": [
+        "autumn 拼成 autum。"
+      ],
+      "tips": "autumn 结尾有 n。"
+    },
+    {
+      "point": "冷热形容词 hot / warm / cool / cold",
+      "core_concept": "hot 炎热、warm 温暖、cool 凉爽、cold 寒冷。夏天 hot，冬天 cold。",
+      "key_formula": "It's hot in summer. / It's cold in winter.",
+      "common_mistakes": [
+        "cool 与 cold 混。"
+      ],
+      "tips": "cool 凉爽，cold 寒冷。"
+    }
+  ]
+}

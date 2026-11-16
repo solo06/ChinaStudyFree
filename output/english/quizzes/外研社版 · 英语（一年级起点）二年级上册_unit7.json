@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Module 7 We have a picnic 出行方式",
+  "unit_number": 7,
+  "unit_test": {
+    "title": "第7单元「Module 7 We have a picnic 出行方式」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "交通工具 train / bus / ship / plane / bike",
+        "question": "「火车」的英文是（　）",
+        "options": [
+          "trian",
+          "trane",
+          "trein",
+          "train"
+        ],
+        "answer": "train",
+        "explanation": "train = 火车。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "交通工具 train / bus / ship / plane / bike",
+        "question": "「轮船」的英文是（　）",
+        "options": [
+          "ship",
+          "sheep",
+          "ships",
+          "chip"
+        ],
+        "answer": "ship",
+        "explanation": "ship = 轮船。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "交通工具 train / bus / ship / plane / bike",
+        "question": "「坐公共汽车」的英文是（　）",
+        "options": [
+          "by bus",
+          "by a bus",
+          "in bus",
+          "on the bus by"
+        ],
+        "answer": "by bus",
+        "explanation": "by + 交通工具。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "go to work / on holiday",
+        "question": "on holiday 的意思是「度假」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "on holiday。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "交通工具 train / bus / ship / plane / bike",
+      "core_concept": "train 火车、bus 公共汽车、ship 轮船、plane 飞机、bike 自行车。by 乘、坐。",
+      "key_formula": "by train / by bus / by plane",
+      "common_mistakes": [
+        "by a bus（×）。"
+      ],
+      "tips": "by + 交通工具，不加 a/the。"
+    },
+    {
+      "point": "go to work / on holiday",
+      "core_concept": "go to work 去上班、on holiday 度假、walk 步行、love 喜爱、then 然后。",
+      "key_formula": "I go to work by bus.",
+      "common_mistakes": [
+        "go to work by foot（×）"
+      ],
+      "tips": "步行说 on foot 或 walk。"
+    }
+  ]
+}

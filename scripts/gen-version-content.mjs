@@ -1345,6 +1345,1195 @@ writeBook(M, "浙教版 · 数学七年级上册", "七年级上册", [
   ]),
 ]);
 
+// ══════════════════════ 一年级 / 二年级英语（人教一年级起点）══════════════════════
+// 依据人教版《义务教育教科书·英语（一年级起点）》一上、一下、二上、二下 目录与单元词汇表编排。
+// 一个单元一对知识卡（词汇 + 句型），题目以单词识记 + 目标句型为主。
+
+const rot = (arr, k) => arr.slice(k % arr.length).concat(arr.slice(0, k % arr.length));
+/** 词汇识记题：正确项位置按词长轮转，避免答案永远在第一位 */
+const vq = (kp, d, zh, word, wrongs) =>
+  ch(kp, d, `「${zh}」的英文是（　）`, rot([word, ...wrongs], word.length), word, `${word} = ${zh}。`);
+const tfq = (kp, d, q, a, e) => tf(kp, d, q, a, e);
+
+// —— 一年级上册：Unit 1 School / 2 Face / 3 Animals / 4 Numbers / 5 Colours / 6 Fruit ——
+writeBook(E, "人教版（一年级起点）· 英语一年级上册", "一年级上册", [
+  unit(1, "Unit 1 School 学校与文具", [
+    { name: "文具与人物词汇", desc: "认识 book / ruler / pencil / schoolbag / teacher。", d: 1,
+      core: "book 书、ruler 尺子、pencil 铅笔、schoolbag 书包、teacher 老师。这些都是教室里最常见的词。",
+      formula: "book / ruler / pencil / schoolbag / teacher", mistakes: ["pencil 与 pen 混淆（pen 是钢笔）。"], tips: "pencil 铅笔，pen 钢笔。" },
+    { name: "I have a … / Show me your …", desc: "会用 have 表达「我有」，听懂课堂指令。", d: 1,
+      core: "I have a pencil. 我有一支铅笔。Show me your ruler. 给我看看你的尺子。Stand up. 起立。Sit down. 请坐。",
+      formula: "I have a + 物品.", mistakes: ["a 与 an 混用（an 用在元音音素前）。"], tips: "I have a book. / I have an apple." },
+  ], [
+    vq("文具与人物词汇", 1, "书", "book", ["look", "cook", "box"]),
+    vq("文具与人物词汇", 1, "尺子", "ruler", ["rule", "ruller", "rubber"]),
+    vq("文具与人物词汇", 1, "铅笔", "pencil", ["pen", "pencel", "pensil"]),
+    ch("I have a … / Show me your …", 1, "「我有一本书。」的英文是（　）", ["I have a book.", "I has a book.", "I have book.", "I am a book."], "I have a book.", "I + have + a + 物品。"),
+    ch("I have a … / Show me your …", 1, "「给我看看你的书包。」的英文是（　）", ["Show me your schoolbag.", "Show your me schoolbag.", "Show me you schoolbag.", "Show me your bag school."], "Show me your schoolbag.", "Show me your + 物品。"),
+    tfq("文具与人物词汇", 1, "teacher 的意思是「老师」。", "对", "teacher = 老师。"),
+  ], [
+    vq("文具与人物词汇", 1, "书包", "schoolbag", ["school", "bagbook", "schools"]),
+    ch("I have a … / Show me your …", 1, "老师请同学坐下，应说（　）", ["Sit down, please.", "Stand up, please.", "Sit up, please.", "Down sit, please."], "Sit down, please.", "sit down 坐下。"),
+    tfq("I have a … / Show me your …", 1, "「I have a ruler.」的意思是「我有一把尺子」。", "对", "have 表示「有」。"),
+  ]),
+
+  unit(2, "Unit 2 Face 我的脸", [
+    { name: "五官词汇 eye / nose / mouth / ear / face", desc: "认识五个五官单词。", d: 1,
+      core: "eye 眼睛、nose 鼻子、mouth 嘴、ear 耳朵、face 脸。eye 和 ear 常用复数 eyes / ears（成对）。",
+      formula: "eye / nose / mouth / ear / face", mistakes: ["把 mouth 读成 mouse（老鼠）。"], tips: "mouth 嘴，mouse 老鼠，别混。" },
+    { name: "This is my … / Touch your …", desc: "会介绍自己的五官，听懂身体指令。", d: 1,
+      core: "This is my nose. 这是我的鼻子。Touch your mouth. 摸摸你的嘴。",
+      formula: "This is my + 身体部位.", mistakes: ["用 This is me nose（×）。"], tips: "my 后面直接跟名词。" },
+  ], [
+    vq("五官词汇 eye / nose / mouth / ear / face", 1, "眼睛", "eye", ["ear", "ice", "yes"]),
+    vq("五官词汇 eye / nose / mouth / ear / face", 1, "鼻子", "nose", ["no", "note", "rose"]),
+    vq("五官词汇 eye / nose / mouth / ear / face", 1, "嘴", "mouth", ["mouse", "month", "moth"]),
+    ch("This is my … / Touch your …", 1, "「这是我的耳朵。」的英文是（　）", ["This is my ear.", "This is my eyes.", "This are my ear.", "This my ear is."], "This is my ear.", "单数用 This is my…"),
+    ch("This is my … / Touch your …", 1, "「摸摸你的脸。」的英文是（　）", ["Touch your face.", "Touch you face.", "Touch your faces.", "Touching your face."], "Touch your face.", "指令用动词原形开头。"),
+    tfq("五官词汇 eye / nose / mouth / ear / face", 1, "face 的意思是「脸」。", "对", "face = 脸。"),
+  ], [
+    vq("五官词汇 eye / nose / mouth / ear / face", 1, "耳朵", "ear", ["eye", "air", "hear"]),
+    ch("This is my … / Touch your …", 1, "— Touch your nose. — ___（照做并说明）", ["This is my nose.", "This is my ear.", "Touch my nose.", "My nose is touch."], "This is my nose.", "照做后可说 This is my…"),
+    tfq("This is my … / Touch your …", 1, "「Touch your eyes.」是让学生摸眼睛。", "对", "touch = 触摸。"),
+  ]),
+
+  unit(3, "Unit 3 Animals 动物园里", [
+    { name: "动物词汇 bird / tiger / monkey / dog / cat", desc: "认识五种动物。", d: 1,
+      core: "bird 鸟、tiger 老虎、monkey 猴子、dog 狗、cat 猫。复数一般直接加 -s：birds / tigers / dogs / cats。",
+      formula: "bird / tiger / monkey / dog / cat", mistakes: ["monkey 复数写成 monkeyes。"], tips: "辅音字母 + y 结尾才变 ies，monkey 直接加 s。" },
+    { name: "What's this? — It's a …", desc: "会问「这是什么」并回答。", d: 1,
+      core: "What's this? 这是什么？It's a tiger. 它是一只老虎。指远处用 What's that?",
+      formula: "What's this? — It's a + 动物.", mistakes: ["回答用 This is a tiger.（不自然）"], tips: "问 this 答 it。" },
+  ], [
+    vq("动物词汇 bird / tiger / monkey / dog / cat", 1, "鸟", "bird", ["board", "bread", "bear"]),
+    vq("动物词汇 bird / tiger / monkey / dog / cat", 1, "老虎", "tiger", ["tigger", "tigar", "target"]),
+    vq("动物词汇 bird / tiger / monkey / dog / cat", 1, "猴子", "monkey", ["monk", "moneky", "monday"]),
+    ch("What's this? — It's a …", 1, "— What's this? — ___（一只猫）", ["It's a cat.", "This is cat.", "It's cat a.", "It a cat."], "It's a cat.", "It's a + 名词。"),
+    ch("What's this? — It's a …", 1, "「它是一只狗。」的英文是（　）", ["It's a dog.", "It's dog.", "It a dog.", "This a dog."], "It's a dog.", "It's = It is。"),
+    tfq("动物词汇 bird / tiger / monkey / dog / cat", 1, "cat 的复数是 cats。", "对", "一般加 -s。"),
+  ], [
+    vq("动物词汇 bird / tiger / monkey / dog / cat", 1, "狗", "dog", ["dig", "dot", "god"]),
+    ch("What's this? — It's a …", 1, "问近处的东西「这是什么」，应说（　）", ["What's this?", "What's that?", "Who's this?", "Where's this?"], "What's this?", "近处用 this。"),
+    tfq("What's this? — It's a …", 1, "「What's that?」问的是远处的东西。", "对", "that 指远处。"),
+  ]),
+
+  unit(4, "Unit 4 Numbers 数字 1—10", [
+    { name: "数字 one—ten", desc: "会读会写 1—10 的英文。", d: 1,
+      core: "one 1、two 2、three 3、four 4、five 5、six 6、seven 7、eight 8、nine 9、ten 10。注意 three 的 th 音、five 结尾的 v。",
+      formula: "one, two, three, four, five, six, seven, eight, nine, ten", mistakes: ["three 写成 tree（树）。"], tips: "three 三，tree 树。" },
+    { name: "How many … are there?", desc: "会问数量并回答。", d: 1,
+      core: "How many tigers are there? 有几只老虎？Five. 五只。How many 后面跟可数名词复数。",
+      formula: "How many + 复数名词 + are there? — 数字.", mistakes: ["How many tiger（×，要用复数）。"], tips: "How many 后必用复数。" },
+  ], [
+    vq("数字 one—ten", 1, "三", "three", ["tree", "there", "the"]),
+    vq("数字 one—ten", 1, "五", "five", ["four", "fine", "fifth"]),
+    vq("数字 one—ten", 1, "九", "nine", ["nin", "night", "ninth"]),
+    ch("How many … are there?", 1, "「有几只鸟？」的英文是（　）", ["How many birds are there?", "How many bird are there?", "How much birds are there?", "How many birds there are?"], "How many birds are there?", "How many + 复数。"),
+    ch("数字 one—ten", 1, "eight 表示数字（　）", ["8", "6", "9", "18"], "8", "eight = 8。"),
+    tfq("数字 one—ten", 1, "ten 的意思是 10。", "对", "ten = 10。"),
+  ], [
+    vq("数字 one—ten", 1, "七", "seven", ["eleven", "siven", "sever"]),
+    ch("How many … are there?", 1, "— How many cats are there? — ___（四只）", ["Four.", "Four cats is.", "There four.", "It's four cats."], "Four.", "直接答数字即可。"),
+    tfq("How many … are there?", 1, "How many 后面要用名词复数。", "对", "How many + 复数。"),
+  ]),
+
+  unit(5, "Unit 5 Colours 颜色", [
+    { name: "颜色词汇 red / blue / green / yellow / black", desc: "认识五种颜色。", d: 1,
+      core: "red 红、blue 蓝、green 绿、yellow 黄、black 黑。颜色词可以放在名词前：a red apple。",
+      formula: "red / blue / green / yellow / black", mistakes: ["green 写成 gree。"], tips: "green 有两个 e。" },
+    { name: "What colour is it? — It's …", desc: "会问颜色并回答。", d: 1,
+      core: "What colour is it? 它是什么颜色？It's yellow. 它是黄色的。",
+      formula: "What colour is it? — It's + 颜色.", mistakes: ["回答漏掉 It's。"], tips: "问 colour 答颜色词。" },
+  ], [
+    vq("颜色词汇 red / blue / green / yellow / black", 1, "红色", "red", ["read", "bed", "rid"]),
+    vq("颜色词汇 red / blue / green / yellow / black", 1, "蓝色", "blue", ["blow", "blew", "bule"]),
+    vq("颜色词汇 red / blue / green / yellow / black", 1, "绿色", "green", ["gren", "grain", "greeen"]),
+    ch("What colour is it? — It's …", 1, "— What colour is it? — ___（黄色）", ["It's yellow.", "It yellow.", "It's a yellow.", "Yellow it is."], "It's yellow.", "It's + 颜色。"),
+    ch("颜色词汇 red / blue / green / yellow / black", 1, "a ___ apple（红苹果）", ["red", "read", "blue", "green"], "red", "red 红色。"),
+    tfq("What colour is it? — It's …", 1, "「What colour is it?」是问颜色的句型。", "对", "colour = 颜色。"),
+  ], [
+    vq("颜色词汇 red / blue / green / yellow / black", 1, "黑色", "black", ["blak", "back", "block"]),
+    ch("What colour is it? — It's …", 1, "「它是黑色的。」的英文是（　）", ["It's black.", "It's a black.", "It black.", "It's black colour."], "It's black.", "It's + 颜色词。"),
+    tfq("颜色词汇 red / blue / green / yellow / black", 1, "yellow 的意思是「黄色」。", "对", "yellow = 黄色。"),
+  ]),
+
+  unit(6, "Unit 6 Fruit 水果", [
+    { name: "水果词汇 apple / orange / banana / pear", desc: "认识四种水果。", d: 1,
+      core: "apple 苹果、orange 橙子、banana 香蕉、pear 梨。apple 和 orange 前用 an：an apple / an orange。",
+      formula: "apple / orange / banana / pear", mistakes: ["a apple（×）。"], tips: "元音音素前用 an。" },
+    { name: "Do you like …? — Yes, I do. / No, I don't.", desc: "会问喜好并回答。", d: 1,
+      core: "Do you like bananas? 你喜欢香蕉吗？Yes, I do. / No, I don't. 喜欢说 Yes, I do.，不喜欢说 No, I don't.",
+      formula: "Do you like + 复数名词? — Yes, I do. / No, I don't.", mistakes: ["回答用 Yes, I like.（×）"], tips: "Do 问 Do 答。" },
+  ], [
+    vq("水果词汇 apple / orange / banana / pear", 1, "苹果", "apple", ["apply", "appel", "aple"]),
+    vq("水果词汇 apple / orange / banana / pear", 1, "香蕉", "banana", ["bananna", "banan", "banaba"]),
+    vq("水果词汇 apple / orange / banana / pear", 1, "梨", "pear", ["bear", "peer", "peal"]),
+    ch("Do you like …? — Yes, I do. / No, I don't.", 1, "— Do you like apples? — ___（喜欢）", ["Yes, I do.", "Yes, I like.", "Yes, I am.", "Yes, I like it."], "Yes, I do.", "Do 问 Do 答。"),
+    ch("水果词汇 apple / orange / banana / pear", 1, "「一个橙子」的英文是（　）", ["an orange", "a orange", "an oranges", "a apple"], "an orange", "元音音素前用 an。"),
+    tfq("Do you like …? — Yes, I do. / No, I don't.", 1, "「No, I don't.」表示不喜欢。", "对", "don't = do not。"),
+  ], [
+    vq("水果词汇 apple / orange / banana / pear", 1, "橙子", "orange", ["orenge", "oranges", "orage"]),
+    ch("Do you like …? — Yes, I do. / No, I don't.", 1, "「我不喜欢梨。」的英文是（　）", ["I don't like pears.", "I not like pears.", "I don't likes pears.", "I no like pear."], "I don't like pears.", "否定用 don't + 原形。"),
+    tfq("水果词汇 apple / orange / banana / pear", 1, "banana 的复数是 bananas。", "对", "一般加 -s。"),
+  ]),
+]);
+
+// —— 一年级下册：Unit 1 Classroom / 2 Room / 3 Toys / 4 Food / 5 Drink / 6 Clothes ——
+writeBook(E, "人教版（一年级起点）· 英语一年级下册", "一年级下册", [
+  unit(1, "Unit 1 Classroom 教室与方位", [
+    { name: "教室物品 chair / desk / blackboard", desc: "认识教室里的物品。", d: 1,
+      core: "chair 椅子、desk 书桌、blackboard 黑板。chair 和 desk 都在教室里，blackboard 是老师写字的地方。",
+      formula: "chair / desk / blackboard", mistakes: ["desk 与 table 混用（table 一般指餐桌）。"], tips: "书桌说 desk，餐桌说 table。" },
+    { name: "方位介词 in / on / under", desc: "会用 in / on / under 说位置。", d: 1,
+      core: "on 在……上面、in 在……里面、under 在……下面。The book is on the desk. 书在桌子上。",
+      formula: "Where is the …? — It's on / in / under the …", mistakes: ["on 与 in 互换。"], tips: "上面 on、里面 in、下面 under。" },
+  ], [
+    vq("教室物品 chair / desk / blackboard", 1, "椅子", "chair", ["hair", "cheer", "chare"]),
+    vq("教室物品 chair / desk / blackboard", 1, "黑板", "blackboard", ["blackbord", "board", "blackbird"]),
+    ch("方位介词 in / on / under", 1, "书在桌子上，应说（　）", ["The book is on the desk.", "The book is in the desk.", "The book is under the desk.", "The book on desk is."], "The book is on the desk.", "上面用 on。"),
+    ch("方位介词 in / on / under", 1, "「猫在椅子下面。」的英文是（　）", ["The cat is under the chair.", "The cat is on the chair.", "The cat is in the chair.", "The cat under chair."], "The cat is under the chair.", "下面用 under。"),
+    tfq("方位介词 in / on / under", 1, "in 表示「在……里面」。", "对", "in = 在里面。"),
+  ], [
+    vq("教室物品 chair / desk / blackboard", 1, "书桌", "desk", ["disk", "deck", "dsek"]),
+    ch("方位介词 in / on / under", 1, "「铅笔在书包里。」的英文是（　）", ["The pencil is in the schoolbag.", "The pencil is on the schoolbag.", "The pencil is under the schoolbag.", "The pencil in schoolbag."], "The pencil is in the schoolbag.", "里面用 in。"),
+    tfq("教室物品 chair / desk / blackboard", 1, "blackboard 是「黑板」。", "对", "black + board。"),
+  ]),
+
+  unit(2, "Unit 2 Room 我的房间", [
+    { name: "房间物品 light / bed / door / box", desc: "认识房间里的物品。", d: 1,
+      core: "light 灯、bed 床、door 门、box 箱子。bed 是睡觉的地方，box 可以装玩具。",
+      formula: "light / bed / door / box", mistakes: ["把 light 当成「轻的」（一词多义）。"], tips: "light 既是灯也是「轻的」。" },
+    { name: "方位介词 near / behind", desc: "会用 near / behind 说位置。", d: 1,
+      core: "near 靠近、behind 在……后面。The box is behind the door. 箱子在门后面。",
+      formula: "It's near / behind the …", mistakes: ["behind 拼成 behine。"], tips: "be + hind。" },
+  ], [
+    vq("房间物品 light / bed / door / box", 1, "床", "bed", ["bad", "bead", "bird"]),
+    vq("房间物品 light / bed / door / box", 1, "门", "door", ["doll", "doer", "dore"]),
+    ch("方位介词 near / behind", 1, "「球在门后面。」的英文是（　）", ["The ball is behind the door.", "The ball is near the door.", "The ball is on the door.", "The ball behind door."], "The ball is behind the door.", "后面用 behind。"),
+    ch("方位介词 near / behind", 1, "near 的意思是（　）", ["靠近", "在下面", "在里面", "在后面"], "靠近", "near = 靠近。"),
+    tfq("房间物品 light / bed / door / box", 1, "box 的意思是「箱子」。", "对", "box = 箱子。"),
+  ], [
+    vq("房间物品 light / bed / door / box", 1, "灯", "light", ["night", "lite", "lightt"]),
+    ch("方位介词 near / behind", 1, "「椅子在床旁边。」的英文是（　）", ["The chair is near the bed.", "The chair is behind the bed.", "The chair is under the bed.", "The chair near bed."], "The chair is near the bed.", "靠近用 near。"),
+    tfq("方位介词 near / behind", 1, "behind 表示「在……后面」。", "对", "behind = 在后面。"),
+  ]),
+
+  unit(3, "Unit 3 Toys 玩具", [
+    { name: "玩具词汇 plane / ball / doll / train / car / bear", desc: "认识六种玩具。", d: 1,
+      core: "plane 飞机、ball 球、doll 洋娃娃、train 火车、car 小汽车、bear 玩具熊。",
+      formula: "plane / ball / doll / train / car / bear", mistakes: ["plane 与 planet（行星）混。"], tips: "plane 飞机。" },
+    { name: "Can I …? — Sure. / Sorry.", desc: "会用英语借玩具。", d: 1,
+      core: "Can I play with your ball? 我可以玩你的球吗？Sure. 当然可以。Sorry. 抱歉（不方便）。",
+      formula: "Can I play with your …? — Sure. / Sorry.", mistakes: ["用 Give me your ball.（不礼貌）"], tips: "请求用 Can I…? 更礼貌。" },
+  ], [
+    vq("玩具词汇 plane / ball / doll / train / car / bear", 1, "球", "ball", ["bell", "bull", "bal"]),
+    vq("玩具词汇 plane / ball / doll / train / car / bear", 1, "洋娃娃", "doll", ["dole", "dolls", "dol"]),
+    vq("玩具词汇 plane / ball / doll / train / car / bear", 1, "飞机", "plane", ["plan", "plant", "plain"]),
+    ch("Can I …? — Sure. / Sorry.", 1, "想借别人的玩具，最礼貌的说法是（　）", ["Can I play with your ball?", "Give me your ball.", "I play your ball.", "Your ball, please give."], "Can I play with your ball?", "Can I…? 表示请求。"),
+    ch("Can I …? — Sure. / Sorry.", 1, "同意对方的请求，应说（　）", ["Sure.", "Sorry.", "No, I can't.", "Thank you."], "Sure.", "Sure = 当然可以。"),
+    tfq("玩具词汇 plane / ball / doll / train / car / bear", 1, "train 的意思是「火车」。", "对", "train = 火车。"),
+  ], [
+    vq("玩具词汇 plane / ball / doll / train / car / bear", 1, "小汽车", "car", ["cat", "card", "care"]),
+    ch("Can I …? — Sure. / Sorry.", 1, "不能把玩具借给别人时，应说（　）", ["Sorry.", "Sure.", "Here you are.", "Yes, please."], "Sorry.", "Sorry 表示抱歉。"),
+    tfq("Can I …? — Sure. / Sorry.", 1, "「Can I…?」可以用来提出请求。", "对", "表请求。"),
+  ]),
+
+  unit(4, "Unit 4 Food 食物", [
+    { name: "食物词汇 rice / noodles / vegetable / fish / chicken / egg", desc: "认识常见食物。", d: 1,
+      core: "rice 米饭、noodles 面条、vegetable 蔬菜、fish 鱼、chicken 鸡肉、egg 鸡蛋。noodles 常用复数。",
+      formula: "rice / noodles / vegetable / fish / chicken / egg", mistakes: ["noodle 当单数（一般说 noodles）。"], tips: "面条成条，常用复数。" },
+    { name: "I'm hungry. I want …", desc: "会表达饥饿和想要什么。", d: 1,
+      core: "I'm hungry. 我饿了。I want some rice. 我想要一些米饭。and 表示并列：fish and rice。",
+      formula: "I'm hungry. I want some + 食物.", mistakes: ["I want eat rice.（×）"], tips: "want 后面直接跟名词。" },
+  ], [
+    vq("食物词汇 rice / noodles / vegetable / fish / chicken / egg", 1, "米饭", "rice", ["rise", "race", "ice"]),
+    vq("食物词汇 rice / noodles / vegetable / fish / chicken / egg", 1, "鸡蛋", "egg", ["eg", "edge", "agg"]),
+    vq("食物词汇 rice / noodles / vegetable / fish / chicken / egg", 1, "蔬菜", "vegetable", ["vegtable", "vegatables", "vegetables"]),
+    ch("I'm hungry. I want …", 1, "「我饿了。」的英文是（　）", ["I'm hungry.", "I'm thirsty.", "I'm happy.", "I'm hungry food."], "I'm hungry.", "hungry = 饿；thirsty = 渴。"),
+    ch("I'm hungry. I want …", 1, "「我想要一些面条。」的英文是（　）", ["I want some noodles.", "I want some noodle.", "I want eat noodles.", "I wants some noodles."], "I want some noodles.", "some + 复数。"),
+    tfq("食物词汇 rice / noodles / vegetable / fish / chicken / egg", 1, "chicken 既是「鸡」也是「鸡肉」。", "对", "一词两义。"),
+  ], [
+    vq("食物词汇 rice / noodles / vegetable / fish / chicken / egg", 1, "鱼", "fish", ["fis", "fist", "fich"]),
+    ch("食物词汇 rice / noodles / vegetable / fish / chicken / egg", 1, "「面条」的英文是（　）", ["noodles", "noodle", "noodels", "noodls"], "noodles", "常用复数。"),
+    tfq("I'm hungry. I want …", 1, "and 表示「和」，可连接两个名词。", "对", "fish and rice。"),
+  ]),
+
+  unit(5, "Unit 5 Drink 饮料", [
+    { name: "饮料词汇 juice / tea / milk / water", desc: "认识常见饮料。", d: 1,
+      core: "juice 果汁、tea 茶、milk 牛奶、water 水。这些多是不可数名词，说 some juice / some water。",
+      formula: "juice / tea / milk / water", mistakes: ["a water（×，一般说 some water）。"], tips: "液体不可数。" },
+    { name: "I'm thirsty. / Thanks.", desc: "会表达口渴与道谢。", d: 1,
+      core: "I'm thirsty. 我渴了。Here you are. 给你。Thanks. 谢谢。",
+      formula: "I'm thirsty. — Here you are. — Thanks.", mistakes: ["hungry 与 thirsty 混用。"], tips: "hungry 饿，thirsty 渴。" },
+  ], [
+    vq("饮料词汇 juice / tea / milk / water", 1, "果汁", "juice", ["juise", "juce", "juices"]),
+    vq("饮料词汇 juice / tea / milk / water", 1, "牛奶", "milk", ["milt", "mill", "mike"]),
+    ch("I'm thirsty. / Thanks.", 1, "「我渴了。」的英文是（　）", ["I'm thirsty.", "I'm hungry.", "I'm thirty.", "I'm thirsty water."], "I'm thirsty.", "thirsty = 渴。"),
+    ch("饮料词汇 juice / tea / milk / water", 1, "「一些水」的英文是（　）", ["some water", "a water", "some waters", "many water"], "some water", "不可数名词用 some。"),
+    tfq("I'm thirsty. / Thanks.", 1, "别人递给你东西后，可以说 Thanks.", "对", "thanks = 谢谢。"),
+  ], [
+    vq("饮料词汇 juice / tea / milk / water", 1, "茶", "tea", ["tee", "te", "peat"]),
+    ch("I'm thirsty. / Thanks.", 1, "— Here you are. — ___", ["Thanks.", "Here you are.", "I'm thirsty.", "You're welcome."], "Thanks.", "接东西后道谢。"),
+    tfq("饮料词汇 juice / tea / milk / water", 1, "water 的意思是「水」。", "对", "water = 水。"),
+  ]),
+
+  unit(6, "Unit 6 Clothes 衣服", [
+    { name: "衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts", desc: "认识常见衣物。", d: 1,
+      core: "shirt 衬衫、T-shirt T恤、skirt 短裙、dress 连衣裙、socks 袜子、shorts 短裤。socks 和 shorts 常用复数。",
+      formula: "shirt / T-shirt / skirt / dress / socks / shorts", mistakes: ["sock 当单数（成对用 socks）。"], tips: "成对的东西用复数。" },
+    { name: "your + 衣物", desc: "会说他人的衣物。", d: 1,
+      core: "This is your shirt. 这是你的衬衫。your 表示「你的」。",
+      formula: "This is your + 衣物.", mistakes: ["把 your 写成 you。"], tips: "your 后面必须跟名词。" },
+  ], [
+    vq("衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts", 1, "衬衫", "shirt", ["skirt", "short", "shorts"]),
+    vq("衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts", 1, "短裙", "skirt", ["shirt", "skert", "skat"]),
+    vq("衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts", 1, "连衣裙", "dress", ["dres", "drees", "dresses"]),
+    ch("衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts", 1, "「袜子」的英文是（　）", ["socks", "sock", "soks", "shoes"], "socks", "常用复数。"),
+    ch("your + 衣物", 1, "「这是你的T恤。」的英文是（　）", ["This is your T-shirt.", "This is you T-shirt.", "This your T-shirt is.", "This are your T-shirt."], "This is your T-shirt.", "your + 名词。"),
+    tfq("衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts", 1, "shorts 的意思是「短裤」。", "对", "shorts = 短裤。"),
+  ], [
+    vq("衣物词汇 shirt / T-shirt / skirt / dress / socks / shorts", 1, "短裤", "shorts", ["short", "shirt", "shotes"]),
+    ch("your + 衣物", 1, "「这是你的裙子。」的英文是（　）", ["This is your skirt.", "This is you skirt.", "This your skirt.", "This are your skirt."], "This is your skirt.", "your 是形容词性物主代词。"),
+    tfq("your + 衣物", 1, "your 的意思是「你的」。", "对", "your = 你的。"),
+  ]),
+]);
+
+
+// —— 二年级上册：Unit 1 My Family / 2 Boys and Girls / 3 My Friends / 4 In the Community / 5 In the Park / 6 Happy Holidays ——
+writeBook(E, "人教版（一年级起点）· 英语二年级上册", "二年级上册", [
+  unit(1, "Unit 1 My Family 我的家人", [
+    { name: "家人词汇 father / mother / sister / brother / grandfather / grandmother", desc: "认识六位家人。", d: 1,
+      core: "father 爸爸、mother 妈妈、sister 姐妹、brother 兄弟、grandfather 爷爷/外公、grandmother 奶奶/外婆。",
+      formula: "father / mother / sister / brother / grandfather / grandmother", mistakes: ["sister 与 brother 性别弄反。"], tips: "sister 女，brother 男。" },
+    { name: "Who's he? / Who's she?", desc: "会问「他/她是谁」。", d: 1,
+      core: "Who's he? 他是谁？He is my father. Who's she? 她是谁？She is my mother. 男用 he，女用 she。",
+      formula: "Who's he? — He is my … / Who's she? — She is my …", mistakes: ["男的说 she。"], tips: "he 男 she 女。" },
+  ], [
+    vq("家人词汇 father / mother / sister / brother / grandfather / grandmother", 1, "妈妈", "mother", ["father", "brother", "mather"]),
+    vq("家人词汇 father / mother / sister / brother / grandfather / grandmother", 1, "姐妹", "sister", ["brother", "sistor", "syster"]),
+    ch("Who's he? / Who's she?", 1, "问「他是谁」，应说（　）", ["Who's he?", "Who's she?", "What's he?", "Where's he?"], "Who's he?", "男的问 he。"),
+    ch("Who's he? / Who's she?", 1, "— Who's she? — ___（我妈妈）", ["She is my mother.", "He is my mother.", "She my mother.", "It is my mother."], "She is my mother.", "she 指女性。"),
+    tfq("Who's he? / Who's she?", 1, "回答 Who's she? 时要用 She is…", "对", "she 对应 she。"),
+  ], [
+    vq("家人词汇 father / mother / sister / brother / grandfather / grandmother", 1, "爸爸", "father", ["farther", "fater", "mother"]),
+    vq("家人词汇 father / mother / sister / brother / grandfather / grandmother", 1, "奶奶／外婆", "grandmother", ["grandfather", "grandmather", "grandmothers"]),
+    ch("Who's he? / Who's she?", 1, "— Who's he? — ___（我爷爷）", ["He is my grandfather.", "She is my grandfather.", "He my grandfather.", "His is my grandfather."], "He is my grandfather.", "he 指男性。"),
+  ]),
+
+  unit(2, "Unit 2 Boys and Girls 男孩和女孩", [
+    { name: "人物词汇 boy / girl / man / woman / classmate / friend", desc: "认识六个人物词。", d: 1,
+      core: "boy 男孩、girl 女孩、man 男人（成年）、woman 女人（成年）、classmate 同学、friend 朋友。",
+      formula: "boy / girl / man / woman / classmate / friend", mistakes: ["man 复数写成 mans。"], tips: "man → men。" },
+    { name: "What's his / her name?", desc: "会问男孩、女孩的名字。", d: 1,
+      core: "What's his name? 他叫什么名字？His name is Panpan. What's her name? 她叫什么名字？Her name is Candy.",
+      formula: "What's his name? — His name is … / What's her name? — Her name is …", mistakes: ["his 与 her 混用。"], tips: "his 男，her 女。" },
+  ], [
+    vq("人物词汇 boy / girl / man / woman / classmate / friend", 1, "女孩", "girl", ["gril", "girll", "boy"]),
+    vq("人物词汇 boy / girl / man / woman / classmate / friend", 1, "同学", "classmate", ["classmates", "clasmat", "roommate"]),
+    ch("What's his / her name?", 1, "问女孩的名字，应说（　）", ["What's her name?", "What's his name?", "What's she name?", "Who's her name?"], "What's her name?", "女孩用 her。"),
+    ch("What's his / her name?", 1, "— What's his name? — ___（他叫盼盼）", ["His name is Panpan.", "Her name is Panpan.", "He name is Panpan.", "His Panpan name."], "His name is Panpan.", "his name = 他的名字。"),
+    tfq("人物词汇 boy / girl / man / woman / classmate / friend", 1, "man 的复数是 men。", "对", "不规则复数。"),
+  ], [
+    vq("人物词汇 boy / girl / man / woman / classmate / friend", 1, "女人", "woman", ["women", "womam", "man"]),
+    vq("人物词汇 boy / girl / man / woman / classmate / friend", 1, "朋友", "friend", ["freind", "frind", "frend"]),
+    ch("What's his / her name?", 1, "— What's her name? — ___（她叫 Candy）", ["Her name is Candy.", "His name is Candy.", "She name is Candy.", "Her is Candy name."], "Her name is Candy.", "her name = 她的名字。"),
+  ]),
+
+  unit(3, "Unit 3 My Friends 我的朋友", [
+    { name: "外貌形容词 tall / short / big / thin / handsome / pretty", desc: "会用形容词描述人。", d: 1,
+      core: "tall 高的、short 矮的/短的、big 大的、thin 瘦的、handsome 英俊的（多形容男孩）、pretty 漂亮的（多形容女孩）。",
+      formula: "tall / short / big / thin / handsome / pretty", mistakes: ["形容女孩用 handsome。"], tips: "女孩用 pretty，男孩用 handsome。" },
+    { name: "What does he look like?", desc: "会问外貌并描述。", d: 2,
+      core: "What does he look like? 他长什么样？He is tall. 他很高。",
+      formula: "What does he / she look like? — He / She is + 形容词.", mistakes: ["漏掉 does：What he look like?（×）"], tips: "第三人称用 does。" },
+  ], [
+    vq("外貌形容词 tall / short / big / thin / handsome / pretty", 1, "高的", "tall", ["tale", "tell", "tol"]),
+    vq("外貌形容词 tall / short / big / thin / handsome / pretty", 1, "瘦的", "thin", ["thim", "thank", "than"]),
+    vq("外貌形容词 tall / short / big / thin / handsome / pretty", 1, "漂亮的（形容女孩）", "pretty", ["prety", "pritty", "handsome"]),
+    ch("What does he look like?", 1, "「他长什么样？」的英文是（　）", ["What does he look like?", "What he look like?", "What is he look like?", "How he look like?"], "What does he look like?", "第三人称用 does。"),
+    ch("What does he look like?", 1, "— What does she look like? — ___（她很高）", ["She is tall.", "She tall.", "He is tall.", "She is tall very."], "She is tall.", "She is + 形容词。"),
+    tfq("外貌形容词 tall / short / big / thin / handsome / pretty", 1, "short 既可表示「矮的」也可表示「短的」。", "对", "一词两义。"),
+  ], [
+    vq("外貌形容词 tall / short / big / thin / handsome / pretty", 1, "大的", "big", ["bag", "bigg", "bit"]),
+    vq("外貌形容词 tall / short / big / thin / handsome / pretty", 1, "英俊的", "handsome", ["handsom", "handsum", "hansome"]),
+    tfq("What does he look like?", 1, "descripe 外貌时说 He is big.", "对", "big 可形容体型。"),
+  ]),
+
+  unit(4, "Unit 4 In the Community 我们的社区", [
+    { name: "场所词汇 bookshop / supermarket / zoo / park / school / hospital", desc: "认识六个社区场所。", d: 2,
+      core: "bookshop 书店、supermarket 超市、zoo 动物园、park 公园、school 学校、hospital 医院。",
+      formula: "bookshop / supermarket / zoo / park / school / hospital", mistakes: ["hospital 拼成 hopital。"], tips: "hospital 中间是 s-p-i。" },
+    { name: "I'm going to …", desc: "会说要去哪里。", d: 2,
+      core: "I'm going to the bookshop. 我要去书店。Where are we going today? 我们今天去哪儿？",
+      formula: "I'm going to the + 场所.", mistakes: ["漏掉 the：I'm going to bookshop.（×）"], tips: "场所前加 the。" },
+  ], [
+    vq("场所词汇 bookshop / supermarket / zoo / park / school / hospital", 2, "书店", "bookshop", ["bookstore", "booksop", "shopbook"]),
+    vq("场所词汇 bookshop / supermarket / zoo / park / school / hospital", 2, "超市", "supermarket", ["supermark", "supermaket", "supmarket"]),
+    vq("场所词汇 bookshop / supermarket / zoo / park / school / hospital", 2, "医院", "hospital", ["hopital", "hospitel", "hospitl"]),
+    ch("I'm going to …", 2, "「我要去动物园。」的英文是（　）", ["I'm going to the zoo.", "I'm going zoo.", "I'm go to the zoo.", "I going to the zoo."], "I'm going to the zoo.", "be going to + the + 场所。"),
+    ch("I'm going to …", 2, "— Where are we going today? — ___（去公园）", ["To the park.", "To park.", "The park go.", "We park."], "To the park.", "回答 To the + 场所。"),
+    tfq("场所词汇 bookshop / supermarket / zoo / park / school / hospital", 2, "zoo 的意思是「动物园」。", "对", "zoo = 动物园。"),
+  ], [
+    vq("场所词汇 bookshop / supermarket / zoo / park / school / hospital", 2, "公园", "park", ["pack", "part", "parke"]),
+    ch("I'm going to …", 2, "「我们要去超市。」的英文是（　）", ["We're going to the supermarket.", "We going to supermarket.", "We're go to the supermarket.", "We are go supermarket."], "We're going to the supermarket.", "are going to + the。"),
+    tfq("I'm going to …", 2, "「I'm going to the hospital.」是「我要去医院」。", "对", "去医院。"),
+  ]),
+
+  unit(5, "Unit 5 In the Park 在公园", [
+    { name: "景物词汇 lake / boat / tree / grass / hill / flower", desc: "认识公园里的景物。", d: 2,
+      core: "lake 湖、boat 小船、tree 树、grass 草、hill 小山、flower 花。tree 复数是 trees。",
+      formula: "lake / boat / tree / grass / hill / flower", mistakes: ["grass 当可数加 s。"], tips: "grass 不可数，不加 s。" },
+    { name: "There is / There are", desc: "会用 there be 说「有」。", d: 2,
+      core: "There is a boat on the lake. 湖上有一条船。There are trees in the park. 公园里有很多树。单数用 is，复数用 are。",
+      formula: "There is a + 单数 / There are + 复数", mistakes: ["There are a boat.（×）"], tips: "看后面的名词单复数。" },
+  ], [
+    vq("景物词汇 lake / boat / tree / grass / hill / flower", 2, "湖", "lake", ["lack", "like", "lak"]),
+    vq("景物词汇 lake / boat / tree / grass / hill / flower", 2, "小船", "boat", ["boar", "boot", "bot"]),
+    vq("景物词汇 lake / boat / tree / grass / hill / flower", 2, "树", "tree", ["three", "tre", "trees"]),
+    ch("There is / There are", 2, "「湖上有一条船。」的英文是（　）", ["There is a boat on the lake.", "There are a boat on the lake.", "There is boat on lake.", "There have a boat on the lake."], "There is a boat on the lake.", "单数用 there is。"),
+    ch("There is / There are", 2, "「公园里有很多树。」的英文是（　）", ["There are trees in the park.", "There is trees in the park.", "There are tree in the park.", "There have trees in the park."], "There are trees in the park.", "复数用 there are。"),
+    tfq("There is / There are", 2, "There is 后面跟单数名词，There are 跟复数。", "对", "看单复数。"),
+  ], [
+    vq("景物词汇 lake / boat / tree / grass / hill / flower", 2, "花", "flower", ["flowr", "flour", "flowers"]),
+    ch("There is / There are", 2, "「草地上有一朵花。」的英文是（　）", ["There is a flower on the grass.", "There are a flower on the grass.", "There is flower on grass.", "There have a flower on the grass."], "There is a flower on the grass.", "单数 a flower → is。"),
+    tfq("景物词汇 lake / boat / tree / grass / hill / flower", 2, "hill 的意思是「小山」。", "对", "hill = 小山。"),
+  ]),
+
+  unit(6, "Unit 6 Happy Holidays 节日快乐", [
+    { name: "礼物与节日词汇 card / present / holiday", desc: "认识节日相关词。", d: 2,
+      core: "card 卡片、present 礼物、holiday 节日/假期。Happy New Year! 新年快乐！",
+      formula: "card / present / holiday", mistakes: ["present 与 parent（父母）混。"], tips: "present 礼物，parent 父母。" },
+    { name: "Happy New Year! / Thank you.", desc: "会说节日祝福并回应。", d: 2,
+      core: "Happy New Year! 新年快乐！Here's a present for you. 这是给你的礼物。Thank you. 谢谢。",
+      formula: "Happy New Year! — Thank you.", mistakes: ["祝福时说 Happy birthday（生日才用）。"], tips: "新年说 Happy New Year。" },
+  ], [
+    vq("礼物与节日词汇 card / present / holiday", 2, "礼物", "present", ["parent", "presant", "presents"]),
+    vq("礼物与节日词汇 card / present / holiday", 2, "卡片", "card", ["cart", "cord", "cards"]),
+    ch("Happy New Year! / Thank you.", 2, "新年时最合适的祝福是（　）", ["Happy New Year!", "Happy birthday!", "Good morning!", "Good night!"], "Happy New Year!", "新年说 Happy New Year。"),
+    ch("Happy New Year! / Thank you.", 2, "「这是给你的礼物。」的英文是（　）", ["Here's a present for you.", "Here a present for you.", "Here's present for you.", "This present for you here."], "Here's a present for you.", "Here's = Here is。"),
+    tfq("礼物与节日词汇 card / present / holiday", 2, "present 的意思是「礼物」。", "对", "present = 礼物。"),
+  ], [
+    vq("礼物与节日词汇 card / present / holiday", 2, "节日；假期", "holiday", ["holyday", "holidays", "holidey"]),
+    ch("Happy New Year! / Thank you.", 2, "别人祝你新年快乐，你应回答（　）", ["Thank you.", "Happy New Year to me.", "You're welcome.", "I'm fine."], "Thank you.", "收到祝福说 Thank you。"),
+    tfq("Happy New Year! / Thank you.", 2, "收到礼物可以说 Thank you。", "对", "道谢。"),
+  ]),
+]);
+
+// —— 二年级下册：Unit 1 Playtime / 2 Weather / 3 Seasons / 4 Time / 5 My Day / 6 My Week ——
+writeBook(E, "人教版（一年级起点）· 英语二年级下册", "二年级下册", [
+  unit(1, "Unit 1 Playtime 课余活动", [
+    { name: "活动短语 play football / fly a kite / ride a bike / swim", desc: "掌握六个活动短语。", d: 2,
+      core: "play football 踢足球、fly a kite 放风筝、ride a bike 骑自行车、make a model plane 做飞机模型、swim 游泳、make a snowman 堆雪人。",
+      formula: "play football / fly a kite / ride a bike / swim", mistakes: ["play football 说成 play the football。"], tips: "球类运动不加 the。" },
+    { name: "Can you …? — Yes, I can. / No, I can't.", desc: "会问能力并回答。", d: 2,
+      core: "Can you play football? 你会踢足球吗？Yes, I can. / No, I can't. can 后接动词原形。",
+      formula: "Can you + 动词原形? — Yes, I can. / No, I can't.", mistakes: ["Can you to swim?（×）"], tips: "can 后不加 to。" },
+  ], [
+    vq("活动短语 play football / fly a kite / ride a bike / swim", 2, "游泳", "swim", ["swin", "swime", "swam"]),
+    ch("活动短语 play football / fly a kite / ride a bike / swim", 2, "「踢足球」的英文是（　）", ["play football", "play the football", "play a football", "football play"], "play football", "球类不加 the。"),
+    ch("Can you …? — Yes, I can. / No, I can't.", 2, "— Can you ride a bike? — ___（会）", ["Yes, I can.", "Yes, I do.", "Yes, I am.", "Yes, I can't."], "Yes, I can.", "Can 问 Can 答。"),
+    ch("Can you …? — Yes, I can. / No, I can't.", 2, "「我不会放风筝。」的英文是（　）", ["I can't fly a kite.", "I can fly a kite.", "I can't to fly a kite.", "I don't can fly a kite."], "I can't fly a kite.", "否定用 can't + 原形。"),
+    tfq("Can you …? — Yes, I can. / No, I can't.", 2, "can 后面要跟动词原形。", "对", "can + 原形。"),
+  ], [
+    ch("活动短语 play football / fly a kite / ride a bike / swim", 2, "「骑自行车」的英文是（　）", ["ride a bike", "ride bike", "by a bike", "bike ride"], "ride a bike", "ride a bike。"),
+    ch("Can you …? — Yes, I can. / No, I can't.", 2, "— Can you swim? — ___（不会）", ["No, I can't.", "No, I don't.", "No, I'm not.", "No, I can."], "No, I can't.", "否定回答 No, I can't."),
+  ]),
+
+  unit(2, "Unit 2 Weather 天气", [
+    { name: "天气词 rainy / cloudy / snowy / windy / sunny", desc: "认识五种天气。", d: 2,
+      core: "rainy 下雨的、cloudy 多云的、snowy 下雪的、windy 刮风的、sunny 晴朗的。都由名词 + y 变来：rain→rainy。",
+      formula: "rainy / cloudy / snowy / windy / sunny", mistakes: ["suny（×，要双写 n）。"], tips: "sun → sunny 双写 n。" },
+    { name: "What's the weather like?", desc: "会问天气并回答。", d: 2,
+      core: "What's the weather like? 天气怎么样？It's sunny. 天气晴朗。带上 umbrella 雨伞下雨时用。",
+      formula: "What's the weather like? — It's + 天气词.", mistakes: ["回答漏 It's。"], tips: "It's + 天气形容词。" },
+  ], [
+    vq("天气词 rainy / cloudy / snowy / windy / sunny", 2, "晴朗的", "sunny", ["suny", "sunnny", "sunney"]),
+    vq("天气词 rainy / cloudy / snowy / windy / sunny", 2, "下雨的", "rainy", ["rainny", "rani", "rainey"]),
+    vq("天气词 rainy / cloudy / snowy / windy / sunny", 2, "刮风的", "windy", ["window", "windi", "windey"]),
+    ch("What's the weather like?", 2, "「天气怎么样？」的英文是（　）", ["What's the weather like?", "What weather is like?", "How is weather?", "What's weather look?"], "What's the weather like?", "固定句型 What's the weather like?"),
+    ch("What's the weather like?", 2, "— What's the weather like? — ___（下雪）", ["It's snowy.", "It snowy.", "It's snow.", "It's a snowy."], "It's snowy.", "It's + 天气形容词。"),
+    tfq("天气词 rainy / cloudy / snowy / windy / sunny", 2, "cloudy 的意思是「多云的」。", "对", "cloud + y。"),
+  ], [
+    vq("天气词 rainy / cloudy / snowy / windy / sunny", 2, "多云的", "cloudy", ["clouday", "clowdy", "cludy"]),
+    vq("天气词 rainy / cloudy / snowy / windy / sunny", 2, "雨伞", "umbrella", ["umbrela", "umbrealla", "umberlla"]),
+    ch("What's the weather like?", 2, "下雨天出门要带（　）", ["an umbrella", "a umbrella", "umbrellas", "the umbrella's"], "an umbrella", "元音音素前用 an。"),
+  ]),
+
+  unit(3, "Unit 3 Seasons 季节", [
+    { name: "季节词汇 spring / summer / autumn / winter", desc: "认识四季。", d: 2,
+      core: "spring 春、summer 夏、autumn 秋、winter 冬。一年四季 four seasons。",
+      formula: "spring / summer / autumn / winter", mistakes: ["autumn 拼成 autum。"], tips: "autumn 结尾有 n。" },
+    { name: "冷热形容词 hot / warm / cool / cold", desc: "会用形容词说天气冷暖。", d: 2,
+      core: "hot 炎热、warm 温暖、cool 凉爽、cold 寒冷。夏天 hot，冬天 cold。",
+      formula: "It's hot in summer. / It's cold in winter.", mistakes: ["cool 与 cold 混。"], tips: "cool 凉爽，cold 寒冷。" },
+  ], [
+    vq("季节词汇 spring / summer / autumn / winter", 2, "春天", "spring", ["sprig", "sping", "springs"]),
+    vq("季节词汇 spring / summer / autumn / winter", 2, "冬天", "winter", ["winer", "wintr", "winder"]),
+    ch("冷热形容词 hot / warm / cool / cold", 2, "「夏天很热。」的英文是（　）", ["It's hot in summer.", "It hot in summer.", "It's hot on summer.", "It's heat in summer."], "It's hot in summer.", "in + 季节。"),
+    ch("冷热形容词 hot / warm / cool / cold", 2, "「凉爽的」的英文是（　）", ["cool", "cold", "warm", "hot"], "cool", "cool = 凉爽。"),
+    tfq("季节词汇 spring / summer / autumn / winter", 2, "一年有四个季节。", "对", "四季。"),
+  ], [
+    vq("季节词汇 spring / summer / autumn / winter", 2, "夏天", "summer", ["sumer", "summur", "summers"]),
+    vq("季节词汇 spring / summer / autumn / winter", 2, "秋天", "autumn", ["autum", "autumne", "autunm"]),
+    tfq("冷热形容词 hot / warm / cool / cold", 2, "warm 比 hot 温度低。", "对", "warm 温暖，hot 炎热。"),
+  ]),
+
+  unit(4, "Unit 4 Time 时间", [
+    { name: "数字 eleven—fifty", desc: "认识 11—50 的整十与十几。", d: 3,
+      core: "eleven 11、twelve 12、thirteen 13、fourteen 14、fifteen 15、twenty 20、thirty 30、forty 40、fifty 50。13—19 以 -teen 结尾，整十以 -ty 结尾。",
+      formula: "thirteen / thirty, fourteen / forty, fifteen / fifty", mistakes: ["thirteen 与 thirty 混。"], tips: "-teen 十几，-ty 几十。" },
+    { name: "What time is it?", desc: "会问时间并回答。", d: 3,
+      core: "What time is it? 现在几点？It's seven. 七点。It's time for school. 该上学了。",
+      formula: "What time is it? — It's + 数字.", mistakes: ["回答加 o'clock 时位置错。"], tips: "整点可说 It's seven o'clock." },
+  ], [
+    vq("数字 eleven—fifty", 3, "十二", "twelve", ["twelth", "twelf", "twelv"]),
+    vq("数字 eleven—fifty", 3, "二十", "twenty", ["twentty", "twenti", "twelfty"]),
+    vq("数字 eleven—fifty", 3, "三十", "thirty", ["thirthy", "thirteen", "thiteen"]),
+    ch("What time is it?", 3, "「现在几点？」的英文是（　）", ["What time is it?", "What time it is?", "How time is it?", "What's time?"], "What time is it?", "固定句型。"),
+    ch("What time is it?", 3, "— What time is it? — ___（七点）", ["It's seven.", "It seven.", "It's seven time.", "Seven is it."], "It's seven.", "It's + 数字。"),
+    tfq("数字 eleven—fifty", 3, "forty 表示 40。", "对", "forty = 40（不是 fourty）。"),
+  ], [
+    vq("数字 eleven—fifty", 3, "五十", "fifty", ["fivty", "fiftty", "fiftey"]),
+    ch("数字 eleven—fifty", 3, "「十五」的英文是（　）", ["fifteen", "fifty", "fiveteen", "fiftteen"], "fifteen", "fifteen = 15。"),
+    tfq("What time is it?", 3, "13—19 的数字多以 -teen 结尾。", "对", "thirteen / fourteen …"),
+  ]),
+
+  unit(5, "Unit 5 My Day 我的一天", [
+    { name: "作息短语 get up / eat breakfast / go to school / go to bed", desc: "掌握一天的活动。", d: 2,
+      core: "get up 起床、eat breakfast 吃早饭、go to school 上学、eat lunch 吃午饭、go home 回家、eat dinner 吃晚饭、go to bed 上床睡觉。",
+      formula: "get up / eat breakfast / go to school / go to bed", mistakes: ["go to school 说成 go school。"], tips: "school 前加 to。" },
+    { name: "When do you …? — At …", desc: "会问时间安排。", d: 3,
+      core: "When do you get up? 你什么时候起床？At seven. 七点。every day 每天。",
+      formula: "When do you + 动词? — At + 时间.", mistakes: ["回答用 In seven（×）。"], tips: "钟点前用 at。" },
+  ], [
+    ch("作息短语 get up / eat breakfast / go to school / go to bed", 2, "「起床」的英文是（　）", ["get up", "get on", "stand up", "wake"], "get up", "get up = 起床。"),
+    ch("作息短语 get up / eat breakfast / go to school / go to bed", 2, "「吃早饭」的英文是（　）", ["eat breakfast", "eat lunch", "have breakfasts", "eat the breakfast"], "eat breakfast", "三餐前不加 the。"),
+    ch("When do you …? — At …", 3, "「你什么时候去上学？」的英文是（　）", ["When do you go to school?", "When you go to school?", "What time you go school?", "When do you go school?"], "When do you go to school?", "When do you + 动词。"),
+    ch("When do you …? — At …", 3, "— When do you get up? — ___（七点）", ["At seven.", "In seven.", "On seven.", "Seven o'clock is."], "At seven.", "钟点前用 at。"),
+    tfq("作息短语 get up / eat breakfast / go to school / go to bed", 2, "go to bed 的意思是「上床睡觉」。", "对", "go to bed。"),
+  ], [
+    ch("作息短语 get up / eat breakfast / go to school / go to bed", 2, "「回家」的英文是（　）", ["go home", "go to home", "go house", "come house"], "go home", "home 前不加 to。"),
+    ch("When do you …? — At …", 3, "every day 的意思是（　）", ["每天", "昨天", "明天", "今天"], "每天", "every day = 每天。"),
+  ]),
+
+  unit(6, "Unit 6 My Week 我的一周", [
+    { name: "星期词汇 Sunday—Saturday", desc: "掌握七个星期名。", d: 3,
+      core: "Sunday 周日、Monday 周一、Tuesday 周二、Wednesday 周三、Thursday 周四、Friday 周五、Saturday 周六。星期名首字母要大写。",
+      formula: "Sunday / Monday / Tuesday / Wednesday / Thursday / Friday / Saturday", mistakes: ["Wednesday 拼错（Wed-nes-day）。"], tips: "Wednesday 中间有 d 和 e。" },
+    { name: "today 与星期表达", desc: "会说「今天是星期几」。", d: 2,
+      core: "Today is Monday. 今天是星期一。What day is it today? 今天星期几？",
+      formula: "Today is + 星期.", mistakes: ["Today is monday（不大写）。"], tips: "星期首字母大写。" },
+  ], [
+    vq("星期词汇 Sunday—Saturday", 3, "星期一", "Monday", ["monday", "Munday", "Mondey"]),
+    vq("星期词汇 Sunday—Saturday", 3, "星期三", "Wednesday", ["Wensday", "Wednsday", "Wedensday"]),
+    vq("星期词汇 Sunday—Saturday", 3, "星期六", "Saturday", ["Saterday", "Saturdy", "Satuday"]),
+    ch("today 与星期表达", 2, "「今天是星期一。」的英文是（　）", ["Today is Monday.", "Today is monday.", "Today Monday.", "It today Monday."], "Today is Monday.", "星期首字母大写。"),
+    ch("today 与星期表达", 2, "「今天星期几？」的英文是（　）", ["What day is it today?", "What time is it today?", "What day today is?", "How day is today?"], "What day is it today?", "问星期用 What day。"),
+    tfq("星期词汇 Sunday—Saturday", 3, "Sunday 是一周的第一天（英语习惯）。", "对", "英语里 Sunday 为一周之始。"),
+  ], [
+    vq("星期词汇 Sunday—Saturday", 3, "星期二", "Tuesday", ["Tusday", "Tuseday", "Tuesdy"]),
+    vq("星期词汇 Sunday—Saturday", 3, "星期四", "Thursday", ["Thirsday", "Thursdy", "Thurday"]),
+    tfq("today 与星期表达", 2, "today 的意思是「今天」。", "对", "today = 今天。"),
+  ]),
+]);
+
+
+// ══════════════════════ 一年级 / 二年级英语（外研社一年级起点）══════════════════════
+// 依据外研社《英语（一年级起点）》一上、一下、二上、二下 的 Module 目录与「各模块词汇表」编排。
+
+// —— 一年级上册：Module 1—10 ——
+writeBook(E, "外研社版 · 英语（一年级起点）一年级上册", "一年级上册", [
+  unit(1, "Module 1 Hello 打招呼", [
+    { name: "问候与告别 hello / goodbye / How are you?", desc: "掌握最基础的问候语。", d: 1,
+      core: "hello（hi）你好、goodbye（bye）再见、How are you? 你好吗？I'm fine, thank you. 我很好，谢谢。sorry 对不起。",
+      formula: "How are you? — I'm fine, thank you.", mistakes: ["回答用 I'm fine, thanks you.（×）"], tips: "thank you 不带 s。" },
+    { name: "yes / no", desc: "会用 yes / no 作简单回答。", d: 1,
+      core: "yes 是、no 不。回答一般疑问句时先说 Yes 或 No。", formula: "Yes, I am. / No, I'm not.",
+      mistakes: ["Yes 后接否定。"], tips: "Yes 配肯定，No 配否定。" },
+  ], [
+    vq("问候与告别 hello / goodbye / How are you?", 1, "你好", "hello", ["hallo", "help", "hell"]),
+    vq("问候与告别 hello / goodbye / How are you?", 1, "再见", "goodbye", ["goodby", "goodboy", "goodnight"]),
+    ch("问候与告别 hello / goodbye / How are you?", 1, "— How are you? — ___", ["I'm fine, thank you.", "I'm five.", "My name is Bill.", "Yes, I am."], "I'm fine, thank you.", "问身体好不好。"),
+    tfq("yes / no", 1, "no 的意思是「不」。", "对", "no = 不。"),
+  ], [
+    vq("问候与告别 hello / goodbye / How are you?", 1, "对不起", "sorry", ["sory", "worry", "sorre"]),
+    ch("yes / no", 1, "同意对方时先说（　）", ["Yes", "No", "Sorry", "Hello"], "Yes", "同意用 Yes。"),
+  ]),
+
+  unit(2, "Module 2 What's your name? 你叫什么名字", [
+    { name: "询问姓名 What's your name?", desc: "会问名字并回答。", d: 1,
+      core: "What's your name? 你叫什么名字？My name is Bill. 我叫比尔。Ms 女士（用于姓前）。",
+      formula: "What's your name? — My name is …", mistakes: ["回答用 I name is Bill.（×）"], tips: "my name = 我的名字。" },
+    { name: "问候时间 good morning / good afternoon", desc: "会按时间打招呼。", d: 1,
+      core: "Good morning. 早上好。Good afternoon. 下午好。please 请。", formula: "Good morning, Ms Wu.",
+      mistakes: ["下午说 Good morning。"], tips: "上午 morning，下午 afternoon。" },
+  ], [
+    ch("询问姓名 What's your name?", 2, "「你叫什么名字？」的英文是（　）", ["What's your name?", "What your name?", "How your name?", "Who's your name?"], "What's your name?", "What's = What is。"),
+    vq("问候时间 good morning / good afternoon", 1, "下午", "afternoon", ["afternon", "aftermoon", "morning"]),
+    ch("问候时间 good morning / good afternoon", 1, "下午见到老师，应说（　）", ["Good afternoon.", "Good morning.", "Good night.", "Goodbye."], "Good afternoon.", "下午用 afternoon。"),
+    tfq("询问姓名 What's your name?", 1, "「My name is Lily.」是自我介绍。", "对", "my name is…"),
+  ], [
+    vq("询问姓名 What's your name?", 1, "名字", "name", ["nam", "names", "mine"]),
+    ch("问候时间 good morning / good afternoon", 1, "「请」的英文是（　）", ["please", "pleas", "place"], "please", "please = 请。"),
+  ]),
+
+  unit(3, "Module 3 Sit down, please 课堂指令", [
+    { name: "指令动词 sit / stand / open / point", desc: "听懂并说出课堂指令。", d: 1,
+      core: "Sit down, please. 请坐。Stand up, please. 请起立。Open the window. 打开窗户。Point to the door. 指向门。",
+      formula: "Sit down / Stand up / Open the door / Point to the desk", mistakes: ["Point the door（漏 to）。"], tips: "point to 是固定搭配。" },
+    { name: "教室物品 desk / chair / window / door", desc: "认识四个教室词。", d: 1,
+      core: "desk 书桌、chair 椅子、window 窗户、door 门。", formula: "desk / chair / window / door",
+      mistakes: ["door 与 doll 混。"], tips: "door 门，doll 娃娃。" },
+  ], [
+    vq("教室物品 desk / chair / window / door", 1, "窗户", "window", ["widow", "windo", "windows"]),
+    vq("教室物品 desk / chair / window / door", 1, "门", "door", ["doll", "dore", "dour"]),
+    ch("指令动词 sit / stand / open / point", 1, "「请起立。」的英文是（　）", ["Stand up, please.", "Sit down, please.", "Stand please up.", "Up stand, please."], "Stand up, please.", "stand up 起立。"),
+    tfq("指令动词 sit / stand / open / point", 1, "Point to the door. 的意思是「指向门」。", "对", "point to 指向。"),
+  ], [
+    vq("教室物品 desk / chair / window / door", 1, "书桌", "desk", ["deck", "disk", "dsek"]),
+    ch("指令动词 sit / stand / open / point", 1, "「打开窗户。」的英文是（　）", ["Open the window.", "Open window.", "Opens the window.", "Open the windows please you."], "Open the window.", "open + the + 名词。"),
+  ]),
+
+  unit(4, "Module 4 It's red 颜色", [
+    { name: "颜色 red / blue / yellow / green / black / white / orange", desc: "掌握七种颜色。", d: 1,
+      core: "red 红、blue 蓝、yellow 黄、green 绿、black 黑、white 白、orange 橙。", formula: "red / blue / yellow / green / black / white / orange",
+      mistakes: ["orange 既是橙色也是橙子。"], tips: "orange 一词两义。" },
+    { name: "What colour is it? — It's …", desc: "会问颜色并回答。", d: 1,
+      core: "What colour is it? 它是什么颜色？It's red. 它是红色的。", formula: "What colour is it? — It's + 颜色.",
+      mistakes: ["漏 It's。"], tips: "It's + 颜色。" },
+  ], [
+    vq("颜色 red / blue / yellow / green / black / white / orange", 1, "白色", "white", ["whit", "wite", "wid"]),
+    vq("颜色 red / blue / yellow / green / black / white / orange", 1, "橙色", "orange", ["orenge", "orage", "oragne"]),
+    ch("What colour is it? — It's …", 1, "— What colour is it? — ___（蓝色）", ["It's blue.", "It's a blue.", "It blue.", "Blue it is."], "It's blue.", "It's + 颜色。"),
+    tfq("颜色 red / blue / yellow / green / black / white / orange", 1, "green 的意思是「绿色」。", "对", "green = 绿色。"),
+  ], [
+    vq("颜色 red / blue / yellow / green / black / white / orange", 1, "黄色", "yellow", ["yello", "yelow", "yollow"]),
+    ch("What colour is it? — It's …", 1, "「它是白色的。」的英文是（　）", ["It's white.", "It white.", "It's a white.", "It's whites."], "It's white.", "颜色词前不加 a。"),
+  ]),
+
+  unit(5, "Module 5 This is our teacher 介绍他人", [
+    { name: "介绍他人 This is … / That is …", desc: "会介绍身边的人或物。", d: 1,
+      core: "This is our teacher. 这是我们的老师。That is my bag. 那是我的包。近处用 this，远处用 that。",
+      formula: "This is + 人/物. / That is + 人/物.", mistakes: ["This is our teacher.（our 不能省）"], tips: "our = 我们的。" },
+    { name: "学校词汇 teacher / school / classroom / bag", desc: "认识四个学校词。", d: 1,
+      core: "teacher 老师、school 学校、classroom 教室、bag 包。Nice to meet you. 很高兴见到你。",
+      formula: "teacher / school / classroom / bag", mistakes: ["classroom 拼成 classrom。"], tips: "class + room。" },
+  ], [
+    vq("学校词汇 teacher / school / classroom / bag", 1, "学校", "school", ["scholl", "scool", "shcool"]),
+    vq("学校词汇 teacher / school / classroom / bag", 1, "教室", "classroom", ["classrom", "clasroom", "classrooom"]),
+    ch("介绍他人 This is … / That is …", 1, "「这是我们的老师。」的英文是（　）", ["This is our teacher.", "This is we teacher.", "This our teacher is.", "This are our teacher."], "This is our teacher.", "our + 名词。"),
+    tfq("介绍他人 This is … / That is …", 1, "That is 用来介绍远处的人或物。", "对", "that 指远处。"),
+  ], [
+    vq("学校词汇 teacher / school / classroom / bag", 1, "包", "bag", ["big", "bags", "beg"]),
+    ch("介绍他人 This is … / That is …", 1, "「很高兴见到你。」的英文是（　）", ["Nice to meet you.", "Nice meet you.", "Nice to meeting you.", "Nice you meet."], "Nice to meet you.", "固定问候语。"),
+  ]),
+
+  unit(6, "Module 6 What's this? 文具", [
+    { name: "文具 schoolbag / book / pen / pencil / ruler / eraser / crayon", desc: "掌握七个文具词。", d: 1,
+      core: "schoolbag 书包、book 书、pen 钢笔、pencil 铅笔、ruler 尺子、eraser 橡皮、pencil case 铅笔盒、crayon 蜡笔。",
+      formula: "schoolbag / book / pen / pencil / ruler / eraser / crayon", mistakes: ["pencil 与 pen 混。"], tips: "pencil 铅笔，pen 钢笔。" },
+    { name: "What's this? — It's a …", desc: "会问「这是什么」。", d: 1,
+      core: "What's this? 这是什么？It's a pencil. 它是一支铅笔。", formula: "What's this? — It's a + 文具.",
+      mistakes: ["漏 a。"], tips: "单数可数名词前加 a。" },
+  ], [
+    vq("文具 schoolbag / book / pen / pencil / ruler / eraser / crayon", 1, "橡皮", "eraser", ["erazer", "erasor", "erasers"]),
+    vq("文具 schoolbag / book / pen / pencil / ruler / eraser / crayon", 1, "蜡笔", "crayon", ["crayan", "crayonn", "cryon"]),
+    ch("What's this? — It's a …", 1, "— What's this? — ___（一支铅笔）", ["It's a pencil.", "It's pencil.", "This is pencil a.", "It a pencil."], "It's a pencil.", "It's a + 名词。"),
+    tfq("文具 schoolbag / book / pen / pencil / ruler / eraser / crayon", 1, "ruler 的意思是「尺子」。", "对", "ruler = 尺子。"),
+  ], [
+    vq("文具 schoolbag / book / pen / pencil / ruler / eraser / crayon", 1, "钢笔", "pen", ["pan", "pencil", "pin"]),
+    ch("What's this? — It's a …", 1, "「这是一个书包。」的英文是（　）", ["It's a schoolbag.", "It's schoolbag.", "This schoolbag.", "It a schoolbag."], "It's a schoolbag.", "It's a + 名词。"),
+  ]),
+
+  unit(7, "Module 7 Is it a monkey? 这是猴子吗", [
+    { name: "一般疑问句 Is it a …?", desc: "会问「它是……吗」并回答。", d: 2,
+      core: "Is it a monkey? 它是猴子吗？Yes, it is. / No, it isn't. isn't = is not。",
+      formula: "Is it a + 名词? — Yes, it is. / No, it isn't.", mistakes: ["回答 Yes, it's.（×）"], tips: "简答不说 it's。" },
+    { name: "动物与物品 monkey / monster / kite / house / box", desc: "认识五个词。", d: 1,
+      core: "monkey 猴子、monster 怪物、kite 风筝、house 房子、box 盒子。new 新的。",
+      formula: "monkey / monster / kite / house / box", mistakes: ["kite 与 cat 混。"], tips: "kite 风筝。" },
+  ], [
+    vq("动物与物品 monkey / monster / kite / house / box", 1, "风筝", "kite", ["kit", "kate", "kight"]),
+    vq("动物与物品 monkey / monster / kite / house / box", 1, "房子", "house", ["horse", "haus", "hous"]),
+    ch("一般疑问句 Is it a …?", 2, "— Is it a monkey? — ___（不是）", ["No, it isn't.", "No, it is.", "No, it not.", "No, it don't."], "No, it isn't.", "否定答 isn't。"),
+    tfq("一般疑问句 Is it a …?", 2, "「Is it a kite?」是在问「它是风筝吗」。", "对", "一般疑问句。"),
+  ], [
+    vq("动物与物品 monkey / monster / kite / house / box", 1, "盒子", "box", ["boks", "boxe", "books"]),
+    ch("一般疑问句 Is it a …?", 2, "— Is it a cat? — ___（是的）", ["Yes, it is.", "Yes, it's.", "Yes, it does.", "Yes, it are."], "Yes, it is.", "肯定简答 Yes, it is."),
+  ]),
+
+  unit(8, "Module 8 How many? 数字与数量", [
+    { name: "数字 one—ten", desc: "会数 1—10。", d: 1,
+      core: "one 1、two 2、three 3、four 4、five 5、six 6、seven 7、eight 8、nine 9、ten 10。count 数。",
+      formula: "one—ten", mistakes: ["three 写成 tree。"], tips: "three 三，tree 树。" },
+    { name: "How many …? 与颜色搭配", desc: "会问数量，并说彩色物品。", d: 2,
+      core: "How many? 多少？How many pink balls? 多少个粉色球？pink 粉色、brown 棕色、ball 球。",
+      formula: "How many + 复数名词?", mistakes: ["How many ball（×）。"], tips: "How many 后跟复数。" },
+  ], [
+    vq("数字 one—ten", 1, "六", "six", ["sicks", "sixt", "sis"]),
+    vq("How many …? 与颜色搭配", 1, "粉色", "pink", ["pinck", "pinkk", "pank"]),
+    ch("How many …? 与颜色搭配", 2, "「多少个粉色球？」的英文是（　）", ["How many pink balls?", "How many pink ball?", "How much pink balls?", "How many balls pink?"], "How many pink balls?", "How many + 复数。"),
+    tfq("数字 one—ten", 1, "seven 表示 7。", "对", "seven = 7。"),
+  ], [
+    vq("How many …? 与颜色搭配", 1, "棕色", "brown", ["browm", "brownn", "browne"]),
+    ch("How many …? 与颜色搭配", 2, "「多少个球？」的英文是（　）", ["How many balls?", "How many ball?", "How much balls?", "How many a ball?"], "How many balls?", "复数 balls。"),
+  ]),
+
+  unit(9, "Module 9 Happy birthday! 生日与年龄", [
+    { name: "询问年龄 How old are you?", desc: "会问年龄并回答。", d: 2,
+      core: "How old are you? 你几岁？I'm nine. 我九岁。", formula: "How old are you? — I'm + 数字.",
+      mistakes: ["How old you are?（语序错）"], tips: "疑问句 are 提前。" },
+    { name: "生日祝福 Happy birthday!", desc: "会说生日祝福与感谢。", d: 1,
+      core: "Happy birthday! 生日快乐！Thank you. 谢谢。You're welcome! 不客气！too 也。",
+      formula: "Happy birthday! — Thank you. / You're welcome.", mistakes: ["回答祝福说 You're welcome（错，那是回应感谢）。"], tips: "收到祝福答 Thank you。" },
+  ], [
+    ch("询问年龄 How old are you?", 2, "「你几岁了？」的英文是（　）", ["How old are you?", "How are you old?", "How old you are?", "What old are you?"], "How old are you?", "How old…?"),
+    vq("生日祝福 Happy birthday!", 1, "生日", "birthday", ["birthay", "brithday", "birtday"]),
+    ch("生日祝福 Happy birthday!", 1, "别人祝你生日快乐，你应说（　）", ["Thank you.", "Happy birthday.", "You're welcome.", "I'm nine."], "Thank you.", "收到祝福道谢。"),
+    tfq("生日祝福 Happy birthday!", 1, "You're welcome! 的意思是「不客气」。", "对", "回应感谢。"),
+  ], [
+    vq("询问年龄 How old are you?", 2, "快乐的", "happy", ["hapy", "happpy", "happi"]),
+    ch("询问年龄 How old are you?", 2, "— How old are you? — ___（我七岁）", ["I'm seven.", "I seven.", "I'm seven years.", "My seven."], "I'm seven.", "I'm + 数字。"),
+  ]),
+
+  unit(10, "Module 10 That is his car 家人与所有格", [
+    { name: "家人词汇 father / mother / grandpa / grandma / sister / brother", desc: "认识六位家人。", d: 1,
+      core: "father 爸爸、mother 妈妈、grandpa 爷爷/外公、grandma 奶奶/外婆、sister 姐妹、brother 兄弟。",
+      formula: "father / mother / grandpa / grandma / sister / brother", mistakes: ["grandpa 与 grandpa 不分男女。"], tips: "grandpa 男，grandma 女。" },
+    { name: "物主代词 his / her", desc: "会用 his / her 表示「他的 / 她的」。", d: 2,
+      core: "That is his car. 那是他的车。This is her bag. 这是她的包。his 指男性，her 指女性。",
+      formula: "That is his / her + 名词.", mistakes: ["his 与 her 混用。"], tips: "his 男，her 女。" },
+  ], [
+    vq("家人词汇 father / mother / grandpa / grandma / sister / brother", 1, "妈妈", "mother", ["mather", "moter", "father"]),
+    vq("家人词汇 father / mother / grandpa / grandma / sister / brother", 1, "兄弟", "brother", ["bother", "broter", "sister"]),
+    ch("物主代词 his / her", 2, "这是她的包，应说（　）", ["This is her bag.", "This is his bag.", "This is she bag.", "This is hers bag."], "This is her bag.", "her + 名词。"),
+    tfq("物主代词 his / her", 2, "his 表示「他的」。", "对", "his = 他的。"),
+  ], [
+    vq("家人词汇 father / mother / grandpa / grandma / sister / brother", 1, "爷爷／外公", "grandpa", ["grandma", "grandpas", "grandfather"]),
+    ch("物主代词 his / her", 2, "「那是他的车。」的英文是（　）", ["That is his car.", "That is her car.", "That his car is.", "That is he car."], "That is his car.", "his + 名词。"),
+  ]),
+]);
+
+// —— 一年级下册：Module 1—10 ——
+writeBook(E, "外研社版 · 英语（一年级起点）一年级下册", "一年级下册", [
+  unit(1, "Module 1 He's a doctor 职业", [
+    { name: "职业词汇 doctor / nurse / driver / policeman / pupil", desc: "认识五种职业/身份。", d: 2,
+      core: "doctor 医生、nurse 护士、driver 司机、policeman 警察、pupil 小学生。", formula: "doctor / nurse / driver / policeman / pupil",
+      mistakes: ["policeman 复数 policemen。"], tips: "man → men。" },
+    { name: "he / she 与 He's / She's", desc: "会用 he's / she's 介绍职业。", d: 2,
+      core: "He's a doctor. 他是医生。She's a nurse. 她是护士。He's = He is，She's = She is。",
+      formula: "He's / She's a + 职业.", mistakes: ["He's doctor（漏 a）。"], tips: "职业前加 a。" },
+  ], [
+    vq("职业词汇 doctor / nurse / driver / policeman / pupil", 2, "医生", "doctor", ["docter", "doctar", "dacter"]),
+    vq("职业词汇 doctor / nurse / driver / policeman / pupil", 2, "护士", "nurse", ["nurs", "nurce", "nerse"]),
+    ch("he / she 与 He's / She's", 2, "她是老师，应说（　）", ["She's a teacher.", "He's a teacher.", "She a teacher.", "She's teacher."], "She's a teacher.", "She's a + 职业。"),
+    tfq("he / she 与 He's / She's", 2, "pupil 的意思是「小学生」。", "对", "pupil = 小学生。"),
+  ], [
+    vq("职业词汇 doctor / nurse / driver / policeman / pupil", 2, "司机", "driver", ["drivor", "drivver", "drive"]),
+    ch("he / she 与 He's / She's", 2, "「他是警察。」的英文是（　）", ["He's a policeman.", "He's policeman.", "She's a policeman.", "He a policeman."], "He's a policeman.", "He's a + 职业。"),
+  ]),
+
+  unit(2, "Module 2 Where's the bird? 方位", [
+    { name: "方位介词 in / on / under", desc: "会用 in / on / under 说位置。", d: 2,
+      core: "in 在里面、on 在上面、under 在下面。Where's the bird? 鸟在哪里？It's on the hat. 在帽子上。",
+      formula: "Where's the …? — It's in / on / under the …", mistakes: ["on the hat 说成 in the hat。"], tips: "看实际位置选介词。" },
+    { name: "物品词汇 hat / toy / bed / bear", desc: "认识四个名词。", d: 1,
+      core: "hat 帽子、toy 玩具、bed 床、bear 熊。look at 看……", formula: "hat / toy / bed / bear",
+      mistakes: ["hat 与 cap 混（cap 有帽檐）。"], tips: "hat 一般指有边帽子。" },
+  ], [
+    vq("物品词汇 hat / toy / bed / bear", 1, "帽子", "hat", ["had", "hut", "hot"]),
+    vq("物品词汇 hat / toy / bed / bear", 1, "玩具", "toy", ["toys", "tou", "boy"]),
+    ch("方位介词 in / on / under", 2, "熊在床下，应说（　）", ["The bear is under the bed.", "The bear is on the bed.", "The bear is in the bed.", "The bear under bed."], "The bear is under the bed.", "下面用 under。"),
+    tfq("方位介词 in / on / under", 2, "on 表示「在……上面」。", "对", "on = 在上面。"),
+  ], [
+    vq("物品词汇 hat / toy / bed / bear", 1, "熊", "bear", ["beer", "bar", "bore"]),
+    ch("方位介词 in / on / under", 2, "「球在哪里？」的英文是（　）", ["Where's the ball?", "Where the ball?", "What's the ball?", "Where are the ball?"], "Where's the ball?", "Where's = Where is。"),
+  ]),
+
+  unit(3, "Module 3 How many? 数字 11—12", [
+    { name: "数字 eleven / twelve", desc: "会数到 12。", d: 2,
+      core: "eleven 11、twelve 12。one—twelve 是本册的数字范围。", formula: "eleven / twelve",
+      mistakes: ["twelve 拼成 twelth。"], tips: "twelve 结尾是 ve。" },
+    { name: "don't / let's 的用法", desc: "会用 don't 否定、let's 提议。", d: 2,
+      core: "I don't know. 我不知道。Let's count. 我们数一数吧。don't = do not，let's = let us。",
+      formula: "I don't know. / Let's + 动词原形.", mistakes: ["Let's to count（×）。"], tips: "let's 后跟原形。" },
+  ], [
+    vq("数字 eleven / twelve", 2, "十一", "eleven", ["elevn", "elven", "elewen"]),
+    ch("don't / let's 的用法", 2, "「我不知道。」的英文是（　）", ["I don't know.", "I not know.", "I don't no.", "I no know."], "I don't know.", "否定用 don't。"),
+    ch("don't / let's 的用法", 2, "「我们数一数吧。」的英文是（　）", ["Let's count.", "Let's to count.", "Let us counting.", "Let count."], "Let's count.", "Let's + 原形。"),
+    tfq("数字 eleven / twelve", 2, "twelve 表示 12。", "对", "twelve = 12。"),
+  ], [
+    vq("数字 eleven / twelve", 2, "十二", "twelve", ["twelth", "twelf", "twelwe"]),
+    tfq("don't / let's 的用法", 2, "don't 是 do not 的缩写。", "对", "缩写形式。"),
+  ]),
+
+  unit(4, "Module 4 These are your eyes 身体部位", [
+    { name: "身体部位 head / face / eye / ear / mouth / nose / hand / leg / feet", desc: "掌握九个身体词。", d: 2,
+      core: "head 头、face 脸、eye 眼睛、ear 耳朵、mouth 嘴、nose 鼻子、hand 手、leg 腿、feet 脚（foot 的复数）。",
+      formula: "head / face / eye / ear / mouth / nose / hand / leg / feet", mistakes: ["foot 的复数写成 foots。"], tips: "foot → feet。" },
+    { name: "These are … / Touch your …", desc: "会用复数句型与身体指令。", d: 2,
+      core: "These are your eyes. 这些是你的眼睛。Touch your nose. 摸摸鼻子。these 是 this 的复数。",
+      formula: "These are your + 复数名词.", mistakes: ["These is your eyes（×）。"], tips: "these 配 are。" },
+  ], [
+    vq("身体部位 head / face / eye / ear / mouth / nose / hand / leg / feet", 2, "头", "head", ["hand", "hard", "hed"]),
+    vq("身体部位 head / face / eye / ear / mouth / nose / hand / leg / feet", 2, "手", "hand", ["head", "hend", "had"]),
+    ch("These are … / Touch your …", 2, "「这些是你的眼睛。」的英文是（　）", ["These are your eyes.", "This is your eyes.", "These is your eyes.", "These your eyes are."], "These are your eyes.", "these + are。"),
+    tfq("These are … / Touch your …", 2, "feet 是 foot 的复数。", "对", "不规则复数。"),
+  ], [
+    vq("身体部位 head / face / eye / ear / mouth / nose / hand / leg / feet", 2, "腿", "leg", ["lag", "lig", "ledge"]),
+    ch("These are … / Touch your …", 2, "「摸摸你的头。」的英文是（　）", ["Touch your head.", "Touch you head.", "Touching your head.", "Touch your heads."], "Touch your head.", "指令用原形。"),
+  ]),
+
+  unit(5, "Module 5 They're cows 农场动物", [
+    { name: "农场动物 cow / pig / duck / chicken / farm", desc: "认识农场动物。", d: 2,
+      core: "cow 奶牛、pig 猪、duck 鸭子、chicken 鸡、farm 农场、egg 鸡蛋。", formula: "cow / pig / duck / chicken / farm",
+      mistakes: ["chicken 既可指鸡也可指鸡肉。"], tips: "一词两义。" },
+    { name: "They're … / 形容词 big / small / fat / thin", desc: "会用 they're 描述动物。", d: 2,
+      core: "They're cows. 它们是奶牛。very 很、big 大的、little 小的、fat 胖的、thin 瘦的。",
+      formula: "They're + 复数名词. / It's very fat.", mistakes: ["They're cow（漏复数）。"], tips: "they're 后跟复数。" },
+  ], [
+    vq("农场动物 cow / pig / duck / chicken / farm", 2, "奶牛", "cow", ["coo", "caw", "cows"]),
+    vq("农场动物 cow / pig / duck / chicken / farm", 2, "鸭子", "duck", ["duk", "dark", "dock"]),
+    ch("They're … / 形容词 big / small / fat / thin", 2, "它们是奶牛，应说（　）", ["They're cows.", "They're cow.", "It's cows.", "They is cows."], "They're cows.", "复数用 they're。"),
+    tfq("They're … / 形容词 big / small / fat / thin", 2, "fat 的意思是「胖的」。", "对", "fat = 胖。"),
+  ], [
+    vq("农场动物 cow / pig / duck / chicken / farm", 2, "猪", "pig", ["big", "peg", "pug"]),
+    ch("They're … / 形容词 big / small / fat / thin", 2, "「它很瘦。」的英文是（　）", ["It's very thin.", "It's very fat.", "It very thin.", "It's very thins."], "It's very thin.", "It's + very + 形容词。"),
+  ]),
+
+  unit(6, "Module 6 This is my father 动物园", [
+    { name: "动物园动物 elephant / tiger / giraffe / snake / horse", desc: "认识五种动物。", d: 2,
+      core: "elephant 大象、tiger 老虎、giraffe 长颈鹿、snake 蛇、horse 马、zoo 动物园。",
+      formula: "elephant / tiger / giraffe / snake / horse", mistakes: ["giraffe 拼成 girafe。"], tips: "双 f。" },
+    { name: "形容词 long / short / tall / cute / strong", desc: "会用形容词描述动物。", d: 2,
+      core: "long 长的、short 短的/矮的、tall 高的、cute 可爱的、strong 强壮的。",
+      formula: "It's long / short / tall.", mistakes: ["tall 与 long 混。"], tips: "高用 tall，长用 long。" },
+  ], [
+    vq("动物园动物 elephant / tiger / giraffe / snake / horse", 2, "大象", "elephant", ["elefant", "elephent", "elephnat"]),
+    vq("动物园动物 elephant / tiger / giraffe / snake / horse", 2, "长颈鹿", "giraffe", ["girafe", "giraf", "giraff"]),
+    ch("形容词 long / short / tall / cute / strong", 2, "「它很高。」的英文是（　）", ["It's tall.", "It's long.", "It tall.", "It's talls."], "It's tall.", "高度用 tall。"),
+    tfq("动物园动物 elephant / tiger / giraffe / snake / horse", 2, "zoo 的意思是「动物园」。", "对", "zoo = 动物园。"),
+  ], [
+    vq("动物园动物 elephant / tiger / giraffe / snake / horse", 2, "蛇", "snake", ["snak", "snack", "sneak"]),
+    ch("形容词 long / short / tall / cute / strong", 2, "「它很可爱。」的英文是（　）", ["It's cute.", "It's cut.", "It cute.", "It's cutes."], "It's cute.", "cute = 可爱。"),
+  ]),
+
+  unit(7, "Module 7 There is a cat 存在句", [
+    { name: "There is / There are", desc: "会用 there be 说「有」。", d: 3,
+      core: "There is a cat. 有一只猫。There are some animals. 有一些动物。单数 is，复数 are。",
+      formula: "There is a + 单数 / There are + 复数", mistakes: ["There is some animals（×）。"], tips: "看后面名词单复数。" },
+    { name: "物品词汇 table / animal / some / over there", desc: "掌握周边词汇。", d: 2,
+      core: "table 桌子、animal 动物、some 一些、over there 在那边、help 帮助。",
+      formula: "over there / some animals", mistakes: ["some 后跟单数（×）。"], tips: "some + 复数或不可数。" },
+  ], [
+    vq("物品词汇 table / animal / some / over there", 2, "动物", "animal", ["animel", "animals", "anamal"]),
+    ch("There is / There are", 3, "「有一些动物。」的英文是（　）", ["There are some animals.", "There is some animals.", "There are some animal.", "There have some animals."], "There are some animals.", "复数用 there are。"),
+    ch("There is / There are", 3, "「有一只猫。」的英文是（　）", ["There is a cat.", "There are a cat.", "There is cat.", "There have a cat."], "There is a cat.", "单数用 there is。"),
+    tfq("There is / There are", 3, "over there 的意思是「在那边」。", "对", "over there 在那边。"),
+  ], [
+    vq("物品词汇 table / animal / some / over there", 2, "桌子", "table", ["tabel", "tabl", "tible"]),
+    tfq("There is / There are", 3, "There are 后面跟复数名词。", "对", "are + 复数。"),
+  ]),
+
+  unit(8, "Module 8 Put on your clothes 衣物与运动", [
+    { name: "衣物 shirt / shorts / shoe / sock / clothes", desc: "认识衣物词。", d: 2,
+      core: "shirt 衬衫、shorts 短裤、shoe 鞋、sock 袜子、clothes 衣服（复数）。a pair of 一双。",
+      formula: "shirt / shorts / shoe / sock / clothes", mistakes: ["clothes 当单数。"], tips: "clothes 总是复数。" },
+    { name: "Put on your …", desc: "会说「穿上」。", d: 2,
+      core: "Put on your shirt. 穿上衬衫。put on 是「穿上」，反义是 take off。",
+      formula: "Put on your + 衣物.", mistakes: ["Put your shirt on 语序也行；但 Put on you shirt（×）。"], tips: "your 不能写成 you。" },
+  ], [
+    vq("衣物 shirt / shorts / shoe / sock / clothes", 2, "袜子", "sock", ["soks", "sockss", "socks"]),
+    vq("衣物 shirt / shorts / shoe / sock / clothes", 2, "衣服（总称）", "clothes", ["cloths", "clothe", "clothess"]),
+    ch("Put on your …", 2, "「穿上你的衬衫。」的英文是（　）", ["Put on your shirt.", "Put on you shirt.", "Put your on shirt.", "Putting on your shirt."], "Put on your shirt.", "put on + your + 衣物。"),
+    tfq("Put on your …", 2, "a pair of shoes 的意思是「一双鞋」。", "对", "a pair of 一双。"),
+  ], [
+    vq("衣物 shirt / shorts / shoe / sock / clothes", 2, "短裤", "shorts", ["short", "shotes", "shirts"]),
+    ch("Put on your …", 2, "「穿上你的袜子。」的英文是（　）", ["Put on your socks.", "Put on your sock.", "Put on you socks.", "Putting on your socks."], "Put on your socks.", "袜子常用复数。"),
+  ]),
+
+  unit(9, "Module 9 I like football 运动与喜好", [
+    { name: "运动 football / basketball / swimming", desc: "认识运动名称。", d: 2,
+      core: "football 足球、basketball 篮球、swimming 游泳、sport 运动。play football 踢足球。",
+      formula: "play football / play basketball", mistakes: ["play the football（×）。"], tips: "球类运动不加 the。" },
+    { name: "I like … / favourite", desc: "会表达喜好。", d: 2,
+      core: "I like football. 我喜欢足球。My favourite sport is football. 我最喜欢的运动是足球。with 和……一起，together 一起。",
+      formula: "I like + 名词. / My favourite sport is …", mistakes: ["I like play football（×）。"], tips: "like 后接名词或动名词。" },
+  ], [
+    vq("运动 football / basketball / swimming", 2, "篮球", "basketball", ["basketbool", "basketballs", "basketbal"]),
+    ch("运动 football / basketball / swimming", 2, "「踢足球」的英文是（　）", ["play football", "play the football", "play a football", "footballing"], "play football", "球类不加 the。"),
+    ch("I like … / favourite", 2, "「我最喜欢的运动是游泳。」的英文是（　）", ["My favourite sport is swimming.", "My favourite sport is swim.", "I favourite sport swimming.", "My favourite sports is swim."], "My favourite sport is swimming.", "favourite + 名词。"),
+    tfq("I like … / favourite", 2, "I like football. 的意思是「我喜欢足球」。", "对", "like 表喜好。"),
+  ], [
+    vq("运动 football / basketball / swimming", 2, "运动", "sport", ["spor", "sports", "spart"]),
+    ch("I like … / favourite", 2, "「我喜欢游泳。」的英文是（　）", ["I like swimming.", "I like swim.", "I like to swimming.", "I likes swimming."], "I like swimming.", "like + 动名词。"),
+  ]),
+
+  unit(10, "Module 10 Let's go swimming 提议与感受", [
+    { name: "提议 Let's …", desc: "会用 Let's 提建议。", d: 2,
+      core: "Let's go swimming. 我们去游泳吧。Let's sing and dance. 我们唱歌跳舞吧。idea 主意。",
+      formula: "Let's + 动词原形.", mistakes: ["Let's to go（×）。"], tips: "let's 后不加 to。" },
+    { name: "感受 hot / tired", desc: "会表达冷热与疲倦。", d: 2,
+      core: "I'm hot. 我很热。I'm tired. 我累了。go swimming 去游泳。",
+      formula: "I'm hot / tired.", mistakes: ["I'm tire（×）。"], tips: "tired 是形容词。" },
+  ], [
+    ch("提议 Let's …", 2, "「我们去游泳吧。」的英文是（　）", ["Let's go swimming.", "Let's to go swimming.", "Let go swimming.", "Let's going swimming."], "Let's go swimming.", "Let's + 原形。"),
+    vq("感受 hot / tired", 2, "累的", "tired", ["tried", "tire", "tiredd"]),
+    ch("感受 hot / tired", 2, "「我很热。」的英文是（　）", ["I'm hot.", "I'm heat.", "I hot.", "I'm hots."], "I'm hot.", "hot 是形容词。"),
+    tfq("提议 Let's …", 2, "「Let's dance.」是提议一起跳舞。", "对", "Let's 表建议。"),
+  ], [
+    vq("感受 hot / tired", 2, "热的", "hot", ["hut", "hat", "hots"]),
+    ch("提议 Let's …", 2, "「我们唱歌吧。」的英文是（　）", ["Let's sing.", "Let's to sing.", "Let sing.", "Let's singing."], "Let's sing.", "Let's + 原形。"),
+  ]),
+]);
+
+
+// —— 二年级上册：Module 1—10 ——
+writeBook(E, "外研社版 · 英语（一年级起点）二年级上册", "二年级上册", [
+  unit(1, "Module 1 I like football 一起活动", [
+    { name: "活动用语 come on / team", desc: "掌握活动相关词。", d: 2,
+      core: "song 歌曲、come on 加油、team 球队。Let's sing a song. 我们唱首歌吧。",
+      formula: "come on / team / song", mistakes: ["come on 写成 come in。"], tips: "come on 加油；come in 进来。" },
+    { name: "Let's + 动词原形", desc: "会用 Let's 提议。", d: 2,
+      core: "Let's sing a song. 我们唱首歌。Let's play football. 我们踢足球吧。",
+      formula: "Let's + 动词原形.", mistakes: ["Let's to sing（×）。"], tips: "Let's 后不加 to。" },
+  ], [
+    vq("活动用语 come on / team", 2, "球队", "team", ["teem", "tam", "teams"]),
+    ch("Let's + 动词原形", 2, "「我们唱首歌吧。」的英文是（　）", ["Let's sing a song.", "Let's to sing a song.", "Let sing a song.", "Let's singing a song."], "Let's sing a song.", "Let's + 原形。"),
+    ch("活动用语 come on / team", 2, "「加油！」的英文是（　）", ["Come on!", "Come in!", "Come to!", "Come up!"], "Come on!", "come on 加油。"),
+    tfq("Let's + 动词原形", 2, "Let's 后面接动词原形。", "对", "Let's + 原形。"),
+  ], [
+    vq("活动用语 come on / team", 2, "歌曲", "song", ["sang", "songs", "son"]),
+    ch("Let's + 动词原形", 2, "「我们踢足球吧。」的英文是（　）", ["Let's play football.", "Let's to play football.", "Let's playing football.", "Let play football."], "Let's play football.", "Let's + 原形。"),
+  ]),
+
+  unit(2, "Module 2 I don't like meat 食物与喜好", [
+    { name: "食物词汇 meat / noodles / rice / sweets / ice cream", desc: "认识五种食物。", d: 2,
+      core: "meat 肉、noodles 面条、rice 米饭、sweets 糖果、ice cream 冰淇淋。children 孩子们（child 的复数）。",
+      formula: "meat / noodles / rice / sweets / ice cream", mistakes: ["sweet 单数指「甜的」。"], tips: "sweets 糖果（复数）。" },
+    { name: "I like / I don't like", desc: "会表达喜欢与不喜欢。", d: 2,
+      core: "I like noodles. 我喜欢面条。I don't like meat. 我不喜欢肉。nice 好的。",
+      formula: "I like … / I don't like …", mistakes: ["I don't like meats（×，meat 不可数）。"], tips: "meat / rice 不可数。" },
+  ], [
+    vq("食物词汇 meat / noodles / rice / sweets / ice cream", 2, "肉", "meat", ["meet", "met", "mate"]),
+    vq("食物词汇 meat / noodles / rice / sweets / ice cream", 2, "糖果", "sweets", ["sweet", "swetes", "sweats"]),
+    ch("I like / I don't like", 2, "「我不喜欢肉。」的英文是（　）", ["I don't like meat.", "I not like meat.", "I don't like meats.", "I no like meat."], "I don't like meat.", "don't + 原形。"),
+    tfq("I like / I don't like", 2, "ice cream 的意思是「冰淇淋」。", "对", "ice cream。"),
+  ], [
+    vq("食物词汇 meat / noodles / rice / sweets / ice cream", 2, "米饭", "rice", ["rise", "race", "rices"]),
+    ch("I like / I don't like", 2, "「我喜欢面条。」的英文是（　）", ["I like noodles.", "I like noodle.", "I likes noodles.", "I like to noodles."], "I like noodles.", "noodles 复数。"),
+  ]),
+
+  unit(3, "Module 3 Do you like bananas? 水果", [
+    { name: "水果 banana / apple / orange / tomato / fruit", desc: "认识水果与蔬菜。", d: 2,
+      core: "banana 香蕉、apple 苹果、orange 橙子、tomato 西红柿、fruit 水果、milk 牛奶。",
+      formula: "banana / apple / orange / tomato / fruit", mistakes: ["tomato 复数 tomatoes。"], tips: "tomato → tomatoes。" },
+    { name: "Do you like …? 与 Here you are.", desc: "会问喜好并递东西。", d: 2,
+      core: "Do you like bananas? 你喜欢香蕉吗？Yes, I do. / No, I don't. Here you are. 给你。",
+      formula: "Do you like + 复数? — Yes, I do. / No, I don't.", mistakes: ["答 Yes, I like.（×）"], tips: "Do 问 Do 答。" },
+  ], [
+    vq("水果 banana / apple / orange / tomato / fruit", 2, "水果", "fruit", ["fruite", "fruits", "froot"]),
+    vq("水果 banana / apple / orange / tomato / fruit", 2, "西红柿", "tomato", ["tommato", "tomatoe", "tometo"]),
+    ch("Do you like …? 与 Here you are.", 2, "— Do you like oranges? — ___（喜欢）", ["Yes, I do.", "Yes, I like.", "Yes, I am.", "Yes, I does."], "Yes, I do.", "Do 问 Do 答。"),
+    tfq("水果 banana / apple / orange / tomato / fruit", 2, "「Here you are.」的意思是「给你」。", "对", "递东西时用。"),
+  ], [
+    vq("水果 banana / apple / orange / tomato / fruit", 2, "橙子", "orange", ["orenge", "oragne", "oranges"]),
+    ch("Do you like …? 与 Here you are.", 2, "「我不喜欢西红柿。」的英文是（　）", ["I don't like tomatoes.", "I don't like tomato.", "I not like tomatoes.", "I don't likes tomatoes."], "I don't like tomatoes.", "复数 tomatoes。"),
+  ]),
+
+  unit(4, "Module 4 It's a T-shirt 衣物与聚会", [
+    { name: "衣物 T-shirt / dress / trousers", desc: "认识三种衣物。", d: 2,
+      core: "T-shirt T恤、dress 连衣裙、trousers 裤子（复数）。party 聚会。",
+      formula: "T-shirt / dress / trousers", mistakes: ["trousers 当单数。"], tips: "裤子总是复数。" },
+    { name: "too 与 Here's …", desc: "会用 too 表示「也」和 Here's。", d: 2,
+      core: "Here's a T-shirt. 这是件T恤。It's too big. 太大了。too 表示「太……」，也可表示「也」。",
+      formula: "Here's + 名词. / It's too + 形容词.", mistakes: ["too 与 to 混。"], tips: "too 太/也，to 到。" },
+  ], [
+    vq("衣物 T-shirt / dress / trousers", 2, "裤子", "trousers", ["trouserss", "trowser", "trouser"]),
+    ch("too 与 Here's …", 2, "「太大了。」的英文是（　）", ["It's too big.", "It's to big.", "It's too bigger.", "It too big."], "It's too big.", "too + 形容词。"),
+    ch("too 与 Here's …", 2, "「这是件T恤。」的英文是（　）", ["Here's a T-shirt.", "Here a T-shirt.", "Here's T-shirt.", "This a T-shirt here."], "Here's a T-shirt.", "Here's = Here is。"),
+    tfq("衣物 T-shirt / dress / trousers", 2, "dress 的意思是「连衣裙」。", "对", "dress = 连衣裙。"),
+  ], [
+    vq("衣物 T-shirt / dress / trousers", 2, "连衣裙", "dress", ["dres", "dresss", "drees"]),
+    tfq("too 与 Here's …", 2, "Here's 是 Here is 的缩写。", "对", "缩写形式。"),
+  ]),
+
+  unit(5, "Module 5 I get up at seven 我的一天", [
+    { name: "作息短语 get up / go to school / have lunch / go home / watch TV", desc: "掌握一天的活动。", d: 2,
+      core: "get up 起床、go to school 上学、have lunch 吃午饭、go home 回家、watch TV 看电视。",
+      formula: "get up / go to school / have lunch / go home / watch TV", mistakes: ["watch the TV（×）。"], tips: "watch TV 不加 the。" },
+    { name: "at + 钟点", desc: "会用 at 表示时间。", d: 2,
+      core: "I get up at seven. 我七点起床。at 用于钟点前。",
+      formula: "I + 动作 + at + 时间.", mistakes: ["in seven（×）。"], tips: "钟点用 at。" },
+  ], [
+    ch("作息短语 get up / go to school / have lunch / go home / watch TV", 2, "「看电视」的英文是（　）", ["watch TV", "watch the TV", "see TV", "look TV"], "watch TV", "不加 the。"),
+    ch("at + 钟点", 2, "「我七点起床。」的英文是（　）", ["I get up at seven.", "I get up in seven.", "I get up seven.", "I get up on seven."], "I get up at seven.", "钟点前用 at。"),
+    vq("作息短语 get up / go to school / have lunch / go home / watch TV", 2, "起床", "get up", ["get on", "get in", "getting up"]),
+    tfq("at + 钟点", 2, "have lunch 的意思是「吃午饭」。", "对", "have lunch。"),
+  ], [
+    vq("作息短语 get up / go to school / have lunch / go home / watch TV", 2, "回家", "go home", ["go to home", "go house", "come home to"], "go home", "home 前不加 to。"),
+    ch("at + 钟点", 2, "「我八点去上学。」的英文是（　）", ["I go to school at eight.", "I go to school in eight.", "I go school at eight.", "I go to school eight."], "I go to school at eight.", "at + 钟点。"),
+  ]),
+
+  unit(6, "Module 6 It's on Sunday 星期与城市", [
+    { name: "星期日 Sunday / 一周表达", desc: "认识 Sunday 及一周概念。", d: 2,
+      core: "Sunday 星期日、today 今天、week 星期/周。on Sunday 在星期日。",
+      formula: "on Sunday", mistakes: ["in Sunday（×）。"], tips: "星期前用 on。" },
+    { name: "居住与景物 live / park / city / sky / moon", desc: "会描述居住环境。", d: 2,
+      core: "live 居住、park 公园、city 城市、sky 天空、moon 月亮、great 太好了。",
+      formula: "I live in + 城市.", mistakes: ["I live on Beijing（×）。"], tips: "城市前用 in。" },
+  ], [
+    vq("居住与景物 live / park / city / sky / moon", 2, "月亮", "moon", ["mone", "moons", "morn"]),
+    vq("居住与景物 live / park / city / sky / moon", 2, "城市", "city", ["citey", "citi", "cities"]),
+    ch("居住与景物 live / park / city / sky / moon", 2, "「我住在北京。」的英文是（　）", ["I live in Beijing.", "I live on Beijing.", "I live Beijing.", "I living in Beijing."], "I live in Beijing.", "live in + 城市。"),
+    tfq("星期日 Sunday / 一周表达", 2, "「on Sunday」表示「在星期日」。", "对", "星期前用 on。"),
+  ], [
+    vq("居住与景物 live / park / city / sky / moon", 2, "天空", "sky", ["skuy", "skie", "skay"]),
+    ch("居住与景物 live / park / city / sky / moon", 2, "「太好了！」的英文是（　）", ["Great!", "Green!", "Grade!", "Grate!"], "Great!", "great = 太好了。"),
+  ]),
+
+  unit(7, "Module 7 We have a picnic 出行方式", [
+    { name: "交通工具 train / bus / ship / plane / bike", desc: "认识五种交通方式。", d: 2,
+      core: "train 火车、bus 公共汽车、ship 轮船、plane 飞机、bike 自行车。by 乘、坐。",
+      formula: "by train / by bus / by plane", mistakes: ["by a bus（×）。"], tips: "by + 交通工具，不加 a/the。" },
+    { name: "go to work / on holiday", desc: "会说出行目的。", d: 2,
+      core: "go to work 去上班、on holiday 度假、walk 步行、love 喜爱、then 然后。",
+      formula: "I go to work by bus.", mistakes: ["go to work by foot（×）"], tips: "步行说 on foot 或 walk。" },
+  ], [
+    vq("交通工具 train / bus / ship / plane / bike", 2, "火车", "train", ["trian", "trane", "trein"]),
+    vq("交通工具 train / bus / ship / plane / bike", 2, "轮船", "ship", ["sheep", "ships", "chip"]),
+    ch("交通工具 train / bus / ship / plane / bike", 2, "「坐公共汽车」的英文是（　）", ["by bus", "by a bus", "in bus", "on the bus by"], "by bus", "by + 交通工具。"),
+    tfq("go to work / on holiday", 2, "on holiday 的意思是「度假」。", "对", "on holiday。"),
+  ], [
+    vq("交通工具 train / bus / ship / plane / bike", 2, "飞机", "plane", ["plan", "plant", "plain"]),
+    ch("go to work / on holiday", 2, "「他坐火车去上班。」的英文是（　）", ["He goes to work by train.", "He go to work by train.", "He goes to work on train.", "He goes work by train."], "He goes to work by train.", "第三人称单数 goes。"),
+  ]),
+
+  unit(8, "Module 8 She watches TV 周末活动", [
+    { name: "周末活动 watch / read / play / listen", desc: "掌握周末活动的说法。", d: 2,
+      core: "watch TV 看电视、read books 读书、play the piano 弹钢琴、listen to music 听音乐。weekend 周末。",
+      formula: "watch / read / play / listen to", mistakes: ["play piano（漏 the，乐器要加 the）。"], tips: "乐器前加 the。" },
+    { name: "第三人称单数 -s", desc: "会用 -s 形式描述他人。", d: 3,
+      core: "He watches TV. 他看电视。She reads books. 她读书。第三人称单数动词加 -s/-es。",
+      formula: "He / She + 动词-s", mistakes: ["He watch TV（×）。"], tips: "he/she 后动词加 s。" },
+  ], [
+    vq("周末活动 watch / read / play / listen", 2, "周末", "weekend", ["weekand", "weeken", "wekend"]),
+    ch("第三人称单数 -s", 3, "「她读书。」的英文是（　）", ["She reads books.", "She read books.", "She reading books.", "She read book."], "She reads books.", "第三人称单数加 s。"),
+    ch("周末活动 watch / read / play / listen", 2, "「弹钢琴」的英文是（　）", ["play the piano", "play piano", "play a piano", "piano play"], "play the piano", "乐器前加 the。"),
+    tfq("第三人称单数 -s", 3, "「He watches TV.」中 watch 加了 es。", "对", "ch/sh 结尾加 es。"),
+  ], [
+    vq("周末活动 watch / read / play / listen", 2, "听", "listen", ["lisen", "liston", "lissten"]),
+    ch("周末活动 watch / read / play / listen", 2, "「听音乐」的英文是（　）", ["listen to music", "listen music", "hear to music", "listen the music"], "listen to music", "listen to 是固定搭配。"),
+  ]),
+
+  unit(9, "Module 9 It's winter 季节与衣物", [
+    { name: "季节 winter / spring / summer / autumn", desc: "认识四季。", d: 2,
+      core: "winter 冬、spring 春、summer 夏、autumn 秋。skating 滑冰，go skating 去滑冰。",
+      formula: "winter / spring / summer / autumn", mistakes: ["autumn 拼错。"], tips: "autumn 结尾 n。" },
+    { name: "天气与衣物 warm / cool / cold / coat / sweater / glove", desc: "会用天气配衣物。", d: 2,
+      core: "warm 温暖、cool 凉爽、cold 寒冷；coat 外套、jacket 夹克、sweater 毛衣、glove 手套。wear 穿。",
+      formula: "It's cold. Wear a coat.", mistakes: ["wear 与 put on 混（wear 表状态）。"], tips: "wear 穿着，put on 穿上。" },
+  ], [
+    vq("天气与衣物 warm / cool / cold / coat / sweater / glove", 2, "寒冷的", "cold", ["cool", "cole", "colde"]),
+    vq("天气与衣物 warm / cool / cold / coat / sweater / glove", 2, "毛衣", "sweater", ["sweather", "sweaters", "sweter"]),
+    ch("天气与衣物 warm / cool / cold / coat / sweater / glove", 2, "天冷时应该（　）", ["Wear a coat.", "Wear a T-shirt.", "Go swimming.", "Wear shorts."], "Wear a coat.", "冷天穿外套。"),
+    tfq("季节 winter / spring / summer / autumn", 2, "go skating 的意思是「去滑冰」。", "对", "skating 滑冰。"),
+  ], [
+    vq("天气与衣物 warm / cool / cold / coat / sweater / glove", 2, "温暖的", "warm", ["wam", "worm", "warme"]),
+    ch("季节 winter / spring / summer / autumn", 2, "「冬天」的英文是（　）", ["winter", "winer", "wintr", "winder"], "winter", "winter = 冬天。"),
+  ]),
+
+  unit(10, "Module 10 Happy New Year! 节日", [
+    { name: "节日词汇 year / present / dumpling / Christmas", desc: "认识节日相关词。", d: 2,
+      core: "year 年、present 礼物、dumpling 饺子、Christmas 圣诞节、dinner 正餐。Happy New Year! 新年快乐！",
+      formula: "Happy New Year! / Merry Christmas!", mistakes: ["新年说 Merry Christmas（×）。"], tips: "新年 Happy New Year。" },
+    { name: "wish / come in / eat", desc: "会说祝福与邀请。", d: 2,
+      core: "come in 进来、wish 祝愿、eat 吃、Chinese 中国的。We wish you a happy New Year. 祝你新年快乐。",
+      formula: "Come in, please. / We wish you …", mistakes: ["wish you happy（漏 a）。"], tips: "wish you a happy…" },
+  ], [
+    vq("节日词汇 year / present / dumpling / Christmas", 2, "礼物", "present", ["presant", "parent", "presents"]),
+    vq("节日词汇 year / present / dumpling / Christmas", 2, "饺子", "dumpling", ["dumplin", "dumplig", "dumplings"]),
+    ch("节日词汇 year / present / dumpling / Christmas", 2, "新年祝福应说（　）", ["Happy New Year!", "Merry Christmas!", "Happy birthday!", "Good luck to you."], "Happy New Year!", "新年用 Happy New Year。"),
+    tfq("wish / come in / eat", 2, "come in 的意思是「进来」。", "对", "come in 进来。"),
+  ], [
+    vq("节日词汇 year / present / dumpling / Christmas", 2, "年", "year", ["yeer", "yer", "years"]),
+    ch("wish / come in / eat", 2, "「请进。」的英文是（　）", ["Come in, please.", "Come on, please.", "Come to, please.", "Go in, please."], "Come in, please.", "come in 进来。"),
+  ]),
+]);
+
+// —— 二年级下册：Module 1—10 ——
+writeBook(E, "外研社版 · 英语（一年级起点）二年级下册", "二年级下册", [
+  unit(1, "Module 1 What's the weather like? 天气", [
+    { name: "天气词 sunny / windy / rain / snow", desc: "认识天气词。", d: 2,
+      core: "sunny 晴朗、windy 有风、rain 雨/下雨、snow 雪/下雪、weather 天气。",
+      formula: "sunny / windy / rainy / snowy", mistakes: ["rain 与 rainy 混。"], tips: "rain 名词/动词，rainy 形容词。" },
+    { name: "What's the weather like?", desc: "会问天气。", d: 2,
+      core: "What's the weather like? 天气怎么样？It's sunny. 天晴。take 带、cap 帽子。",
+      formula: "What's the weather like? — It's + 天气词.", mistakes: ["How is the weather like?（×）"], tips: "What's … like? 固定搭配。" },
+  ], [
+    vq("天气词 sunny / windy / rain / snow", 2, "有风的", "windy", ["windys", "windi", "windey"]),
+    vq("天气词 sunny / windy / rain / snow", 2, "雪", "snow", ["snau", "snowy", "sno"]),
+    ch("What's the weather like?", 2, "「天气怎么样？」的英文是（　）", ["What's the weather like?", "How is the weather like?", "What weather like?", "What's weather?"], "What's the weather like?", "固定句型。"),
+    tfq("天气词 sunny / windy / rain / snow", 2, "sunny 的意思是「晴朗的」。", "对", "sun + ny。"),
+  ], [
+    vq("天气词 sunny / windy / rain / snow", 2, "雨", "rain", ["rane", "rian", "rainy"]),
+    ch("What's the weather like?", 2, "— What's the weather like? — ___（刮风）", ["It's windy.", "It windy.", "It's wind.", "There is windy."], "It's windy.", "It's + 天气词。"),
+  ]),
+
+  unit(2, "Module 2 I have a new camera 物品与动作", [
+    { name: "物品 radio / photo / newspaper / camera / letter", desc: "认识五种物品。", d: 2,
+      core: "radio 收音机、photo 照片、newspaper 报纸、camera 照相机、letter 信。",
+      formula: "radio / photo / newspaper / camera / letter", mistakes: ["photo 复数 photos。"], tips: "photo → photos。" },
+    { name: "draw / write / smile", desc: "掌握三个动作词。", d: 2,
+      core: "draw 画、write 写、smile 微笑、picture 图画。draw a picture 画一幅画。",
+      formula: "draw a picture / write a letter", mistakes: ["draw picture（漏 a）。"], tips: "可数名词单数前加 a。" },
+  ], [
+    vq("物品 radio / photo / newspaper / camera / letter", 2, "照相机", "camera", ["camer", "camara", "camra"]),
+    vq("物品 radio / photo / newspaper / camera / letter", 2, "报纸", "newspaper", ["newspapper", "newspapers", "newspapr"]),
+    ch("draw / write / smile", 2, "「画一幅画」的英文是（　）", ["draw a picture", "draw picture", "write a picture", "draw the pictures one"], "draw a picture", "draw + a + picture。"),
+    tfq("物品 radio / photo / newspaper / camera / letter", 2, "letter 的意思是「信」。", "对", "letter = 信。"),
+  ], [
+    vq("物品 radio / photo / newspaper / camera / letter", 2, "信", "letter", ["leter", "lettre", "latter"]),
+    ch("draw / write / smile", 2, "「写一封信」的英文是（　）", ["write a letter", "write letter", "draw a letter", "writes a letter"], "write a letter", "write + a + letter。"),
+  ]),
+
+  unit(3, "Module 3 Tidy your room 家务与整理", [
+    { name: "家务短语 tidy / do homework / sleep", desc: "掌握三个日常动作。", d: 2,
+      core: "tidy 整理、do homework 做作业、sleep 睡觉、room 房间。Tidy your room. 整理你的房间。",
+      formula: "tidy your room / do homework", mistakes: ["do homeworks（×，homework 不可数）。"], tips: "homework 不可数。" },
+    { name: "secret / card / flower / science", desc: "认识四个名词。", d: 2,
+      core: "secret 秘密、card 卡片、flower 花、science 科学、today 今天。",
+      formula: "secret / card / flower / science", mistakes: ["science 拼错。"], tips: "sci-ence。" },
+  ], [
+    vq("家务短语 tidy / do homework / sleep", 2, "做作业", "homework", ["homeworks", "home work", "housework"]), 
+    vq("secret / card / flower / science", 2, "秘密", "secret", ["secrect", "secreet", "secert"]),
+    ch("家务短语 tidy / do homework / sleep", 2, "「整理你的房间。」的英文是（　）", ["Tidy your room.", "Tidy you room.", "Tidying your room.", "Tidy your rooms please you."], "Tidy your room.", "祈使句用原形。"),
+    tfq("secret / card / flower / science", 2, "flower 的意思是「花」。", "对", "flower = 花。"),
+  ], [
+    vq("secret / card / flower / science", 2, "科学", "science", ["sience", "sciense", "sciences"]),
+    ch("secret / card / flower / science", 2, "「卡片」的英文是（　）", ["card", "cart", "cord", "cards"], "card", "card = 卡片。"),
+  ]),
+
+  unit(4, "Module 4 Hide-and-seek 游戏与方位", [
+    { name: "游戏词汇 hide / seek / hide-and-seek / stone", desc: "认识游戏相关词。", d: 2,
+      core: "hide 躲藏、seek 寻找、hide-and-seek 捉迷藏、stone 石头、noise 声音、call 喊。",
+      formula: "hide-and-seek", mistakes: ["hide and seek 连字符可省。"], tips: "hide-and-seek 捉迷藏。" },
+    { name: "behind / drink / talk", desc: "会用 behind 和日常动词。", d: 2,
+      core: "behind 在……后面、drink 喝、talk 说话。He is behind the door. 他在门后。",
+      formula: "He / She is behind the …", mistakes: ["behind 拼错。"], tips: "be + hind。" },
+  ], [
+    vq("游戏词汇 hide / seek / hide-and-seek / stone", 2, "石头", "stone", ["ston", "stoon", "stones"]),
+    ch("behind / drink / talk", 2, "「他在门后面。」的英文是（　）", ["He is behind the door.", "He is on the door.", "He is in the door.", "He behind door."], "He is behind the door.", "behind = 在后面。"),
+    vq("游戏词汇 hide / seek / hide-and-seek / stone", 2, "捉迷藏", "hide-and-seek", ["hide-seek", "hiding-seek", "hide-and-seek game"]),
+    tfq("behind / drink / talk", 2, "talk 的意思是「说话」。", "对", "talk = 说话。"),
+  ], [
+    vq("游戏词汇 hide / seek / hide-and-seek / stone", 2, "声音", "noise", ["nois", "noyse", "noises"]),
+    ch("behind / drink / talk", 2, "「喝」的英文是（　）", ["drink", "dring", "drnik", "drank"], "drink", "drink = 喝。"),
+  ]),
+
+  unit(5, "Module 5 Hurry up! 催促与游戏", [
+    { name: "催促 hurry up / late", desc: "会说「快点」和「迟到」。", d: 2,
+      core: "Hurry up! 快点！late 迟的、sad 伤心的、those 那些、game 游戏、clap 拍手。",
+      formula: "Hurry up! / You're late.", mistakes: ["late 与 later 混。"], tips: "late 迟的。" },
+    { name: "those / well / kid / of course", desc: "掌握常用词。", d: 2,
+      core: "those 那些（that 的复数）、well 好、kid 小孩、of course 当然、catch 抓住。",
+      formula: "Those are … / Of course.", mistakes: ["those 当单数。"], tips: "those + 复数。" },
+  ], [
+    ch("催促 hurry up / late", 2, "「快点！」的英文是（　）", ["Hurry up!", "Hurry on!", "Hurry in!", "Quick up!"], "Hurry up!", "hurry up 快点。"),
+    vq("those / well / kid / of course", 2, "小孩", "kid", ["kidd", "kit", "kids"]),
+    ch("those / well / kid / of course", 2, "「当然。」的英文是（　）", ["Of course.", "Of cause.", "Of course it.", "On course."], "Of course.", "固定表达。"),
+    tfq("催促 hurry up / late", 2, "late 的意思是「迟的」。", "对", "late = 迟的。"),
+  ], [
+    vq("those / well / kid / of course", 2, "那些", "those", ["these", "thoes", "thos"]),
+    ch("those / well / kid / of course", 2, "「我们迟到了。」的英文是（　）", ["We're late.", "We're later.", "We late are.", "We are lately."], "We're late.", "late 是形容词。"),
+  ]),
+
+  unit(6, "Module 6 She usually goes shopping 日常习惯", [
+    { name: "动作 ride / cook / go shopping", desc: "掌握三个动作短语。", d: 2,
+      core: "ride 骑、cook 做饭、go shopping 去购物、kitchen 厨房、ill 生病的。",
+      formula: "ride a bike / cook dinner / go shopping", mistakes: ["go to shopping（×）。"], tips: "go shopping 不加 to。" },
+    { name: "usually 与第三人称", desc: "会用 usually 说习惯。", d: 3,
+      core: "She usually goes shopping. 她通常去购物。usually 通常。第三人称单数动词加 -s/-es。",
+      formula: "He / She usually + 动词-s.", mistakes: ["She usually go（×）。"], tips: "usually 后仍要三单形式。" },
+  ], [
+    vq("动作 ride / cook / go shopping", 2, "厨房", "kitchen", ["kithen", "kichen", "kitchin"]),
+    ch("usually 与第三人称", 3, "「她通常去购物。」的英文是（　）", ["She usually goes shopping.", "She usually go shopping.", "She usual goes shopping.", "She usually going shopping."], "She usually goes shopping.", "三单 goes。"),
+    ch("动作 ride / cook / go shopping", 2, "「做饭」的英文是（　）", ["cook", "cooking dinner", "make cook", "cooker"], "cook", "cook 既名词也动词。"),
+    tfq("通常是 usually", 3, "usually 的意思是「通常」。", "对", "usually = 通常。"),
+  ], [
+    vq("动作 ride / cook / go shopping", 2, "骑", "ride", ["rid", "ried", "read"]),
+    ch("usually 与第三人称", 3, "「他通常骑车上学。」的英文是（　）", ["He usually rides a bike to school.", "He usually ride a bike to school.", "He usual rides bike school.", "He usually riding a bike school."], "He usually rides a bike to school.", "三单 rides。"),
+  ]),
+
+  unit(7, "Module 7 Children's Day 儿童节", [
+    { name: "节日词汇 Children's Day / picnic / beach", desc: "认识儿童节相关词。", d: 2,
+      core: "Children's Day 儿童节、picnic 野餐、beach 海滩、family 家庭、poem 诗。",
+      formula: "Children's Day / have a picnic", mistakes: ["Childrens' Day（×）。"], tips: "Children's（先复数再加 's）。" },
+    { name: "say a poem / play 表演", desc: "会说表演类活动。", d: 2,
+      core: "say a poem 朗诵诗、play 演出、TV 电视台。They play on TV. 他们在电视上演出。",
+      formula: "say a poem / play on TV", mistakes: ["say poem（漏 a）。"], tips: "a poem。" },
+  ], [
+    vq("节日词汇 Children's Day / picnic / beach", 2, "海滩", "beach", ["beatch", "beache", "beech"]),
+    vq("节日词汇 Children's Day / picnic / beach", 2, "野餐", "picnic", ["picnick", "picnik", "picnics"]),
+    ch("say a poem / play 表演", 2, "「朗诵一首诗」的英文是（　）", ["say a poem", "say poem", "speak a poem", "tell a poem"], "say a poem", "say a poem。" ),
+    tfq("节日词汇 Children's Day / picnic / beach", 2, "Children's Day 是「儿童节」。", "对", "6 月 1 日儿童节。"),
+  ], [
+    vq("节日词汇 Children's Day / picnic / beach", 2, "家庭", "family", ["famly", "famliy", "families"]),
+    ch("say a poem / play 表演", 2, "「他们在电视上演出。」的英文是（　）", ["They play on TV.", "They play in TV.", "They plays on TV.", "They playing on TV."], "They play on TV.", "they 用动词原形。"),
+  ]),
+
+  unit(8, "Module 8 The train is at the station 交通与地点", [
+    { name: "地点 station / hospital / hill / factory", desc: "认识四个地点。", d: 2,
+      core: "station 车站、hospital 医院、hill 小山、factory 工厂、ground 地面。",
+      formula: "station / hospital / hill / factory", mistakes: ["station 拼错。"], tips: "sta-tion。" },
+    { name: "turn around / jump / come back", desc: "掌握三个动作短语。", d: 2,
+      core: "turn around 转身、jump 跳、come back 回来、again 再一次。",
+      formula: "Turn around. / Come back.", mistakes: ["turn around 说成 turn round（也可）。"], tips: "两者都可。" },
+  ], [
+    vq("地点 station / hospital / hill / factory", 2, "车站", "station", ["stasion", "stations", "statoin"]),
+    vq("地点 station / hospital / hill / factory", 2, "工厂", "factory", ["factery", "factry", "factor"]),
+    ch("turn around / jump / come back", 2, "「转过身。」的英文是（　）", ["Turn around.", "Turn on.", "Turn up.", "Turn in."], "Turn around.", "turn around 转身。"),
+    tfq("turn around / jump / come back", 2, "come back 的意思是「回来」。", "对", "come back 回来。"),
+  ], [
+    vq("地点 station / hospital / hill / factory", 2, "小山", "hill", ["heel", "hilt", "hil"]),
+    ch("turn around / jump / come back", 2, "「再跳一次。」的英文是（　）", ["Jump again.", "Jump more.", "Jumping again.", "Again jump it."], "Jump again.", "again = 再一次。"),
+  ]),
+
+  unit(9, "Module 9 Turn left 问路", [
+    { name: "方向 left / right / straight", desc: "掌握三个方向词。", d: 2,
+      core: "left 左、right 右、straight 直。turn left 向左转、turn right 向右转、go straight on 直走。",
+      formula: "turn left / turn right / go straight on", mistakes: ["turn to left（×）。"], tips: "turn left 不加 to。" },
+    { name: "excuse me / lost / road", desc: "会问路。", d: 2,
+      core: "Excuse me. 劳驾。I'm lost. 我迷路了。road 路。Where's the hospital? 医院在哪？",
+      formula: "Excuse me, where's the …?", mistakes: ["Excuse me 用于打扰别人前。"], tips: "问路先说 Excuse me。" },
+  ], [
+    vq("方向 left / right / straight", 2, "左", "left", ["lift", "lefts", "lft"]),
+    vq("方向 left / right / straight", 2, "右", "right", ["rite", "rights", "rigth"]),
+    ch("方向 left / right / straight", 2, "「向左转」的英文是（　）", ["turn left", "turn to left", "left turn to", "turn the left"], "turn left", "turn left。"),
+    tfq("excuse me / lost / road", 2, "「I'm lost.」的意思是「我迷路了」。", "对", "lost = 迷路。"),
+  ], [
+    vq("excuse me / lost / road", 2, "路", "road", ["rode", "rood", "roads"]),
+    ch("excuse me / lost / road", 2, "问路前最礼貌的开场是（　）", ["Excuse me.", "Hello you.", "Sorry me.", "Hey!"], "Excuse me.", "Excuse me = 劳驾。"),
+  ]),
+
+  unit(10, "Module 10 Where's the supermarket? 指路", [
+    { name: "地点 supermarket / cinema / station", desc: "认识三个地点。", d: 2,
+      core: "supermarket 超市、cinema 电影院、station 车站、taxi 出租车。",
+      formula: "supermarket / cinema / station", mistakes: ["cinema 拼成 cinima。"], tips: "ci-ne-ma。" },
+    { name: "next to / in front of", desc: "两个方位短语。", d: 3,
+      core: "next to 紧挨着、in front of 在……前面、turn back 往回走、wrong 错误的。",
+      formula: "It's next to the … / It's in front of the …", mistakes: ["next the bank（漏 to）。"], tips: "next to 有 to。" },
+  ], [
+    vq("地点 supermarket / cinema / station", 2, "电影院", "cinema", ["cinima", "cineme", "cinama"]),
+    ch("next to / in front of", 3, "「在超市旁边」的英文是（　）", ["next to the supermarket", "next the supermarket", "next to supermarket the", "near to supermarket"], "next to the supermarket", "next to + the + 地点。"),
+    ch("next to / in front of", 3, "「在学校前面」的英文是（　）", ["in front of the school", "in the front of school", "front of the school", "in front the school"], "in front of the school", "in front of 固定搭配。"),
+    tfq("地点 supermarket / cinema / station", 2, "taxi 的意思是「出租车」。", "对", "taxi = 出租车。"),
+  ], [
+    vq("地点 supermarket / cinema / station", 2, "超市", "supermarket", ["supermark", "supermaket", "supmarket"]),
+    ch("next to / in front of", 3, "「走错路了。」的英文是（　）", ["We're on the wrong way.", "We're on the wrong road way.", "We wrong way.", "We're in wrong way."], "We're on the wrong way.", "on the wrong way。"),
+  ]),
+]);
+
 // ══════════════════════ 统计输出 ══════════════════════
 console.log(`✅ 多版本内容生成完成：教材 ${stats.books} 本 / 单元 ${stats.units} 个 / 题目 ${stats.questions} 道`);
 console.log(`   输出目录：${OUTPUT}`);

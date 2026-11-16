@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 7 Children's Day 儿童节",
+  "unit_number": 7,
+  "unit_test": {
+    "title": "第7单元「Module 7 Children's Day 儿童节」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "节日词汇 Children's Day / picnic / beach",
+        "question": "「海滩」的英文是（　）",
+        "options": [
+          "beatch",
+          "beache",
+          "beech",
+          "beach"
+        ],
+        "answer": "beach",
+        "explanation": "beach = 海滩。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "节日词汇 Children's Day / picnic / beach",
+        "question": "「野餐」的英文是（　）",
+        "options": [
+          "picnik",
+          "picnics",
+          "picnic",
+          "picnick"
+        ],
+        "answer": "picnic",
+        "explanation": "picnic = 野餐。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "say a poem / play 表演",
+        "question": "「朗诵一首诗」的英文是（　）",
+        "options": [
+          "say a poem",
+          "say poem",
+          "speak a poem",
+          "tell a poem"
+        ],
+        "answer": "say a poem",
+        "explanation": "say a poem。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "节日词汇 Children's Day / picnic / beach",
+        "question": "Children's Day 是「儿童节」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "6 月 1 日儿童节。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "节日词汇 Children's Day / picnic / beach",
+      "core_concept": "Children's Day 儿童节、picnic 野餐、beach 海滩、family 家庭、poem 诗。",
+      "key_formula": "Children's Day / have a picnic",
+      "common_mistakes": [
+        "Childrens' Day（×）。"
+      ],
+      "tips": "Children's（先复数再加 's）。"
+    },
+    {
+      "point": "say a poem / play 表演",
+      "core_concept": "say a poem 朗诵诗、play 演出、TV 电视台。They play on TV. 他们在电视上演出。",
+      "key_formula": "say a poem / play on TV",
+      "common_mistakes": [
+        "say poem（漏 a）。"
+      ],
+      "tips": "a poem。"
+    }
+  ]
+}

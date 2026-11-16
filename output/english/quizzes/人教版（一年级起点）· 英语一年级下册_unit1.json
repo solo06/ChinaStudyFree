@@ -1,0 +1,107 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Unit 1 Classroom 教室与方位",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第1单元「Unit 1 Classroom 教室与方位」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "教室物品 chair / desk / blackboard",
+        "question": "「椅子」的英文是（　）",
+        "options": [
+          "hair",
+          "cheer",
+          "chare",
+          "chair"
+        ],
+        "answer": "chair",
+        "explanation": "chair = 椅子。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "教室物品 chair / desk / blackboard",
+        "question": "「黑板」的英文是（　）",
+        "options": [
+          "board",
+          "blackbird",
+          "blackboard",
+          "blackbord"
+        ],
+        "answer": "blackboard",
+        "explanation": "blackboard = 黑板。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "方位介词 in / on / under",
+        "question": "书在桌子上，应说（　）",
+        "options": [
+          "The book is on the desk.",
+          "The book is in the desk.",
+          "The book is under the desk.",
+          "The book on desk is."
+        ],
+        "answer": "The book is on the desk.",
+        "explanation": "上面用 on。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "方位介词 in / on / under",
+        "question": "「猫在椅子下面。」的英文是（　）",
+        "options": [
+          "The cat is under the chair.",
+          "The cat is on the chair.",
+          "The cat is in the chair.",
+          "The cat under chair."
+        ],
+        "answer": "The cat is under the chair.",
+        "explanation": "下面用 under。"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "方位介词 in / on / under",
+        "question": "in 表示「在……里面」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "in = 在里面。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "教室物品 chair / desk / blackboard",
+      "core_concept": "chair 椅子、desk 书桌、blackboard 黑板。chair 和 desk 都在教室里，blackboard 是老师写字的地方。",
+      "key_formula": "chair / desk / blackboard",
+      "common_mistakes": [
+        "desk 与 table 混用（table 一般指餐桌）。"
+      ],
+      "tips": "书桌说 desk，餐桌说 table。"
+    },
+    {
+      "point": "方位介词 in / on / under",
+      "core_concept": "on 在……上面、in 在……里面、under 在……下面。The book is on the desk. 书在桌子上。",
+      "key_formula": "Where is the …? — It's on / in / under the …",
+      "common_mistakes": [
+        "on 与 in 互换。"
+      ],
+      "tips": "上面 on、里面 in、下面 under。"
+    }
+  ]
+}

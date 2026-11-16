@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Module 1 He's a doctor 职业",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第1单元「Module 1 He's a doctor 职业」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "职业词汇 doctor / nurse / driver / policeman / pupil",
+        "question": "「医生」的英文是（　）",
+        "options": [
+          "doctar",
+          "dacter",
+          "doctor",
+          "docter"
+        ],
+        "answer": "doctor",
+        "explanation": "doctor = 医生。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "职业词汇 doctor / nurse / driver / policeman / pupil",
+        "question": "「护士」的英文是（　）",
+        "options": [
+          "nurs",
+          "nurce",
+          "nerse",
+          "nurse"
+        ],
+        "answer": "nurse",
+        "explanation": "nurse = 护士。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "he / she 与 He's / She's",
+        "question": "她是老师，应说（　）",
+        "options": [
+          "She's a teacher.",
+          "He's a teacher.",
+          "She a teacher.",
+          "She's teacher."
+        ],
+        "answer": "She's a teacher.",
+        "explanation": "She's a + 职业。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "he / she 与 He's / She's",
+        "question": "pupil 的意思是「小学生」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "pupil = 小学生。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "职业词汇 doctor / nurse / driver / policeman / pupil",
+      "core_concept": "doctor 医生、nurse 护士、driver 司机、policeman 警察、pupil 小学生。",
+      "key_formula": "doctor / nurse / driver / policeman / pupil",
+      "common_mistakes": [
+        "policeman 复数 policemen。"
+      ],
+      "tips": "man → men。"
+    },
+    {
+      "point": "he / she 与 He's / She's",
+      "core_concept": "He's a doctor. 他是医生。She's a nurse. 她是护士。He's = He is，She's = She is。",
+      "key_formula": "He's / She's a + 职业.",
+      "common_mistakes": [
+        "He's doctor（漏 a）。"
+      ],
+      "tips": "职业前加 a。"
+    }
+  ]
+}

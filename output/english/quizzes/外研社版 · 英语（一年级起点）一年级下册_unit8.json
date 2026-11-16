@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Module 8 Put on your clothes 衣物与运动",
+  "unit_number": 8,
+  "unit_test": {
+    "title": "第8单元「Module 8 Put on your clothes 衣物与运动」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "衣物 shirt / shorts / shoe / sock / clothes",
+        "question": "「袜子」的英文是（　）",
+        "options": [
+          "sock",
+          "soks",
+          "sockss",
+          "socks"
+        ],
+        "answer": "sock",
+        "explanation": "sock = 袜子。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "衣物 shirt / shorts / shoe / sock / clothes",
+        "question": "「衣服（总称）」的英文是（　）",
+        "options": [
+          "clothess",
+          "clothes",
+          "cloths",
+          "clothe"
+        ],
+        "answer": "clothes",
+        "explanation": "clothes = 衣服（总称）。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "Put on your …",
+        "question": "「穿上你的衬衫。」的英文是（　）",
+        "options": [
+          "Put on your shirt.",
+          "Put on you shirt.",
+          "Put your on shirt.",
+          "Putting on your shirt."
+        ],
+        "answer": "Put on your shirt.",
+        "explanation": "put on + your + 衣物。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "Put on your …",
+        "question": "a pair of shoes 的意思是「一双鞋」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "a pair of 一双。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "衣物 shirt / shorts / shoe / sock / clothes",
+      "core_concept": "shirt 衬衫、shorts 短裤、shoe 鞋、sock 袜子、clothes 衣服（复数）。a pair of 一双。",
+      "key_formula": "shirt / shorts / shoe / sock / clothes",
+      "common_mistakes": [
+        "clothes 当单数。"
+      ],
+      "tips": "clothes 总是复数。"
+    },
+    {
+      "point": "Put on your …",
+      "core_concept": "Put on your shirt. 穿上衬衫。put on 是「穿上」，反义是 take off。",
+      "key_formula": "Put on your + 衣物.",
+      "common_mistakes": [
+        "Put your shirt on 语序也行；但 Put on you shirt（×）。"
+      ],
+      "tips": "your 不能写成 you。"
+    }
+  ]
+}

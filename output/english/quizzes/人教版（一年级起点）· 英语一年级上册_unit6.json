@@ -1,0 +1,123 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Unit 6 Fruit 水果",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "第6单元「Unit 6 Fruit 水果」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "水果词汇 apple / orange / banana / pear",
+        "question": "「苹果」的英文是（　）",
+        "options": [
+          "apply",
+          "appel",
+          "aple",
+          "apple"
+        ],
+        "answer": "apple",
+        "explanation": "apple = 苹果。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "水果词汇 apple / orange / banana / pear",
+        "question": "「香蕉」的英文是（　）",
+        "options": [
+          "banan",
+          "banaba",
+          "banana",
+          "bananna"
+        ],
+        "answer": "banana",
+        "explanation": "banana = 香蕉。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "水果词汇 apple / orange / banana / pear",
+        "question": "「梨」的英文是（　）",
+        "options": [
+          "pear",
+          "bear",
+          "peer",
+          "peal"
+        ],
+        "answer": "pear",
+        "explanation": "pear = 梨。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "Do you like …? — Yes, I do. / No, I don't.",
+        "question": "— Do you like apples? — ___（喜欢）",
+        "options": [
+          "Yes, I do.",
+          "Yes, I like.",
+          "Yes, I am.",
+          "Yes, I like it."
+        ],
+        "answer": "Yes, I do.",
+        "explanation": "Do 问 Do 答。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "水果词汇 apple / orange / banana / pear",
+        "question": "「一个橙子」的英文是（　）",
+        "options": [
+          "an orange",
+          "a orange",
+          "an oranges",
+          "a apple"
+        ],
+        "answer": "an orange",
+        "explanation": "元音音素前用 an。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "Do you like …? — Yes, I do. / No, I don't.",
+        "question": "「No, I don't.」表示不喜欢。",
+        "options": [],
+        "answer": "对",
+        "explanation": "don't = do not。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "水果词汇 apple / orange / banana / pear",
+      "core_concept": "apple 苹果、orange 橙子、banana 香蕉、pear 梨。apple 和 orange 前用 an：an apple / an orange。",
+      "key_formula": "apple / orange / banana / pear",
+      "common_mistakes": [
+        "a apple（×）。"
+      ],
+      "tips": "元音音素前用 an。"
+    },
+    {
+      "point": "Do you like …? — Yes, I do. / No, I don't.",
+      "core_concept": "Do you like bananas? 你喜欢香蕉吗？Yes, I do. / No, I don't. 喜欢说 Yes, I do.，不喜欢说 No, I don't.",
+      "key_formula": "Do you like + 复数名词? — Yes, I do. / No, I don't.",
+      "common_mistakes": [
+        "回答用 Yes, I like.（×）"
+      ],
+      "tips": "Do 问 Do 答。"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Unit 4 Numbers 数字 1—10",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第4单元「Unit 4 Numbers 数字 1—10」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "数字 one—ten",
+        "question": "「三」的英文是（　）",
+        "options": [
+          "tree",
+          "there",
+          "the",
+          "three"
+        ],
+        "answer": "three",
+        "explanation": "three = 三。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "数字 one—ten",
+        "question": "「五」的英文是（　）",
+        "options": [
+          "five",
+          "four",
+          "fine",
+          "fifth"
+        ],
+        "answer": "five",
+        "explanation": "five = 五。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "数字 one—ten",
+        "question": "「九」的英文是（　）",
+        "options": [
+          "nine",
+          "nin",
+          "night",
+          "ninth"
+        ],
+        "answer": "nine",
+        "explanation": "nine = 九。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "How many … are there?",
+        "question": "「有几只鸟？」的英文是（　）",
+        "options": [
+          "How many birds are there?",
+          "How many bird are there?",
+          "How much birds are there?",
+          "How many birds there are?"
+        ],
+        "answer": "How many birds are there?",
+        "explanation": "How many + 复数。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "数字 one—ten",
+        "question": "eight 表示数字（　）",
+        "options": [
+          "8",
+          "6",
+          "9",
+          "18"
+        ],
+        "answer": "8",
+        "explanation": "eight = 8。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "数字 one—ten",
+        "question": "ten 的意思是 10。",
+        "options": [],
+        "answer": "对",
+        "explanation": "ten = 10。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "数字 one—ten",
+      "core_concept": "one 1、two 2、three 3、four 4、five 5、six 6、seven 7、eight 8、nine 9、ten 10。注意 three 的 th 音、five 结尾的 v。",
+      "key_formula": "one, two, three, four, five, six, seven, eight, nine, ten",
+      "common_mistakes": [
+        "three 写成 tree（树）。"
+      ],
+      "tips": "three 三，tree 树。"
+    },
+    {
+      "point": "How many … are there?",
+      "core_concept": "How many tigers are there? 有几只老虎？Five. 五只。How many 后面跟可数名词复数。",
+      "key_formula": "How many + 复数名词 + are there? — 数字.",
+      "common_mistakes": [
+        "How many tiger（×，要用复数）。"
+      ],
+      "tips": "How many 后必用复数。"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "textbook": "一年级下册",
+  "unit": "Unit 2 Room 我的房间",
+  "unit_number": 2,
+  "unit_test": {
+    "title": "第2单元「Unit 2 Room 我的房间」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "房间物品 light / bed / door / box",
+        "question": "「床」的英文是（　）",
+        "options": [
+          "bird",
+          "bed",
+          "bad",
+          "bead"
+        ],
+        "answer": "bed",
+        "explanation": "bed = 床。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "房间物品 light / bed / door / box",
+        "question": "「门」的英文是（　）",
+        "options": [
+          "door",
+          "doll",
+          "doer",
+          "dore"
+        ],
+        "answer": "door",
+        "explanation": "door = 门。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "方位介词 near / behind",
+        "question": "「球在门后面。」的英文是（　）",
+        "options": [
+          "The ball is behind the door.",
+          "The ball is near the door.",
+          "The ball is on the door.",
+          "The ball behind door."
+        ],
+        "answer": "The ball is behind the door.",
+        "explanation": "后面用 behind。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "方位介词 near / behind",
+        "question": "near 的意思是（　）",
+        "options": [
+          "靠近",
+          "在下面",
+          "在里面",
+          "在后面"
+        ],
+        "answer": "靠近",
+        "explanation": "near = 靠近。"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "房间物品 light / bed / door / box",
+        "question": "box 的意思是「箱子」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "box = 箱子。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "房间物品 light / bed / door / box",
+      "core_concept": "light 灯、bed 床、door 门、box 箱子。bed 是睡觉的地方，box 可以装玩具。",
+      "key_formula": "light / bed / door / box",
+      "common_mistakes": [
+        "把 light 当成「轻的」（一词多义）。"
+      ],
+      "tips": "light 既是灯也是「轻的」。"
+    },
+    {
+      "point": "方位介词 near / behind",
+      "core_concept": "near 靠近、behind 在……后面。The box is behind the door. 箱子在门后面。",
+      "key_formula": "It's near / behind the …",
+      "common_mistakes": [
+        "behind 拼成 behine。"
+      ],
+      "tips": "be + hind。"
+    }
+  ]
+}

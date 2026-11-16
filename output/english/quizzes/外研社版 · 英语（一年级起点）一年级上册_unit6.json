@@ -1,0 +1,91 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Module 6 What's this? 文具",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "第6单元「Module 6 What's this? 文具」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "文具 schoolbag / book / pen / pencil / ruler / eraser / crayon",
+        "question": "「橡皮」的英文是（　）",
+        "options": [
+          "erasor",
+          "erasers",
+          "eraser",
+          "erazer"
+        ],
+        "answer": "eraser",
+        "explanation": "eraser = 橡皮。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "文具 schoolbag / book / pen / pencil / ruler / eraser / crayon",
+        "question": "「蜡笔」的英文是（　）",
+        "options": [
+          "crayonn",
+          "cryon",
+          "crayon",
+          "crayan"
+        ],
+        "answer": "crayon",
+        "explanation": "crayon = 蜡笔。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "What's this? — It's a …",
+        "question": "— What's this? — ___（一支铅笔）",
+        "options": [
+          "It's a pencil.",
+          "It's pencil.",
+          "This is pencil a.",
+          "It a pencil."
+        ],
+        "answer": "It's a pencil.",
+        "explanation": "It's a + 名词。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "文具 schoolbag / book / pen / pencil / ruler / eraser / crayon",
+        "question": "ruler 的意思是「尺子」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "ruler = 尺子。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "文具 schoolbag / book / pen / pencil / ruler / eraser / crayon",
+      "core_concept": "schoolbag 书包、book 书、pen 钢笔、pencil 铅笔、ruler 尺子、eraser 橡皮、pencil case 铅笔盒、crayon 蜡笔。",
+      "key_formula": "schoolbag / book / pen / pencil / ruler / eraser / crayon",
+      "common_mistakes": [
+        "pencil 与 pen 混。"
+      ],
+      "tips": "pencil 铅笔，pen 钢笔。"
+    },
+    {
+      "point": "What's this? — It's a …",
+      "core_concept": "What's this? 这是什么？It's a pencil. 它是一支铅笔。",
+      "key_formula": "What's this? — It's a + 文具.",
+      "common_mistakes": [
+        "漏 a。"
+      ],
+      "tips": "单数可数名词前加 a。"
+    }
+  ]
+}

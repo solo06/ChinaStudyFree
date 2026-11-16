@@ -1,0 +1,265 @@
+{
+  "textbook": "一年级下册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Module 1 He's a doctor 职业",
+      "knowledge_points": [
+        {
+          "name": "职业词汇 doctor / nurse / driver / policeman / pupil",
+          "description": "认识五种职业/身份。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "he / she 与 He's / She's",
+          "description": "会用 he's / she's 介绍职业。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Module 2 Where's the bird? 方位",
+      "knowledge_points": [
+        {
+          "name": "方位介词 in / on / under",
+          "description": "会用 in / on / under 说位置。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "物品词汇 hat / toy / bed / bear",
+          "description": "认识四个名词。",
+          "difficulty": 1,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Module 3 How many? 数字 11—12",
+      "knowledge_points": [
+        {
+          "name": "数字 eleven / twelve",
+          "description": "会数到 12。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "don't / let's 的用法",
+          "description": "会用 don't 否定、let's 提议。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Module 4 These are your eyes 身体部位",
+      "knowledge_points": [
+        {
+          "name": "身体部位 head / face / eye / ear / mouth / nose / hand / leg / feet",
+          "description": "掌握九个身体词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "These are … / Touch your …",
+          "description": "会用复数句型与身体指令。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Module 5 They're cows 农场动物",
+      "knowledge_points": [
+        {
+          "name": "农场动物 cow / pig / duck / chicken / farm",
+          "description": "认识农场动物。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "They're … / 形容词 big / small / fat / thin",
+          "description": "会用 they're 描述动物。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Module 6 This is my father 动物园",
+      "knowledge_points": [
+        {
+          "name": "动物园动物 elephant / tiger / giraffe / snake / horse",
+          "description": "认识五种动物。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "形容词 long / short / tall / cute / strong",
+          "description": "会用形容词描述动物。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "title": "Module 7 There is a cat 存在句",
+      "knowledge_points": [
+        {
+          "name": "There is / There are",
+          "description": "会用 there be 说「有」。",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "物品词汇 table / animal / some / over there",
+          "description": "掌握周边词汇。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "title": "Module 8 Put on your clothes 衣物与运动",
+      "knowledge_points": [
+        {
+          "name": "衣物 shirt / shorts / shoe / sock / clothes",
+          "description": "认识衣物词。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "Put on your …",
+          "description": "会说「穿上」。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "title": "Module 9 I like football 运动与喜好",
+      "knowledge_points": [
+        {
+          "name": "运动 football / basketball / swimming",
+          "description": "认识运动名称。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "I like … / favourite",
+          "description": "会表达喜好。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "title": "Module 10 Let's go swimming 提议与感受",
+      "knowledge_points": [
+        {
+          "name": "提议 Let's …",
+          "description": "会用 Let's 提建议。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "感受 hot / tired",
+          "description": "会表达冷热与疲倦。",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    }
+  ]
+}

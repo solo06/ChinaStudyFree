@@ -1,0 +1,123 @@
+{
+  "textbook": "一年级上册",
+  "unit": "Unit 3 Animals 动物园里",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "第3单元「Unit 3 Animals 动物园里」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "动物词汇 bird / tiger / monkey / dog / cat",
+        "question": "「鸟」的英文是（　）",
+        "options": [
+          "bird",
+          "board",
+          "bread",
+          "bear"
+        ],
+        "answer": "bird",
+        "explanation": "bird = 鸟。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "动物词汇 bird / tiger / monkey / dog / cat",
+        "question": "「老虎」的英文是（　）",
+        "options": [
+          "tigger",
+          "tigar",
+          "target",
+          "tiger"
+        ],
+        "answer": "tiger",
+        "explanation": "tiger = 老虎。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "动物词汇 bird / tiger / monkey / dog / cat",
+        "question": "「猴子」的英文是（　）",
+        "options": [
+          "moneky",
+          "monday",
+          "monkey",
+          "monk"
+        ],
+        "answer": "monkey",
+        "explanation": "monkey = 猴子。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "What's this? — It's a …",
+        "question": "— What's this? — ___（一只猫）",
+        "options": [
+          "It's a cat.",
+          "This is cat.",
+          "It's cat a.",
+          "It a cat."
+        ],
+        "answer": "It's a cat.",
+        "explanation": "It's a + 名词。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "What's this? — It's a …",
+        "question": "「它是一只狗。」的英文是（　）",
+        "options": [
+          "It's a dog.",
+          "It's dog.",
+          "It a dog.",
+          "This a dog."
+        ],
+        "answer": "It's a dog.",
+        "explanation": "It's = It is。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 1,
+        "knowledge_point": "动物词汇 bird / tiger / monkey / dog / cat",
+        "question": "cat 的复数是 cats。",
+        "options": [],
+        "answer": "对",
+        "explanation": "一般加 -s。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "动物词汇 bird / tiger / monkey / dog / cat",
+      "core_concept": "bird 鸟、tiger 老虎、monkey 猴子、dog 狗、cat 猫。复数一般直接加 -s：birds / tigers / dogs / cats。",
+      "key_formula": "bird / tiger / monkey / dog / cat",
+      "common_mistakes": [
+        "monkey 复数写成 monkeyes。"
+      ],
+      "tips": "辅音字母 + y 结尾才变 ies，monkey 直接加 s。"
+    },
+    {
+      "point": "What's this? — It's a …",
+      "core_concept": "What's this? 这是什么？It's a tiger. 它是一只老虎。指远处用 What's that?",
+      "key_formula": "What's this? — It's a + 动物.",
+      "common_mistakes": [
+        "回答用 This is a tiger.（不自然）"
+      ],
+      "tips": "问 this 答 it。"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Module 1 What's the weather like? 天气",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第1单元「Module 1 What's the weather like? 天气」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "天气词 sunny / windy / rain / snow",
+        "question": "「有风的」的英文是（　）",
+        "options": [
+          "windys",
+          "windi",
+          "windey",
+          "windy"
+        ],
+        "answer": "windy",
+        "explanation": "windy = 有风的。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "天气词 sunny / windy / rain / snow",
+        "question": "「雪」的英文是（　）",
+        "options": [
+          "snow",
+          "snau",
+          "snowy",
+          "sno"
+        ],
+        "answer": "snow",
+        "explanation": "snow = 雪。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "What's the weather like?",
+        "question": "「天气怎么样？」的英文是（　）",
+        "options": [
+          "What's the weather like?",
+          "How is the weather like?",
+          "What weather like?",
+          "What's weather?"
+        ],
+        "answer": "What's the weather like?",
+        "explanation": "固定句型。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "天气词 sunny / windy / rain / snow",
+        "question": "sunny 的意思是「晴朗的」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "sun + ny。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "天气词 sunny / windy / rain / snow",
+      "core_concept": "sunny 晴朗、windy 有风、rain 雨/下雨、snow 雪/下雪、weather 天气。",
+      "key_formula": "sunny / windy / rainy / snowy",
+      "common_mistakes": [
+        "rain 与 rainy 混。"
+      ],
+      "tips": "rain 名词/动词，rainy 形容词。"
+    },
+    {
+      "point": "What's the weather like?",
+      "core_concept": "What's the weather like? 天气怎么样？It's sunny. 天晴。take 带、cap 帽子。",
+      "key_formula": "What's the weather like? — It's + 天气词.",
+      "common_mistakes": [
+        "How is the weather like?（×）"
+      ],
+      "tips": "What's … like? 固定搭配。"
+    }
+  ]
+}

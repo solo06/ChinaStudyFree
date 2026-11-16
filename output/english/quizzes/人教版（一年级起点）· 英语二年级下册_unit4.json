@@ -1,0 +1,123 @@
+{
+  "textbook": "二年级下册",
+  "unit": "Unit 4 Time 时间",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第4单元「Unit 4 Time 时间」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "数字 eleven—fifty",
+        "question": "「十二」的英文是（　）",
+        "options": [
+          "twelf",
+          "twelv",
+          "twelve",
+          "twelth"
+        ],
+        "answer": "twelve",
+        "explanation": "twelve = 十二。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "数字 eleven—fifty",
+        "question": "「二十」的英文是（　）",
+        "options": [
+          "twenti",
+          "twelfty",
+          "twenty",
+          "twentty"
+        ],
+        "answer": "twenty",
+        "explanation": "twenty = 二十。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "数字 eleven—fifty",
+        "question": "「三十」的英文是（　）",
+        "options": [
+          "thirteen",
+          "thiteen",
+          "thirty",
+          "thirthy"
+        ],
+        "answer": "thirty",
+        "explanation": "thirty = 三十。"
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "What time is it?",
+        "question": "「现在几点？」的英文是（　）",
+        "options": [
+          "What time is it?",
+          "What time it is?",
+          "How time is it?",
+          "What's time?"
+        ],
+        "answer": "What time is it?",
+        "explanation": "固定句型。"
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "What time is it?",
+        "question": "— What time is it? — ___（七点）",
+        "options": [
+          "It's seven.",
+          "It seven.",
+          "It's seven time.",
+          "Seven is it."
+        ],
+        "answer": "It's seven.",
+        "explanation": "It's + 数字。"
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 3,
+        "knowledge_point": "数字 eleven—fifty",
+        "question": "forty 表示 40。",
+        "options": [],
+        "answer": "对",
+        "explanation": "forty = 40（不是 fourty）。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "数字 eleven—fifty",
+      "core_concept": "eleven 11、twelve 12、thirteen 13、fourteen 14、fifteen 15、twenty 20、thirty 30、forty 40、fifty 50。13—19 以 -teen 结尾，整十以 -ty 结尾。",
+      "key_formula": "thirteen / thirty, fourteen / forty, fifteen / fifty",
+      "common_mistakes": [
+        "thirteen 与 thirty 混。"
+      ],
+      "tips": "-teen 十几，-ty 几十。"
+    },
+    {
+      "point": "What time is it?",
+      "core_concept": "What time is it? 现在几点？It's seven. 七点。It's time for school. 该上学了。",
+      "key_formula": "What time is it? — It's + 数字.",
+      "common_mistakes": [
+        "回答加 o'clock 时位置错。"
+      ],
+      "tips": "整点可说 It's seven o'clock."
+    }
+  ]
+}

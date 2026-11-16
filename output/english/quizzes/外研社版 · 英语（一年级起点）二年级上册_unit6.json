@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Module 6 It's on Sunday 星期与城市",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "第6单元「Module 6 It's on Sunday 星期与城市」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "居住与景物 live / park / city / sky / moon",
+        "question": "「月亮」的英文是（　）",
+        "options": [
+          "moon",
+          "mone",
+          "moons",
+          "morn"
+        ],
+        "answer": "moon",
+        "explanation": "moon = 月亮。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "居住与景物 live / park / city / sky / moon",
+        "question": "「城市」的英文是（　）",
+        "options": [
+          "city",
+          "citey",
+          "citi",
+          "cities"
+        ],
+        "answer": "city",
+        "explanation": "city = 城市。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "居住与景物 live / park / city / sky / moon",
+        "question": "「我住在北京。」的英文是（　）",
+        "options": [
+          "I live in Beijing.",
+          "I live on Beijing.",
+          "I live Beijing.",
+          "I living in Beijing."
+        ],
+        "answer": "I live in Beijing.",
+        "explanation": "live in + 城市。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 2,
+        "knowledge_point": "星期日 Sunday / 一周表达",
+        "question": "「on Sunday」表示「在星期日」。",
+        "options": [],
+        "answer": "对",
+        "explanation": "星期前用 on。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "星期日 Sunday / 一周表达",
+      "core_concept": "Sunday 星期日、today 今天、week 星期/周。on Sunday 在星期日。",
+      "key_formula": "on Sunday",
+      "common_mistakes": [
+        "in Sunday（×）。"
+      ],
+      "tips": "星期前用 on。"
+    },
+    {
+      "point": "居住与景物 live / park / city / sky / moon",
+      "core_concept": "live 居住、park 公园、city 城市、sky 天空、moon 月亮、great 太好了。",
+      "key_formula": "I live in + 城市.",
+      "common_mistakes": [
+        "I live on Beijing（×）。"
+      ],
+      "tips": "城市前用 in。"
+    }
+  ]
+}

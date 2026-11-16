@@ -1,0 +1,91 @@
+{
+  "textbook": "二年级上册",
+  "unit": "Module 8 She watches TV 周末活动",
+  "unit_number": 8,
+  "unit_test": {
+    "title": "第8单元「Module 8 She watches TV 周末活动」基础过关测验",
+    "total_score": 100,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "周末活动 watch / read / play / listen",
+        "question": "「周末」的英文是（　）",
+        "options": [
+          "wekend",
+          "weekend",
+          "weekand",
+          "weeken"
+        ],
+        "answer": "weekend",
+        "explanation": "weekend = 周末。"
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "第三人称单数 -s",
+        "question": "「她读书。」的英文是（　）",
+        "options": [
+          "She reads books.",
+          "She read books.",
+          "She reading books.",
+          "She read book."
+        ],
+        "answer": "She reads books.",
+        "explanation": "第三人称单数加 s。"
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "周末活动 watch / read / play / listen",
+        "question": "「弹钢琴」的英文是（　）",
+        "options": [
+          "play the piano",
+          "play piano",
+          "play a piano",
+          "piano play"
+        ],
+        "answer": "play the piano",
+        "explanation": "乐器前加 the。"
+      },
+      {
+        "id": 4,
+        "type": "true_false",
+        "score": 2,
+        "difficulty": 3,
+        "knowledge_point": "第三人称单数 -s",
+        "question": "「He watches TV.」中 watch 加了 es。",
+        "options": [],
+        "answer": "对",
+        "explanation": "ch/sh 结尾加 es。"
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "周末活动 watch / read / play / listen",
+      "core_concept": "watch TV 看电视、read books 读书、play the piano 弹钢琴、listen to music 听音乐。weekend 周末。",
+      "key_formula": "watch / read / play / listen to",
+      "common_mistakes": [
+        "play piano（漏 the，乐器要加 the）。"
+      ],
+      "tips": "乐器前加 the。"
+    },
+    {
+      "point": "第三人称单数 -s",
+      "core_concept": "He watches TV. 他看电视。She reads books. 她读书。第三人称单数动词加 -s/-es。",
+      "key_formula": "He / She + 动词-s",
+      "common_mistakes": [
+        "He watch TV（×）。"
+      ],
+      "tips": "he/she 后动词加 s。"
+    }
+  ]
+}
